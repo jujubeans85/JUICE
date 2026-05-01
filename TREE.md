@@ -1,3 +1,4 @@
+cat <<'EOF' > TREE.md
 /
 ├── SPINES/
 │   ├── ME/
@@ -62,3 +63,4 @@
     ├── PRODUCTS/
     ├── IDEAS/
     └── BUY_LATER/
+EOF
