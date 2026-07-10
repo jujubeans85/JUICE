@@ -57,10 +57,12 @@ Do not pull over unexplained local changes. Copy or commit them first.
      "$HOME/JUICE_DATA"
    ```
 
-6. Reinstall startup and run the doctor:
+6. Reinstall startup, check the restored system without trusting old backup state, then create and deeply verify a fresh snapshot:
 
    ```sh
    bash ~/JUICE/CONTROL/scripts/install_launch_agent.sh
+   bash ~/JUICE/CONTROL/scripts/doctor.sh --strict --allow-no-backup
+   bash ~/JUICE/CONTROL/scripts/backup_external.sh
    bash ~/JUICE/CONTROL/scripts/doctor.sh --strict --deep
    ```
 

@@ -13,6 +13,7 @@ __pycache__/
 *.log
 CONTROL/.state/
 CONTROL/backups/
+CONTROL.backups/
 CONTROL/config.local
 CONTROL/*.local.*
 

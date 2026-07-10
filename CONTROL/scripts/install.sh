@@ -6,7 +6,7 @@ SOURCE_REPO="$(cd "${SOURCE_DIR}/.." && pwd -P)"
 TARGET_DIR="${JUICE_CONTROL_INSTALL_DIR:-${HOME}/JUICE/CONTROL}"
 TARGET_REPO="$(cd "$(dirname "${TARGET_DIR}")" 2>/dev/null && pwd -P || dirname "${TARGET_DIR}")"
 DATA_ROOT="${JUICE_DATA_ROOT:-${HOME}/JUICE_DATA}"
-BACKUP_ROOT="${HOME}/JUICE/CONTROL.backups"
+BACKUP_ROOT="${DATA_ROOT}/ADMIN/control-backups"
 
 mkdir -p "$(dirname "${TARGET_DIR}")" "${BACKUP_ROOT}"
 

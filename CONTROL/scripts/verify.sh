@@ -6,14 +6,48 @@ REPO_ROOT="$(cd "${CONTROL_DIR}/.." && pwd -P)"
 DATA_ROOT="${JUICE_DATA_ROOT:-${HOME}/JUICE_DATA}"
 STATE_ROOT="${DATA_ROOT}/ADMIN"
 STATE_FILE="${STATE_ROOT}/last-verify.json"
+REQUESTED_PASS="all"
+
+usage() {
+  cat <<'USAGE'
+Usage:
+  verify.sh
+  verify.sh --pass shell|python|tests|plist|secrets|repo
+
+Without --pass, all six verification passes run in order.
+USAGE
+}
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --pass)
+      [[ $# -ge 2 ]] || { echo "ERROR: --pass needs a value" >&2; exit 64; }
+      REQUESTED_PASS="$2"
+      shift 2
+      ;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    *)
+      echo "ERROR: unknown argument: $1" >&2
+      usage >&2
+      exit 64
+      ;;
+  esac
+done
 
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:${HOME}/.local/bin:${PATH:-}"
+command -v python3 >/dev/null 2>&1 || { echo "ERROR: python3 is required" >&2; exit 69; }
 mkdir -p "${STATE_ROOT}"
 
 passes=0
+current_label="not started"
+
 run_pass() {
   local label="$1"
   shift
+  current_label="${label}"
   echo
   echo "=== ${label} ==="
   "$@"
@@ -30,6 +64,7 @@ import json
 import os
 import sys
 from pathlib import Path
+
 path = Path(sys.argv[1])
 payload = {
     "format": "juice-verification-state-v1",
@@ -48,12 +83,10 @@ PY
 on_error() {
   local code=$?
   set +e
-  record_state "failed" "Verification failed at or after pass ${passes}"
+  record_state "failed" "Verification failed in ${current_label}"
   exit "${code}"
 }
 trap on_error ERR
-
-command -v python3 >/dev/null 2>&1 || { echo "ERROR: python3 is required" >&2; exit 69; }
 
 shell_syntax() {
   local bad=0
@@ -142,15 +175,35 @@ repository_checks() {
   grep -q '\*\.log' "${REPO_ROOT}/.gitignore"
 }
 
-run_pass "1/6 shell syntax" shell_syntax
-run_pass "2/6 Python compilation" python_compile
-run_pass "3/6 unit, integration, backup round-trip and tamper tests" unit_and_integration
-run_pass "4/6 LaunchAgent rendering and plist parsing" launch_agent_lint
-run_pass "5/6 high-confidence secret scan" secret_scan
-run_pass "6/6 repository consistency" repository_checks
+run_named_pass() {
+  case "$1" in
+    shell)   run_pass "1/6 shell syntax" shell_syntax ;;
+    python)  run_pass "2/6 Python compilation" python_compile ;;
+    tests)   run_pass "3/6 unit, integration, backup round-trip and tamper tests" unit_and_integration ;;
+    plist)   run_pass "4/6 LaunchAgent rendering and plist parsing" launch_agent_lint ;;
+    secrets) run_pass "5/6 high-confidence secret scan" secret_scan ;;
+    repo)    run_pass "6/6 repository consistency" repository_checks ;;
+    *)
+      echo "ERROR: unknown verification pass: $1" >&2
+      usage >&2
+      exit 64
+      ;;
+  esac
+}
 
-record_state "success" "All ${passes} verification passes completed"
+if [[ "${REQUESTED_PASS}" == "all" ]]; then
+  for pass_name in shell python tests plist secrets repo; do
+    run_named_pass "${pass_name}"
+  done
+  record_state "success" "All ${passes} verification passes completed"
+  result_message="all ${passes} verification passes completed"
+else
+  run_named_pass "${REQUESTED_PASS}"
+  record_state "success" "Verification pass ${REQUESTED_PASS} completed"
+  result_message="verification pass ${REQUESTED_PASS} completed"
+fi
+
 trap - ERR
 
 echo
-echo "ROCK SOLID: all ${passes} verification passes completed."
+echo "ROCK SOLID: ${result_message}."

@@ -29,7 +29,7 @@ The setup orchestrator:
 3. Runs six software verification passes.
 4. Initialises the exact external volume with a safety sentinel.
 5. Installs and starts the user LaunchAgent.
-6. Creates an immutable external snapshot.
+6. Creates a timestamped snapshot that JUICE never edits or prunes automatically.
 7. Runs full SHA-256 comparison, re-verification, and a restore drill.
 8. Runs a strict final doctor and checks the live HTTP service.
 
@@ -77,6 +77,8 @@ A snapshot is not marked complete until five passes succeed:
 5. Restore-and-rehash drill on a deterministic file sample.
 
 The script preserves old snapshots and never prunes them automatically. This avoids clever retention logic quietly eating the only good copy.
+
+Runtime logs, active lock files, and in-progress backup state are deliberately removed from the copied snapshot. Restoring them would recreate stale locks and false “backup running” states.
 
 The external disk is still a physical object. Theft, fire, controller failure, or two disks dying together remain possible. A second independent backup—such as Time Machine to another device—is still sensible.
 

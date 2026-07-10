@@ -86,12 +86,15 @@ payload = {
     ],
     "WorkingDirectory": control,
     "EnvironmentVariables": {
+        "HOME": str(Path.home()),
         "JUICE_CONTROL_ROOT": control,
         "JUICE_DATA_ROOT": data,
         "JUICE_CONTROL_OPEN_BROWSER": "0",
     },
     "RunAtLoad": True,
-    "KeepAlive": {"SuccessfulExit": False},
+    # Keep retrying even if a manually launched JUICE instance temporarily owns
+    # the port and server.py exits cleanly after detecting it.
+    "KeepAlive": True,
     "ThrottleInterval": 30,
     "ProcessType": "Interactive",
     "LimitLoadToSessionType": "Aqua",
