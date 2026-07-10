@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python and test output
+__pycache__/
+*.py[cod]
+.coverage
+.pytest_cache/
+
+# Runtime logs and state
+*.log
+CONTROL/.state/
+CONTROL/backups/
+CONTROL.backups/
+CONTROL/config.local
+CONTROL/*.local.*
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.mobileprovision
+secrets/
+credentials/
+
+# Private JUICE data must remain outside this public repository
+JUICE_DATA/
+private/
+PRIVATE/

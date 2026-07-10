@@ -1,0 +1,53 @@
+name: JUICE Control verification
+
+on:
+  push:
+    paths:
+      - ".github/workflows/control-verify.yml"
+      - ".gitignore"
+      - "CONTROL/**"
+  pull_request:
+    paths:
+      - ".github/workflows/control-verify.yml"
+      - ".gitignore"
+      - "CONTROL/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: macos-latest
+    timeout-minutes: 15
+    env:
+      JUICE_DATA_ROOT: ${{ runner.temp }}/JUICE_DATA
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Make launchers executable
+        run: chmod +x CONTROL/start.command CONTROL/server.py CONTROL/scripts/*
+
+      - name: Pass 1 — shell syntax
+        run: bash CONTROL/scripts/verify.sh --pass shell
+
+      - name: Pass 2 — Python compilation
+        run: bash CONTROL/scripts/verify.sh --pass python
+
+      - name: Pass 3 — unit and integration tests
+        run: bash CONTROL/scripts/verify.sh --pass tests
+
+      - name: Pass 4 — LaunchAgent plist
+        run: bash CONTROL/scripts/verify.sh --pass plist
+
+      - name: Pass 5 — secret scan
+        run: bash CONTROL/scripts/verify.sh --pass secrets
+
+      - name: Pass 6 — repository consistency
+        run: bash CONTROL/scripts/verify.sh --pass repo

@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-CONTROL_DIR="$(cd "$(dirname "$0")" && pwd)"
+CONTROL_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 DATA_ROOT="${JUICE_DATA_ROOT:-${HOME}/JUICE_DATA}"
 
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:${HOME}/.local/bin:${PATH:-}"
 export JUICE_CONTROL_ROOT="${JUICE_CONTROL_ROOT:-${CONTROL_DIR}}"
 export JUICE_DATA_ROOT="${DATA_ROOT}"
-export JUICE_CONTROL_OPEN_BROWSER="${JUICE_CONTROL_OPEN_BROWSER:-1}"
+export JUICE_CONTROL_OPEN_BROWSER="${JUICE_CONTROL_OPEN_BROWSER:-0}"
 
 mkdir -p \
   "${JUICE_DATA_ROOT}/CREATIVE" \
@@ -16,10 +16,8 @@ mkdir -p \
   "${JUICE_DATA_ROOT}/ADMIN" \
   "${JUICE_DATA_ROOT}/LOGS"
 
-chmod +x "${CONTROL_DIR}/server.py" "${CONTROL_DIR}"/scripts/*.sh 2>/dev/null || true
-
 command -v python3 >/dev/null 2>&1 || {
-  echo "JUICE Control needs python3. Install Apple's Command Line Tools or Homebrew Python." >&2
+  echo "JUICE Control needs python3." >&2
   exit 127
 }
 

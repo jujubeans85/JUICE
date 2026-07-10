@@ -1,11 +1,81 @@
-# Recovery
+# JUICE recovery
 
-1. Restore the `CONTROL` folder from Git or a backup ZIP.
-2. Place it at `~/JUICE/CONTROL`.
-3. Run `chmod +x start.command server.py scripts/*.sh`.
-4. Recreate `~/JUICE_DATA/CREATIVE`, `~/JUICE_DATA/BUILD/Repos`, and `~/JUICE_DATA/CAPTURE`.
-5. Run `./start.command`.
+## What must exist
 
-No database migration is required.
+```text
+~/JUICE/CONTROL          public code and control scripts
+~/JUICE_DATA             private live data
+external/JUICE_BACKUPS   timestamped verified snapshots
+```
 
-For Zed-specific failures, run `./scripts/doctor.sh`. The permanent opener is `./scripts/open_in_zed.sh`; it does not rely on Finder inheriting your shell PATH.
+## Restore after a damaged CONTROL install
+
+```sh
+cd ~/JUICE
+git status
+git pull --ff-only
+bash CONTROL/scripts/install.sh
+bash ~/JUICE/CONTROL/scripts/install_launch_agent.sh
+bash ~/JUICE/CONTROL/scripts/verify.sh
+bash ~/JUICE/CONTROL/scripts/doctor.sh
+```
+
+Do not pull over unexplained local changes. Copy or commit them first.
+
+## Restore private data from an external snapshot
+
+1. Stop JUICE Control:
+
+   ```sh
+   launchctl bootout "gui/$(id -u)" \
+     "$HOME/Library/LaunchAgents/com.juice.control.plist" 2>/dev/null || true
+   ```
+
+2. Select a snapshot containing both `COMPLETED.json` and `MANIFEST.json`.
+
+3. Verify it before restoring:
+
+   ```sh
+   SNAPSHOT="/Volumes/YOUR_DRIVE/JUICE_BACKUPS/MAC_NAME/TIMESTAMP"
+
+   python3 ~/JUICE/CONTROL/scripts/verify_backup.py verify \
+     --manifest "$SNAPSHOT/MANIFEST.json" \
+     --backup-root "$SNAPSHOT"
+   ```
+
+4. Move the damaged live data aside. Do not delete it:
+
+   ```sh
+   mv ~/JUICE_DATA ~/JUICE_DATA.damaged.$(date +%Y%m%d-%H%M%S)
+   ```
+
+5. Restore:
+
+   ```sh
+   ditto --rsrc --extattr --acl \
+     "$SNAPSHOT/JUICE_DATA" \
+     "$HOME/JUICE_DATA"
+   ```
+
+6. Reinstall startup, check the restored system without trusting old backup state, then create and deeply verify a fresh snapshot:
+
+   ```sh
+   bash ~/JUICE/CONTROL/scripts/install_launch_agent.sh
+   bash ~/JUICE/CONTROL/scripts/doctor.sh --strict --allow-no-backup
+   bash ~/JUICE/CONTROL/scripts/backup_external.sh
+   bash ~/JUICE/CONTROL/scripts/doctor.sh --strict --deep
+   ```
+
+## Clean-Mac recovery
+
+Clone the public repository into `~/JUICE`, restore `JUICE_DATA` as above, then run:
+
+```sh
+bash ~/JUICE/CONTROL/scripts/finish_setup.sh --skip-backup --yes
+```
+
+After confirming the restored live data, run a fresh external backup.
+
+## Important limit
+
+A folder existing is not proof that its contents were recovered. Recovery is complete only after the manifest verifies, the application starts, and representative private files open correctly.
