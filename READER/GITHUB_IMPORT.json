@@ -1,0 +1,17 @@
+{
+  "source": "Existing JUICE Reader Site",
+  "source_commit": "9e3e3a60342d7996b4f397ed3e733420400aafe0",
+  "import_date": "2026-09-20",
+  "purpose": "GitHub source preservation; no live Site or Mac installation change",
+  "differences": [
+    "Private preloaded Mac repair prompt replaced with neutral sample",
+    "README documents neutral sample",
+    "Integration ZIP rebuilt from same source",
+    "Site-specific hosting metadata excluded"
+  ],
+  "checks": [
+    "All JavaScript passes node --check",
+    "Existing site-tools regression suite passed"
+  ],
+  "device_validation": "Not performed"
+}

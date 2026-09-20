@@ -1,0 +1,19 @@
+{
+  "id": "reader",
+  "name": "Reader",
+  "url": "/reader/",
+  "hosted_url": "https://juice-reader.xntfsstt5z.chatgpt.site",
+  "icon": "headphones",
+  "accent": "#82baff",
+  "primary_action": "reader.open",
+  "health": "derive from mounted route and real connection; not yet installed",
+  "current_item": "derive from current response id",
+  "pending_count": "derive from unread response references",
+  "auto_load": {
+    "enabled": true,
+    "minimum_paragraphs": 3,
+    "role": "assistant",
+    "status": "completed",
+    "autoplay": false
+  }
+}

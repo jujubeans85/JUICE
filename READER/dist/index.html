@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101620">
+  <meta name="description" content="Paste a long response and listen. A simple reader with voice, speed, pause and resume controls.">
+  <meta name="apple-mobile-web-app-title" content="JUICE Reader">
+  <title>JUICE Reader — paste and listen</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="sample.js" defer></script>
+  <script src="speech.js" defer></script>
+  <script src="voices.js" defer></script>
+  <script src="intake.js" defer></script>
+  <script src="site-tools.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <header><h1>JUICE<span> / READER</span></h1><span class="header-note">LISTEN</span></header>
+  <div class="workspace">
+    <section class="player" aria-label="Reading controls">
+      <div class="player-top"><span class="eyebrow">LISTEN</span><span id="estimate">Ready when you are</span></div>
+      <button id="play" class="primary" type="button">Read aloud</button>
+      <div class="transport">
+        <button id="back" type="button" aria-label="Previous passage">Back</button>
+        <button id="stop" type="button" aria-label="Stop and return to the beginning">Stop</button>
+        <button id="next" type="button" aria-label="Next passage">Next</button>
+      </div>
+      <div class="progress-label"><span id="position">Ready</span><span id="percent">0%</span></div>
+      <progress id="progress" max="100" value="0" aria-label="Reading progress">0%</progress>
+      <div class="settings">
+        <label for="rate">Speed<select id="rate">
+          <option value="0.8">0.8× · slower</option><option value="1">1× · normal</option>
+          <option value="1.25">1.25×</option><option value="1.5" selected>1.5×</option>
+          <option value="1.75">1.75×</option><option value="2">2× · faster</option>
+        </select></label>
+        <label for="voice">Voice<select id="voice"><option value="">Device default</option></select></label>
+      </div>
+      <div class="voice-section">
+        <span class="eyebrow">QUICK VOICES</span>
+        <div id="quick-voices" class="quick-voices" aria-label="Quick voice choices"></div>
+        <div class="voice-actions"><button id="sample-voice" type="button">Listen sample</button><button id="refresh-voices" class="quiet" type="button">Refresh voices</button></div>
+        <p id="voice-count" class="small">Checking available voices…</p>
+        <details id="more-voices"><summary>Want more natural voices?</summary><p>On iPhone or iPad: Settings → Accessibility → Read &amp; Speak → Voices → English. Choose a different voice or download a higher-quality version where offered, then reopen the reader and press Refresh voices.</p><p>On a Mac: System Settings → Accessibility → Read &amp; Speak (or Spoken Content) → System voice. Add voices there, then refresh this page.</p><p>The browser decides which installed voices it exposes. The choices above are real available voices, not pitch changes to the same voice.</p><a href="https://support.apple.com/guide/iphone/hear-whats-on-the-screen-or-typed-iph96b214f0/ios" target="_blank" rel="noopener noreferrer">Apple’s voice settings</a></details>
+      </div>
+      <p id="voice-note" class="small">Voices are supplied by your browser or device.</p>
+      <div id="notice" class="notice" role="status" aria-live="polite">The JC repair prompt is loaded. Press Read aloud.</div>
+      <div class="current"><span class="eyebrow">CURRENT PASSAGE</span><p id="passage"></p></div>
+    </section>
+    <section class="editor" aria-label="Text editor">
+      <div class="editor-top"><label for="text">Text to read</label><div><button id="paste" class="quiet" type="button">Paste text</button><button id="clear" class="quiet" type="button">Clear</button></div></div>
+      <textarea id="text" spellcheck="false" placeholder="Paste a response, article, email or anything you want read aloud…" aria-describedby="editor-help"></textarea>
+      <div class="editor-bottom"><span id="count">0 words</span><button id="example" class="quiet" type="button">Load JC prompt</button></div>
+      <p id="editor-help" class="small">Paste replaces the text. Editing stops playback. Your pasted text is not uploaded or saved by this site.</p>
+    </section>
+  </div>
+  <section class="connection" aria-label="Automatic response loading">
+    <div class="connection-top"><label class="auto-toggle"><input id="auto-load" type="checkbox" checked> Auto-load replies over two paragraphs</label><span id="connection-state" class="small" role="status">Dashboard not connected</span></div>
+    <p class="small">Loads completed assistant replies sent by ChatGPT or your dashboard. Reading starts only when you press Play.</p>
+    <div id="pending-replies" class="pending" hidden><span id="pending-count"></span><button id="load-next-reply" type="button">Load next reply</button></div>
+    <div class="chat-connection"><span class="eyebrow">CHATGPT CONNECTION</span><p id="chatgpt-state" class="small" role="status">Checking direct connection support…</p><p id="chatgpt-receipt" class="small" role="status" hidden></p>
+      <details id="chatgpt-help"><summary>Connect this chat</summary><p>Open this reader in the latest ChatGPT desktop app’s built-in browser, alongside your conversation. Use GPT-5.6 Sol or Terra. In the address bar, select Site tools and check that the two JUICE Reader tools are listed.</p><p>Tell ChatGPT: “Use JUICE Reader. Send each completed reply over two paragraphs to the reader before posting the same reply here. Start by checking the connection.”</p><p>Keep the reader open. ChatGPT sends replies through its tools; this page cannot watch your conversations by itself. Site tools are currently available on supported desktop accounts, not in the iPhone or iPad app. In Safari, you can still paste and listen.</p><a href="https://learn.chatgpt.com/docs/webmcp" target="_blank" rel="noopener noreferrer">ChatGPT’s connection guide</a></details>
+    </div>
+    <details id="integration-help"><summary>Connect to JUICE CONTROL</summary><p>The dashboard connection is prepared. It still needs installing on the Mac. The direct ChatGPT connection above works independently of the dashboard.</p><p><a href="https://juice-reader.xntfsstt5z.chatgpt.site/integration/JUICE_READER_Install_in_JC.md" download>Mac Codex integration prompt</a> · <a href="https://juice-reader.xntfsstt5z.chatgpt.site/integration/juice-reader-jc-kit.zip" download>Dashboard integration kit</a></p></details>
+  </section>
+  <footer><span>On iPhone or iPad, open in Safari and keep this page open while listening.</span><details><summary>Voice or sound trouble?</summary><p>Choose another voice, check your volume, and press Read aloud again. If a chat app's browser is silent, open this page in Safari. Resume may repeat a few words on devices without word tracking.</p><p>Available voices vary by device. A voice labelled “online” may send text to its voice provider. For sensitive text, choose a voice labelled “on-device”.</p><a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis" target="_blank" rel="noopener noreferrer">About browser speech</a></details></footer>
+  <noscript>This reader needs JavaScript enabled in your browser.</noscript>
+</main>
+</body>
+</html>
