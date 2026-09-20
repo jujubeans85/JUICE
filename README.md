@@ -18,6 +18,10 @@ Contains:
 - practical tools
 - family resilience infrastructure
 
+## MA iOS
+
+- [READ THIS](MA/iOS/READ_THIS.md) — one simple control that reads on-screen text, received images, and photographed physical documents aloud, backed by JUICE Reader.
+
 Rule:
 
 If it creates confusion → simplify.
