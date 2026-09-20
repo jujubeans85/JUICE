@@ -1,0 +1,26 @@
+name: Reader regression
+on:
+  push:
+    paths: ['READER/**', '.github/workflows/reader-regression.yml']
+  pull_request:
+    paths: ['READER/**', '.github/workflows/reader-regression.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reader:
+    name: Reader source and integration kit
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Source, behavior and packaged distribution
+        run: python3 READER/tests/regression.py
