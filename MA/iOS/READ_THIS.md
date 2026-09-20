@@ -1,116 +1,81 @@
 # READ THIS — Mum iOS capability
 
-Status: **APPROVED / queued for implementation**
+Status: **APPROVED / revised scope / queued for device validation**
+Owner: **MA phone**. Reusable reading capability, not a separate app.
+Updated: 2026-09-20.
 
-Owner surface: **MA phone**
-Shared engine: **JUICE Reader**
-Target: **iPhone, local-first**
+## Expert brief
 
-## Outcome
+Simplify reading to: Mum opens the content, invokes one familiar reading control, and listens. Remove taking photos, camera access, photo picking and physical-document scanning entirely from this feature.
 
-Mum gets one obvious **READ THIS** control. It reads ordinary visible text aloud without asking her to understand OCR, sharing, files, voices, or AI.
+## Scope
 
-This is a capability underneath the existing MA interface, not a separate app or a second reading system.
+- Read the message, webpage, email or document already open.
+- Keep text in a received image already open on screen as a desired use case; this is NOT a camera/photo-picker workflow.
+- No importing, copying, sharing, manual screenshots or choosing input modes in Mum's normal flow.
+- No camera permissions or instructions to take another photo.
+- No login, prompt box, model picker or voice settings during use.
 
-## Jobs
+## Recommended first implementation
 
-1. **Read what is already on the phone**
-   - Message, webpage, PDF, email, or a photo Adam has sent.
-   - Preferred path: the native iOS accessibility reading action when the current app exposes text.
-   - Fallback path: capture/share an image, recognise text locally, then speak it.
+Start with native iOS Speak Screen and its persistent on-screen controller. Configure it once with Adam, on Mum's actual iPhone. This keeps her in the content instead of sending her Home to press a launcher icon, losing the screen she wanted read.
 
-2. **Read a physical item**
-   - Letter, newspaper, bill, appointment sheet, label, or medicine instructions.
-   - Take/select photo → recognise text → speak it.
+Target experience: open content → familiar reading control → listen; obvious pause/stop.
+Measure actual taps and control visibility. Do not claim the native controller is a custom blue READ THIS button or guarantees single-tap start. Select the simplest repeatable configuration Mum can independently use.
 
-## Mum interface
+Apple documents Speak Screen, Show Controller and playback controls:
+https://support.apple.com/guide/iphone/hear-whats-on-the-screen-or-typed-iph96b214f0/ios
 
-Idle:
+Exact settings, control actions and suitability must be verified against her installed iOS version.
 
-- One large blue **READ THIS** button.
-- No setup choices.
+## Received-image boundary
 
-Speaking:
+Test a received image opened in Messages separately from ordinary text. Native screen reading must not be assumed to perform reliable OCR in every app.
 
-- One large **STOP** button.
-- One secondary **AGAIN** button.
+If native support fails, investigate user-triggered, temporary current-screen capture plus local OCR behind the same simple control, without camera, photo picker, manual screenshot or Share Sheet steps for Mum. This is a feasibility investigation, not shipped functionality or guaranteed cross-app access. Never silently read the latest photo, clipboard or unrelated content.
 
-Errors must be plain and spoken where possible:
+If no equally simple reliable image path is possible, record that gate as unsupported/pending and explain it to Adam. Do not reintroduce a scanner workflow. As a practical sender-side accommodation, Adam can send the article text alongside its picture.
 
-- “I can’t find writing. Try moving closer.”
-- “That photo is blurry. Take another photo.”
-- “Nothing to read on this screen.”
+## Shared architecture
 
-No login, account, prompt box, file browser, model picker, voice picker, or settings maze in Mum mode.
+READ THIS remains a capability beneath the MA system. Use a platform adapter: iOS owns native Speak Screen playback; JUICE Reader owns playback for text actually delivered into Reader. Reuse Reader's existing text/speech state where applicable, with no duplicate custom engine.
 
-## Architecture
+Do not force native iOS speech through a browser or imply JUICE Reader can control Apple's system speech session. Only one speech owner per reading session. Preserve existing Reader behavior.
 
-```
-MA launcher / iOS Shortcut
-        ↓
-Capture adapter
-  ├─ current accessible screen text
-  ├─ shared image / screenshot
-  └─ camera / photo picker
-        ↓
-Local text recognition
-        ↓
-JUICE Reader speech controller
-        ↓
-STOP / AGAIN
-```
+## Controls and recovery
 
-The capture adapter is iOS-specific. Text cleanup, passage segmentation, speech state, cancellation, replay, and receipts should stay reusable in JUICE Reader.
-
-Do not duplicate a second speech engine inside the MA launcher.
+- Read and an obvious way to silence playback are essential.
+- AGAIN is optional; defer it if it adds a menu or competing control.
+- Caregiver configures voice/rate once; no choices during normal use.
+- Plain failure message where the chosen implementation permits it: “I can't read this screen.”
+- Never direct Mum to take a photo, scan, import or navigate a file picker.
 
 ## Privacy and resilience
 
-- Local-first OCR and on-device speech where iOS supports them.
-- No document upload required for normal reading.
-- No analytics.
-- Do not retain recognised text or photos after the reading session unless Adam deliberately saves them.
-- Ordinary reading must work without a JUICE Control server.
-- If an installed voice needs network access, label that honestly during setup; Mum should never have to decide at runtime.
-
-## iOS delivery surfaces
-
-Ship the same semantic action through the smallest useful surfaces:
-
-- MA home-screen button: **READ THIS**
-- Share Sheet action for photos, PDFs, webpages, and messages
-- Optional Back Tap / Action Button binding for reading the current screen
-- Camera/photo intake inside the shortcut or native companion
-
-The exact current-screen implementation needs a physical-iPhone spike because iOS limits cross-app screen access. Do not claim a universal one-tap screen scraper. Prefer native accessibility reading when available; otherwise use an explicit screenshot/share fallback.
+Local-first, no account, analytics or normal document uploads. No Mac/Control server dependency. Test offline with installed voices. Any custom temporary screen image/text must be discarded after the session; do not alter original received images/messages. No continuous screen monitoring.
 
 ## Acceptance gates
 
-- [ ] Mum can start it from one familiar button.
-- [ ] A photo of a newspaper can be read aloud.
-- [ ] A received image in Messages can be shared into it and read aloud.
-- [ ] Ordinary selectable text on screen can be read through the native accessibility path.
-- [ ] STOP halts speech immediately.
-- [ ] AGAIN repeats the last successful reading.
-- [ ] Empty, angled, dark, and blurry captures produce a simple recovery instruction.
-- [ ] No sign-in or cloud service is required for the normal path.
-- [ ] No captured document persists after the session by default.
-- [ ] VoiceOver, Dynamic Type, high contrast, and large touch targets remain usable.
-- [ ] Tested on Mum’s actual iPhone; simulator success alone does not close the gate.
+- [ ] Record Mum's iPhone model, installed iOS and chosen configuration.
+- [ ] She can invoke reading without leaving the content or needing coaching.
+- [ ] Messages text, an article and a text PDF tested individually.
+- [ ] Received-image text tested separately; report supported versus pending honestly.
+- [ ] She can silence speech immediately and reliably.
+- [ ] No camera, photo picker, import, manual screenshot or sharing step.
+- [ ] Controls are legible, easy to hit and do not obscure required content.
+- [ ] Offline voice test passes; playback is audible through intended output.
+- [ ] No new retained document data in any custom path.
+- [ ] Unreadable content fails safely without invented text.
+- [ ] Physical-device evidence required; not complete until Mum can use it.
 
-## Build order
+## Work order
 
-1. Physical-device spike: native current-screen accessibility action versus screenshot fallback.
-2. Share Sheet image/PDF intake.
-3. Camera/photo OCR intake.
-4. Reuse Reader speech/STOP/AGAIN state.
-5. Add the single MA launcher control.
-6. Run the acceptance gates with Mum.
+1. Configure/test native Speak Screen controller on Mum's phone.
+2. Check independent start/stop usability and ordinary-text cases.
+3. Validate received images; investigate invisible-to-Mum OCR only if needed and feasible.
+4. Add custom code only for an evidenced gap. Reuse existing Reader components where relevant.
+5. Record exact supported cases and remaining limits.
 
-## Non-goals for v1
+## Removed from scope
 
-- Summarising or explaining documents.
-- Translating.
-- Saving an archive.
-- General AI chat.
-- A fancy scanner interface.
+Taking photos, camera/photo-picker intake, physical-document scanning, Share Sheet onboarding for Mum, multiple launch gestures to learn, and a separate scanner UI. No summarisation, translation, archive or chat.
