@@ -20,7 +20,7 @@ Contains:
 
 ## MA iOS
 
-- [READ THIS](MA/iOS/READ_THIS.md) — one simple control that reads on-screen text, received images, and photographed physical documents aloud, backed by JUICE Reader.
+- [READ THIS](MA/iOS/READ_THIS.md) — read content already open on screen; native iOS controls first, with JUICE Reader reuse where applicable. No camera or photo picker; received-image support awaits device validation.
 
 Rule:
 
