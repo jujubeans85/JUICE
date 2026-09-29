@@ -18,6 +18,10 @@ Contains:
 - practical tools
 - family resilience infrastructure
 
+## iOS apps
+
+- [Daily Evolve Pocket](https://jujubeans85.github.io/ios/daily-evolve-pocket/) — daily listening ritual; [app entry](iOS/apps/daily-evolve-pocket/README.md). Public splash, restricted player access.
+
 ## MA iOS
 
 - [READ THIS](MA/iOS/READ_THIS.md) — read content already open on screen; native iOS controls first, with JUICE Reader reuse where applicable. No camera or photo picker; received-image support awaits device validation.
