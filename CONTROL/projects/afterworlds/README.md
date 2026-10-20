@@ -2,6 +2,8 @@
 
 [Add images, files, links or build notes](https://github.com/jujubeans85/JUICE/issues/new?template=afterworlds-build-intake.yml)
 
+[Track implementation: issue #6](https://github.com/jujubeans85/JUICE/issues/6)
+
 [Read the 21 October screenshot batch](INTAKE_2026-10-21.md) · [Canonical structured manifest](intake-2026-10-21.json)
 
 This repository intake is available while the Mac is unavailable. It is a handoff into the existing JC Universal Capture/project queue, not a replacement runtime or a claim that the live dashboard has been updated. The current GitHub `CONTROL/server.py` is an older folder launcher and does not expose the later Universal Capture API. Inspect the real Mac checkout before wiring anything into it.
