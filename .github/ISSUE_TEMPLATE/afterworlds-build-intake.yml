@@ -1,0 +1,50 @@
+name: AFTERWORLDS build intake
+description: Add images, files, links, research leads or build feedback for AFTERWORLDS in JC.
+title: "[AFTERWORLDS intake] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Add the material first; a short note is enough. This feeds the AFTERWORLDS build handoff for JC.
+        **This repository and its issues are public.** Use existing private JC capture for personal material, and enter only a safe reference here. Do not upload account or family information.
+  - type: dropdown
+    id: material-kind
+    attributes:
+      label: Material type
+      options:
+        - Images or annotated screenshots
+        - Files or data
+        - Links or papers
+        - Text or voice transcript
+        - Bug or build request
+        - Mixed batch
+    validations:
+      required: true
+  - type: textarea
+    id: material
+    attributes:
+      label: Material and what to do with it
+      description: Attach supported non-sensitive files/images here, paste links or text, or reference a private JC capture receipt. Include every point you want captured.
+      placeholder: "Drop screenshots here. Example: Explore this world more deeply; the right-hand card is clipped."
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: World, concept or page (optional)
+      placeholder: "Example: World 035 / concept 373 / homepage"
+  - type: input
+    id: source-date
+    attributes:
+      label: Source or screenshot date (optional)
+      placeholder: "Capture date, source publication date, or unknown"
+  - type: textarea
+    id: context
+    attributes:
+      label: Device, build or other context (optional)
+      description: For bugs, add browser, device, orientation and zoom if known. For research, include the source URL and any cropped/uncertain text.
+  - type: input
+    id: receipt
+    attributes:
+      label: Existing JC receipt or related issue (optional)
+      description: Reuse an existing receipt when adding material to the same batch.

@@ -44,3 +44,7 @@ Command Palette -> zed: install cli
 ```
 
 The app fallback should still work even before the CLI is installed, as long as Zed is in `/Applications` or `~/Applications`.
+
+## Project build intake
+
+- [AFTERWORLDS](projects/afterworlds/README.md) — screenshot points, research leads and image/file intake. The repository handoff is ready; live Universal Capture wiring must be verified against the current Mac checkout.
