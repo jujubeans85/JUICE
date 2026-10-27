@@ -152,7 +152,7 @@ def render_page(message: str | None = None, ok: bool = True) -> bytes:
   <h1>{APP_NAME}</h1>
   <p class="muted">Local-only control interface. Zed status: <strong>{html.escape(status_text)}</strong>.</p>
   {banner}
-  <section class="grid">{''.join(cards)}</section>
+  <section class="card" aria-label="Crate Juice music library">\n    <h2>CRATE JUICE — Crate Map</h2>\n    <p>Search the linked playlist library by title, symbol or cover family.</p>\n    <a href="https://crate-juice-map.xntfsstt5z.chatgpt.site" target="_blank" rel="noopener">Open the Crate Map ↗</a>\n  </section>\n  <section class="grid">{''.join(cards)}</section>
   <h2>Diagnostics</h2>
   <pre>{html.escape(json.dumps(diagnostics(), indent=2))}</pre>
 </main>
