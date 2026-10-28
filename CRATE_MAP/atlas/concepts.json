@@ -1,0 +1,1782 @@
+{
+  "schema_version": 1,
+  "version": "2026-10-29.1",
+  "scope": "Editorial concept matching. Visual references do not assert musical influence or historic capture media.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Library of Congress · Olney Hymns, 1779",
+      "url": "https://www.loc.gov/item/2006700069/",
+      "kind": "Digitised original / catalogue",
+      "finding": "A printed hymn-text book without music; a concrete reference for the 1773 text-history stop, with the later publication date kept visible.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S02",
+      "title": "Library of Congress · Amazing Grace and shape-note singing",
+      "url": "https://www.loc.gov/collections/amazing-grace/articles-and-essays/amazing-grace-and-shape-note-singing/",
+      "kind": "Collection essay",
+      "finding": "Distinctive note-head shapes provided a teaching aid. A useful visual language for the 1835 notation stop; the search index supplied the essay, while a direct fetch returned 403.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S03",
+      "title": "Library of Congress · The daguerreotype medium",
+      "url": "https://www.loc.gov/pictures/collection/dag/medium.html",
+      "kind": "Collection process history",
+      "finding": "Publicly announced in France in 1839; a detailed image on silver-plated copper, rather than a universally brown, grainy print.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S04",
+      "title": "Library of Congress · Brady-Handy collection",
+      "url": "https://www.loc.gov/collections/brady-handy/about-this-collection/",
+      "kind": "Collection essay",
+      "finding": "Mounted cartes de visite, wet plates and later dry plates offer distinct nineteenth-century reference formats.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S05",
+      "title": "National Science and Media Museum · Autochrome",
+      "url": "https://blog.scienceandmediamuseum.org.uk/autochromes-the-dawn-of-colour-photography/",
+      "kind": "Museum process history",
+      "finding": "Commercial autochrome plates began in 1907. Early twentieth-century photography therefore cannot be reduced to monochrome.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S06",
+      "title": "V&A · Art Nouveau",
+      "url": "https://www.vam.ac.uk/collections/art-nouveau",
+      "kind": "Museum collection",
+      "finding": "Organic curves and tendrils are associated with a movement from the early 1890s to the First World War, rather than all of the nineteenth century.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S07",
+      "title": "V&A · An introduction to Art Deco",
+      "url": "https://www.vam.ac.uk/articles/an-introduction-to-art-deco",
+      "kind": "Museum history",
+      "finding": "The 1925 Paris exposition is an important reference point. Geometry, modernity and varied international influences complicate the familiar gold-and-black shorthand.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S08",
+      "title": "MoMA · Jacob Lawrence, Migration Series",
+      "url": "https://www.moma.org/collection/works/78539",
+      "kind": "Object record / curatorial text",
+      "finding": "The 1940–41 series tells the Great Migration through repeated colours, angular forms and narrative panels. Its making date differs from the earlier events depicted.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S09",
+      "title": "Smithsonian NMAH · Nature Boy / Lost April",
+      "url": "https://americanhistory.si.edu/collections/object/nmah_663359",
+      "kind": "Original recording object",
+      "finding": "Capitol 15054 is a shellac 78 rpm disc with a 1948 release date: a closer material reference for the Cole stop than a later LP-cover stereotype.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S10",
+      "title": "MoMA · Reid Miles",
+      "url": "https://www.moma.org/artists/38897-reid-miles",
+      "kind": "Designer / collection records",
+      "finding": "The listed Blue Note sleeves run from 1957 through the 1960s; the label’s visual references should not all be backdated to 1948.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S11",
+      "title": "V&A · A short history of the poster",
+      "url": "https://www.vam.ac.uk/articles/a-short-history-of-the-poster",
+      "kind": "Museum design history",
+      "finding": "British psychedelic screenprinting and San Francisco lithography provide different production references for 1960s poster design.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S12",
+      "title": "V&A Americas Foundation · Bonnie MacLean, 6 Days of Sound",
+      "url": "https://vamaf.org/our-work/acquisitions/6-days-of-sound-designed-by-bonnie-maclean-1967/",
+      "kind": "Dated poster / collection record",
+      "finding": "A named designer, San Francisco concert context and 1967 date anchor a psychedelic reference more precisely than a generic hippie mood board.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S13",
+      "title": "Kodak · Chronology of motion-picture film",
+      "url": "https://www.kodak.com/en/motion/page/chronology-of-film/",
+      "kind": "Manufacturer history",
+      "finding": "Super 8 became commercially available in 1965. It can inform a later home-movie look, but cannot stand in for all earlier film.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S14",
+      "title": "National Portrait Gallery · Jamie Reid",
+      "url": "https://www.npg.org.uk/collections/search/person/mp68119/jamie-reid?role=art",
+      "kind": "Artist / object history",
+      "finding": "The 1976–77 Sex Pistols sleeves document torn graphics, cut-up lettering and a specific British punk context.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S15",
+      "title": "Design Museum · Memphis",
+      "url": "https://designmuseum.org/memphis",
+      "kind": "Museum design history",
+      "finding": "The Milan collective debuted in 1981, using conspicuous colour, patterned laminates and deliberately unconventional forms.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S16",
+      "title": "V&A · Staying Power: photographs of Black British experience",
+      "url": "https://www.vam.ac.uk/articles/staying-power-photographs-of-black-british-experience",
+      "kind": "Photographic collection / biographies",
+      "finding": "Named photographers including Normski, Jennie Baptiste and Syd Shelton provide situated music, fashion and community perspectives across several decades.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S17",
+      "title": "Cornell University Library · Rave collection, 1989–2002",
+      "url": "https://rmc.library.cornell.edu/EAD/htmldocs/RMM08068.html",
+      "kind": "Ephemera archive / finding aid",
+      "finding": "Bright printed ephemera, early computer imagery and dense information appear across Bay Area and English rave material; the dates cross decade boundaries.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S18",
+      "title": "Powerhouse · Sydney dance-party flyers, 1990–1998",
+      "url": "https://collection.powerhouse.com.au/object/539530",
+      "kind": "Australian collection / curatorial account",
+      "finding": "The David Travis collection contains 1,854 items. Flyers record local venues, promoters and changes in event communication.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S19",
+      "title": "Sony · Early stages of an imaging business",
+      "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-06.html",
+      "kind": "Manufacturer history",
+      "finding": "Sony’s account places JVC’s VHS announcement in 1976. Videotape is a medium, not a style that belongs only to the 1980s.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S20",
+      "title": "Web Design Museum · Y2K aesthetic in web design",
+      "url": "https://www.webdesignmuseum.org/exhibitions/y2k-aesthetic-in-web-design",
+      "kind": "Curated archive of original websites",
+      "finding": "Examples dated 1996–2005 show glossy, translucent and iridescent digital presentation spanning the millennium.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S21",
+      "title": "Computer History Museum · Apple iMac poster",
+      "url": "https://www.computerhistory.org/revolution/artifact/1215",
+      "kind": "Dated original advertising object",
+      "finding": "A 1998 Apple poster provides a physical-product reference for colourful translucent computing.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S22",
+      "title": "Swiss Camera Museum · The digital revolution",
+      "url": "https://www.cameramuseum.ch/en/discover/permanent-exhibition/the-digital-revolution/",
+      "kind": "Museum technology history",
+      "finding": "The chronology follows scanners, early digital cameras and broader adoption: film and digital coexisted rather than changing overnight.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S23",
+      "title": "Daptone Records · Charles Bradley",
+      "url": "https://daptonerecords.com/artists/charles-bradley/",
+      "kind": "Artist’s label / releases",
+      "finding": "The label lists the Changes single in 2013 and album in 2016; its biography documents the earlier working network. Release date and revival aesthetic need separate fields.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S24",
+      "title": "Fisk Jubilee Singers · History",
+      "url": "https://www.fiskjubileesingers.org/history",
+      "kind": "Ensemble / institutional history",
+      "finding": "The student ensemble began touring in 1871. This supports a named concert-ensemble context, rather than generic nineteenth-century racial imagery.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S25",
+      "title": "Library of Congress · Swing Low, Sweet Chariot",
+      "url": "https://www.loc.gov/item/jukebox-128141/",
+      "kind": "Exact recording catalogue",
+      "finding": "The Victor item is dated 1 December 1909 and identifies the quartet’s members. A later ensemble recording must remain distinct from the 1871 tour.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S26",
+      "title": "BFI · Film colour systems",
+      "url": "https://www.bfi.org.uk/lists/10-best-film-colour-systems",
+      "kind": "Film-archive specialist account",
+      "finding": "Silent-era tinting, toning and applied colour predate later colour-film systems. Early cinema was not uniformly black and white; saturated colour was not invented in the 1960s.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S27",
+      "title": "Fraunhofer IIS · 30 years of .mp3",
+      "url": "https://www.iis.fraunhofer.de/en/magazin/panorama/2025/30-years-of-mp3.html",
+      "kind": "Research institution / first-person technical history",
+      "finding": "The account describes Tom’s Diner as a difficult test item in codec development. The proposed visual reference is a listening laboratory, not a dancefloor.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S28",
+      "title": "V&A · The Music is Black: large-print guide",
+      "url": "https://www.vam.ac.uk/articles/the-music-is-black-large-print-guide",
+      "kind": "Exhibition objects / curatorial account",
+      "finding": "Records, equipment, signs, photographs and decorated record boxes ground Jamaican and British sound-system histories in people and objects.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S29",
+      "title": "CCA Lagos · Fela, Ghariokwu Lemi and album-cover art",
+      "url": "https://ccalagos.org/fela-ghariokwu-lemi-and-the-art-of-the-album-cover/",
+      "kind": "Local arts institution / exhibition account",
+      "finding": "Lemi’s sleeve art combines illustration and political commentary. A named Lagos practice is more informative than a continent-wide decorative pattern.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S30",
+      "title": "MoMA · Tadanori Yokoo, 1965 poster",
+      "url": "https://www.moma.org/collection/works/7953",
+      "kind": "Dated silkscreen object",
+      "finding": "A 1965 silkscreen anchors a Japanese poster reference. It does not establish a universal Japanese or city-pop style.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S31",
+      "title": "Whitney · Hélio Oiticica, Tropicália",
+      "url": "https://whitney.org/media/2617",
+      "kind": "Museum interpretation / audio transcript",
+      "finding": "The 1966–67 installation offers a participatory, mixed-material reference linked to a specific Brazilian artist; it is not a template for all Brazilian music.",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "S32",
+      "title": "NMAAHC · Afrofuturism",
+      "url": "https://nmaahc.si.edu/explore/exhibitions/afrofuturism",
+      "kind": "Museum exhibition",
+      "finding": "Black speculative creativity connects music, art and ideas across periods. Futurism should not be assigned solely from nationality or release decade.",
+      "checked": "2026-10-29"
+    }
+  ],
+  "families": [
+    {
+      "id": "manuscript",
+      "label": "The printed page",
+      "period": "Before 1800",
+      "visual": {
+        "pattern": "paper",
+        "material": "Dry paper; fine engraved coastlines; restrained oxblood annotation.",
+        "type": "serif",
+        "frame": "open",
+        "motion": "slow orbit",
+        "shine": 3,
+        "globe": {
+          "top": "#e5d5ab",
+          "mid": "#e5d5ab",
+          "bottom": "#f2e7ca",
+          "line": "#6f4a30",
+          "grid": "#6f4a30",
+          "documented": "#30251e",
+          "context": "#6d6a3b"
+        }
+      },
+      "source_ids": [
+        "S01"
+      ]
+    },
+    {
+      "id": "engraved",
+      "label": "The silver archive",
+      "period": "1800–1919",
+      "visual": {
+        "pattern": "hatch",
+        "material": "Brushed silver globe, black crosshatching and mounted-paper edges.",
+        "type": "mono",
+        "frame": "square",
+        "motion": "slow orbit",
+        "shine": 12,
+        "globe": {
+          "top": "#52615b",
+          "mid": "#52615b",
+          "bottom": "#d8dbd9",
+          "line": "#eff5f0",
+          "grid": "#eff5f0",
+          "documented": "#172423",
+          "context": "#80513d"
+        }
+      },
+      "source_ids": [
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S24",
+        "S25"
+      ]
+    },
+    {
+      "id": "deco",
+      "label": "The geometric city",
+      "period": "1920–1939",
+      "visual": {
+        "pattern": "rays",
+        "material": "Dark enamel with flat gold-like lines; stepped, architectural highlights.",
+        "type": "display",
+        "frame": "stepped",
+        "motion": "slow orbit",
+        "shine": 3,
+        "globe": {
+          "top": "#39232a",
+          "mid": "#39232a",
+          "bottom": "#210f1c",
+          "line": "#e4bd6f",
+          "grid": "#e4bd6f",
+          "documented": "#eccb80",
+          "context": "#b46b79"
+        }
+      },
+      "source_ids": [
+        "S07",
+        "S08",
+        "S26"
+      ]
+    },
+    {
+      "id": "midcentury",
+      "label": "The cut-paper record",
+      "period": "1940–1959",
+      "visual": {
+        "pattern": "cutout",
+        "material": "Matte ivory globe with cobalt stencil contours and a cropped red accent.",
+        "type": "mono",
+        "frame": "open",
+        "motion": "slow orbit",
+        "shine": 3,
+        "globe": {
+          "top": "#eee0bd",
+          "mid": "#eee0bd",
+          "bottom": "#f6f0df",
+          "line": "#194e91",
+          "grid": "#194e91",
+          "documented": "#142b4f",
+          "context": "#ba4937"
+        }
+      },
+      "source_ids": [
+        "S09",
+        "S10",
+        "S26"
+      ]
+    },
+    {
+      "id": "pop",
+      "label": "The loud print",
+      "period": "1960s",
+      "visual": {
+        "pattern": "halftone",
+        "material": "Flat red-orange globe, hard blue contours and visible halftone cells.",
+        "type": "display",
+        "frame": "square",
+        "motion": "slow orbit",
+        "shine": 3,
+        "globe": {
+          "top": "#f15748",
+          "mid": "#f15748",
+          "bottom": "#ffe74a",
+          "line": "#182763",
+          "grid": "#182763",
+          "documented": "#141e48",
+          "context": "#164db8"
+        }
+      },
+      "source_ids": [
+        "S11",
+        "S12"
+      ]
+    },
+    {
+      "id": "analog",
+      "label": "The tactile groove",
+      "period": "1970s",
+      "visual": {
+        "pattern": "grooves",
+        "material": "Warm matte lacquer, broad radial groove bands and restrained sleeve-paper texture.",
+        "type": "serif",
+        "frame": "round",
+        "motion": "slow orbit",
+        "shine": 3,
+        "globe": {
+          "top": "#b36b35",
+          "mid": "#b36b35",
+          "bottom": "#35251c",
+          "line": "#f6da9d",
+          "grid": "#f6da9d",
+          "documented": "#f1a763",
+          "context": "#bfc575"
+        }
+      },
+      "source_ids": [
+        "S13",
+        "S14"
+      ]
+    },
+    {
+      "id": "electric",
+      "label": "The broadcast signal",
+      "period": "1980s",
+      "visual": {
+        "pattern": "diagonal",
+        "material": "Glossy violet globe, coral bands and crisp cyan construction lines.",
+        "type": "display",
+        "frame": "open",
+        "motion": "slow orbit",
+        "shine": 40,
+        "globe": {
+          "top": "#653283",
+          "mid": "#653283",
+          "bottom": "#1b0c32",
+          "line": "#f7b3e7",
+          "grid": "#f7b3e7",
+          "documented": "#ff7fbd",
+          "context": "#67e1f4"
+        }
+      },
+      "source_ids": [
+        "S15",
+        "S16",
+        "S19"
+      ]
+    },
+    {
+      "id": "rave",
+      "label": "The fluorescent flyer",
+      "period": "1990s",
+      "visual": {
+        "pattern": "pixels",
+        "material": "Near-black globe with acid-yellow segmented lines and a flat fluorescent rim.",
+        "type": "mono",
+        "frame": "square",
+        "motion": "slow orbit",
+        "shine": 3,
+        "globe": {
+          "top": "#172213",
+          "mid": "#172213",
+          "bottom": "#0d0e0a",
+          "line": "#d8ff37",
+          "grid": "#d8ff37",
+          "documented": "#d8ff37",
+          "context": "#c2a4f5"
+        }
+      },
+      "source_ids": [
+        "S17",
+        "S18",
+        "S27"
+      ]
+    },
+    {
+      "id": "digital",
+      "label": "The translucent future",
+      "period": "2000s",
+      "visual": {
+        "pattern": "chrome",
+        "material": "Pale pearl/chrome globe, blue specular bands and translucent pill-like borders.",
+        "type": "mono",
+        "frame": "round",
+        "motion": "slow orbit",
+        "shine": 75,
+        "globe": {
+          "top": "#c7d9e9",
+          "mid": "#c7d9e9",
+          "bottom": "#e8f3fa",
+          "line": "#537ea6",
+          "grid": "#537ea6",
+          "documented": "#17334e",
+          "context": "#6b3e9c"
+        }
+      },
+      "source_ids": [
+        "S20",
+        "S21",
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "id": "afterworlds",
+      "label": "The clear present",
+      "period": "2010s onward / unknown date / home",
+      "visual": {
+        "pattern": "clear",
+        "material": "A dark translucent sphere with pale wire lines and minimal surface noise. Lime marks the selected path, rather than filling the world.",
+        "type": "mono",
+        "frame": "open",
+        "motion": "slow orbit",
+        "shine": 3,
+        "globe": {
+          "top": "#142430",
+          "mid": "#142430",
+          "bottom": "#0b131b",
+          "line": "#bddae5",
+          "grid": "#bddae5",
+          "documented": "#c5f486",
+          "context": "#b7dce5"
+        }
+      },
+      "source_ids": [
+        "S22",
+        "S23"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "printed-hymn",
+      "label": "Printed hymn page",
+      "family_id": "manuscript",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "hymn",
+            "hymns"
+          ],
+          "weight": 5
+        },
+        {
+          "channel": "formats",
+          "terms": [
+            "hymn text"
+          ],
+          "weight": 7
+        }
+      ],
+      "source_ids": [
+        "S01"
+      ],
+      "visual": {},
+      "fallback": false
+    },
+    {
+      "id": "shape-note",
+      "label": "Shape-note tunebook",
+      "family_id": "engraved",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "shape note",
+            "sacred harp"
+          ],
+          "weight": 8
+        }
+      ],
+      "source_ids": [
+        "S02"
+      ],
+      "visual": {
+        "pattern": "notation"
+      },
+      "fallback": false
+    },
+    {
+      "id": "concert-archive",
+      "label": "Concert programme",
+      "family_id": "engraved",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "scenes",
+          "terms": [
+            "concert archive",
+            "jubilee singers"
+          ],
+          "weight": 7
+        }
+      ],
+      "source_ids": [
+        "S24"
+      ],
+      "visual": {
+        "pattern": "paper"
+      },
+      "fallback": false
+    },
+    {
+      "id": "shellac-archive",
+      "label": "Shellac recording",
+      "family_id": "engraved",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "formats",
+          "terms": [
+            "shellac",
+            "78 rpm",
+            "78rpm"
+          ],
+          "weight": 8
+        }
+      ],
+      "source_ids": [
+        "S09",
+        "S25"
+      ],
+      "visual": {
+        "pattern": "grooves"
+      },
+      "fallback": false
+    },
+    {
+      "id": "migration-panels",
+      "label": "Migration / narrative panels",
+      "family_id": "deco",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "scenes",
+          "terms": [
+            "great migration"
+          ],
+          "weight": 9
+        }
+      ],
+      "source_ids": [
+        "S08"
+      ],
+      "visual": {
+        "pattern": "cutout"
+      },
+      "fallback": false
+    },
+    {
+      "id": "family-listening",
+      "label": "Family listening",
+      "family_id": "afterworlds",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "scenes",
+          "terms": [
+            "family listening"
+          ],
+          "weight": 8
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "paper"
+      },
+      "fallback": false
+    },
+    {
+      "id": "cinema-title",
+      "label": "Cinema / title frame",
+      "family_id": "afterworlds",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "film score",
+            "soundtrack"
+          ],
+          "weight": 6
+        },
+        {
+          "channel": "formats",
+          "terms": [
+            "soundtrack",
+            "film song",
+            "film score"
+          ],
+          "weight": 7
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "cinema"
+      },
+      "fallback": false
+    },
+    {
+      "id": "live-stage",
+      "label": "Live stage",
+      "family_id": "afterworlds",
+      "priority": 1,
+      "cues": [
+        {
+          "channel": "formats",
+          "terms": [
+            "live",
+            "live session",
+            "concert",
+            "ceremony"
+          ],
+          "weight": 5
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "spotlight"
+      },
+      "fallback": false
+    },
+    {
+      "id": "diner-editorial",
+      "label": "Diner / newspaper",
+      "family_id": "electric",
+      "priority": 0,
+      "cues": [],
+      "source_ids": [],
+      "visual": {
+        "pattern": "paper",
+        "globe": {
+          "top": "#e8ddc1",
+          "mid": "#cbbd98",
+          "bottom": "#7c785e",
+          "line": "#263c52",
+          "grid": "#667261",
+          "documented": "#b74344",
+          "context": "#2f6672"
+        }
+      },
+      "fallback": false
+    },
+    {
+      "id": "dance-remix",
+      "label": "Dance remix / flyer",
+      "family_id": "rave",
+      "priority": 2,
+      "cues": [
+        {
+          "channel": "formats",
+          "terms": [
+            "remix",
+            "club mix",
+            "extended mix",
+            "rework"
+          ],
+          "weight": 4
+        },
+        {
+          "channel": "genres",
+          "terms": [
+            "house",
+            "acid house",
+            "techno",
+            "rave",
+            "breakbeat",
+            "drum and bass",
+            "jungle",
+            "garage",
+            "dance"
+          ],
+          "weight": 5
+        }
+      ],
+      "source_ids": [
+        "S17",
+        "S18"
+      ],
+      "visual": {},
+      "fallback": false
+    },
+    {
+      "id": "listening-lab",
+      "label": "Listening laboratory",
+      "family_id": "digital",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "scenes",
+          "terms": [
+            "mp3",
+            "audio compression",
+            "codec research"
+          ],
+          "weight": 9
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "pixels"
+      },
+      "fallback": false
+    },
+    {
+      "id": "ensemble-daylight",
+      "label": "Ensemble / daylight",
+      "family_id": "afterworlds",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "scenes",
+          "terms": [
+            "ensemble session"
+          ],
+          "weight": 8
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "cutout"
+      },
+      "fallback": false
+    },
+    {
+      "id": "piano-studio",
+      "label": "Piano / studio",
+      "family_id": "analog",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "instruments",
+          "terms": [
+            "piano"
+          ],
+          "weight": 5
+        },
+        {
+          "channel": "genres",
+          "terms": [
+            "piano rock"
+          ],
+          "weight": 7
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "keys"
+      },
+      "fallback": false
+    },
+    {
+      "id": "soul-workshop",
+      "label": "Independent soul workshop",
+      "family_id": "analog",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "scenes",
+          "terms": [
+            "daptone",
+            "dunham",
+            "soul revival"
+          ],
+          "weight": 8
+        }
+      ],
+      "source_ids": [
+        "S23"
+      ],
+      "visual": {
+        "pattern": "paper"
+      },
+      "fallback": false
+    },
+    {
+      "id": "soul-sleeve",
+      "label": "Soul / record sleeve",
+      "family_id": "analog",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "soul",
+            "neo soul",
+            "neosoul",
+            "rhythm and blues",
+            "r&b",
+            "rnb",
+            "funk",
+            "psychedelic soul"
+          ],
+          "weight": 5
+        }
+      ],
+      "source_ids": [
+        "S23"
+      ],
+      "visual": {},
+      "fallback": false
+    },
+    {
+      "id": "newsroom-session",
+      "label": "Newsroom / live session",
+      "family_id": "afterworlds",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "formats",
+          "terms": [
+            "newsroom concert"
+          ],
+          "weight": 9
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "cutout"
+      },
+      "fallback": false
+    },
+    {
+      "id": "acoustic-room",
+      "label": "Acoustic / close room",
+      "family_id": "afterworlds",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "folk",
+            "indie folk",
+            "folk rock",
+            "singer songwriter",
+            "acoustic"
+          ],
+          "weight": 5
+        },
+        {
+          "channel": "formats",
+          "terms": [
+            "acoustic",
+            "stripped back",
+            "unplugged"
+          ],
+          "weight": 5
+        },
+        {
+          "channel": "instruments",
+          "terms": [
+            "acoustic guitar"
+          ],
+          "weight": 4
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "paper"
+      },
+      "fallback": false
+    },
+    {
+      "id": "gothic-editorial",
+      "label": "Gothic / editorial",
+      "family_id": "electric",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "gothic rock",
+            "gothic",
+            "post punk",
+            "dark wave",
+            "darkwave",
+            "new wave"
+          ],
+          "weight": 5
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "hatch"
+      },
+      "fallback": false
+    },
+    {
+      "id": "jazz-editorial",
+      "label": "Jazz / editorial",
+      "family_id": "midcentury",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "jazz",
+            "vocal jazz",
+            "soul jazz",
+            "jazz funk",
+            "jazz fusion"
+          ],
+          "weight": 5
+        }
+      ],
+      "source_ids": [
+        "S10"
+      ],
+      "visual": {},
+      "fallback": false
+    },
+    {
+      "id": "psychedelic-poster",
+      "label": "Psychedelic concert poster",
+      "family_id": "pop",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "psychedelic rock",
+            "psychedelic pop",
+            "psychedelia",
+            "acid rock"
+          ],
+          "weight": 6
+        }
+      ],
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "visual": {
+        "pattern": "rays"
+      },
+      "fallback": false
+    },
+    {
+      "id": "punk-print",
+      "label": "Punk / cut-up print",
+      "family_id": "analog",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "punk",
+            "punk rock",
+            "hardcore punk"
+          ],
+          "weight": 6
+        }
+      ],
+      "source_ids": [
+        "S14"
+      ],
+      "visual": {
+        "pattern": "hatch"
+      },
+      "fallback": false
+    },
+    {
+      "id": "rock-studio",
+      "label": "Rock / studio",
+      "family_id": "analog",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "rock",
+            "alternative rock",
+            "hard rock",
+            "heavy metal",
+            "metal",
+            "grunge",
+            "progressive rock"
+          ],
+          "weight": 4
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "diagonal"
+      },
+      "fallback": true
+    },
+    {
+      "id": "hip-hop-print",
+      "label": "Hip-hop / print",
+      "family_id": "afterworlds",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "hip hop",
+            "rap",
+            "boom bap",
+            "trip hop"
+          ],
+          "weight": 5
+        }
+      ],
+      "source_ids": [
+        "S16"
+      ],
+      "visual": {
+        "pattern": "halftone"
+      },
+      "fallback": false
+    },
+    {
+      "id": "sound-system",
+      "label": "Sound system / record box",
+      "family_id": "analog",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "reggae",
+            "dub",
+            "ska",
+            "rocksteady",
+            "lovers rock",
+            "dancehall"
+          ],
+          "weight": 6
+        }
+      ],
+      "source_ids": [
+        "S28"
+      ],
+      "visual": {
+        "pattern": "cutout"
+      },
+      "fallback": false
+    },
+    {
+      "id": "afrobeat-illustration",
+      "label": "Afrobeat / illustrated sleeve",
+      "family_id": "analog",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "afrobeat"
+          ],
+          "weight": 7
+        }
+      ],
+      "source_ids": [
+        "S29"
+      ],
+      "visual": {
+        "pattern": "halftone"
+      },
+      "fallback": false
+    },
+    {
+      "id": "digital-orbit",
+      "label": "Electronic / digital orbit",
+      "family_id": "digital",
+      "priority": 0,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "electronic",
+            "electronica",
+            "synth pop",
+            "electropop",
+            "ambient",
+            "synthwave"
+          ],
+          "weight": 4
+        }
+      ],
+      "source_ids": [
+        "S20",
+        "S21"
+      ],
+      "visual": {},
+      "fallback": true
+    },
+    {
+      "id": "studio-room",
+      "label": "Studio / record",
+      "family_id": "afterworlds",
+      "priority": -2,
+      "cues": [
+        {
+          "channel": "formats",
+          "terms": [
+            "studio",
+            "studio recording"
+          ],
+          "weight": 2
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "clear"
+      },
+      "fallback": true
+    },
+    {
+      "id": "score-room",
+      "label": "Score / chamber room",
+      "family_id": "manuscript",
+      "priority": 0,
+      "fallback": false,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "classical",
+            "western classical",
+            "contemporary classical",
+            "chamber music",
+            "orchestral",
+            "opera",
+            "baroque music"
+          ],
+          "weight": 5
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "notation"
+      }
+    },
+    {
+      "id": "country-sleeve",
+      "label": "Country / roots sleeve",
+      "family_id": "analog",
+      "priority": 0,
+      "fallback": false,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "country",
+            "alt country",
+            "alternative country",
+            "bluegrass",
+            "americana",
+            "country rock"
+          ],
+          "weight": 5
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "paper"
+      }
+    },
+    {
+      "id": "blues-record",
+      "label": "Blues / record",
+      "family_id": "analog",
+      "priority": 0,
+      "fallback": false,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "blues",
+            "electric blues",
+            "delta blues",
+            "blues rock",
+            "country blues"
+          ],
+          "weight": 5
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "grooves"
+      }
+    },
+    {
+      "id": "pop-broadcast",
+      "label": "Pop / broadcast",
+      "family_id": "electric",
+      "priority": 0,
+      "fallback": false,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "pop",
+            "art pop",
+            "indie pop",
+            "dance pop",
+            "pop rock",
+            "soft rock"
+          ],
+          "weight": 5
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "diagonal"
+      }
+    },
+    {
+      "id": "dance-pop",
+      "label": "Global dance / print",
+      "family_id": "rave",
+      "priority": 0,
+      "fallback": false,
+      "cues": [
+        {
+          "channel": "genres",
+          "terms": [
+            "reggaeton",
+            "afrobeats",
+            "afropop",
+            "amapiano",
+            "baile funk",
+            "latin pop",
+            "salsa",
+            "cumbia"
+          ],
+          "weight": 5
+        }
+      ],
+      "source_ids": [],
+      "visual": {
+        "pattern": "halftone"
+      }
+    }
+  ],
+  "concepts": [
+    {
+      "id": "format.live",
+      "label": "Live performance",
+      "dimension": "format",
+      "channel": "formats",
+      "terms": [
+        "live",
+        "live session",
+        "concert",
+        "ceremony",
+        "unplugged"
+      ]
+    },
+    {
+      "id": "format.cover",
+      "label": "Cover",
+      "dimension": "format",
+      "channel": "formats",
+      "terms": [
+        "cover",
+        "reinterpretation"
+      ]
+    },
+    {
+      "id": "format.remix",
+      "label": "Remix / rework",
+      "dimension": "format",
+      "channel": "formats",
+      "terms": [
+        "remix",
+        "rework",
+        "club mix"
+      ]
+    },
+    {
+      "id": "format.remaster",
+      "label": "Remastered edition",
+      "dimension": "format",
+      "channel": "formats",
+      "terms": [
+        "remaster",
+        "remastered"
+      ]
+    },
+    {
+      "id": "format.studio",
+      "label": "Studio recording",
+      "dimension": "format",
+      "channel": "formats",
+      "terms": [
+        "studio",
+        "studio recording"
+      ]
+    },
+    {
+      "id": "format.acoustic",
+      "label": "Acoustic / stripped arrangement",
+      "dimension": "format",
+      "channel": "formats",
+      "terms": [
+        "acoustic",
+        "stripped back",
+        "unplugged"
+      ]
+    },
+    {
+      "id": "format.cinema",
+      "label": "Cinema / soundtrack",
+      "dimension": "format",
+      "channel": "formats",
+      "terms": [
+        "soundtrack",
+        "film song",
+        "film score"
+      ]
+    },
+    {
+      "id": "format.archive",
+      "label": "Historical recording object",
+      "dimension": "format",
+      "channel": "formats",
+      "terms": [
+        "shellac",
+        "78 rpm"
+      ]
+    },
+    {
+      "id": "instrument.piano",
+      "label": "Piano",
+      "dimension": "instrument",
+      "channel": "instruments",
+      "terms": [
+        "piano"
+      ]
+    },
+    {
+      "id": "instrument.trumpet",
+      "label": "Trumpet",
+      "dimension": "instrument",
+      "channel": "instruments",
+      "terms": [
+        "trumpet"
+      ]
+    },
+    {
+      "id": "instrument.orchestra",
+      "label": "Orchestra",
+      "dimension": "instrument",
+      "channel": "instruments",
+      "terms": [
+        "orchestra"
+      ]
+    },
+    {
+      "id": "instrument.acoustic-guitar",
+      "label": "Acoustic guitar",
+      "dimension": "instrument",
+      "channel": "instruments",
+      "terms": [
+        "acoustic guitar"
+      ]
+    },
+    {
+      "id": "instrument.voice",
+      "label": "Voice",
+      "dimension": "instrument",
+      "channel": "instruments",
+      "terms": [
+        "voice"
+      ]
+    },
+    {
+      "id": "instrument.a-cappella",
+      "label": "Unaccompanied voice",
+      "dimension": "instrument",
+      "channel": "instruments",
+      "terms": [
+        "a cappella"
+      ]
+    },
+    {
+      "id": "sound.soul",
+      "label": "Soul / funk",
+      "dimension": "sound",
+      "channel": "genres",
+      "terms": [
+        "soul",
+        "neo soul",
+        "funk",
+        "rhythm and blues",
+        "r&b"
+      ]
+    },
+    {
+      "id": "sound.jazz",
+      "label": "Jazz",
+      "dimension": "sound",
+      "channel": "genres",
+      "terms": [
+        "jazz",
+        "vocal jazz",
+        "soul jazz"
+      ]
+    },
+    {
+      "id": "sound.rock",
+      "label": "Rock",
+      "dimension": "sound",
+      "channel": "genres",
+      "terms": [
+        "rock",
+        "alternative rock",
+        "hard rock",
+        "grunge"
+      ]
+    },
+    {
+      "id": "sound.folk",
+      "label": "Folk / songwriter",
+      "dimension": "sound",
+      "channel": "genres",
+      "terms": [
+        "folk",
+        "indie folk",
+        "folk rock",
+        "singer songwriter"
+      ]
+    },
+    {
+      "id": "sound.electronic",
+      "label": "Electronic",
+      "dimension": "sound",
+      "channel": "genres",
+      "terms": [
+        "electronic",
+        "electronica",
+        "ambient",
+        "synth pop"
+      ]
+    },
+    {
+      "id": "sound.dance",
+      "label": "Dance / club",
+      "dimension": "sound",
+      "channel": "genres",
+      "terms": [
+        "house",
+        "techno",
+        "drum and bass",
+        "jungle",
+        "garage",
+        "breakbeat"
+      ]
+    },
+    {
+      "id": "sound.hip-hop",
+      "label": "Hip-hop / trip-hop",
+      "dimension": "sound",
+      "channel": "genres",
+      "terms": [
+        "hip hop",
+        "rap",
+        "trip hop"
+      ]
+    },
+    {
+      "id": "sound.reggae",
+      "label": "Reggae / dub",
+      "dimension": "sound",
+      "channel": "genres",
+      "terms": [
+        "reggae",
+        "dub",
+        "ska",
+        "dancehall"
+      ]
+    },
+    {
+      "id": "sound.spiritual",
+      "label": "Hymn / spiritual",
+      "dimension": "sound",
+      "channel": "genres",
+      "terms": [
+        "hymn",
+        "spiritual",
+        "gospel",
+        "shape note"
+      ]
+    }
+  ],
+  "node_bindings": {
+    "grace-1773": {
+      "scene_id": "printed-hymn",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "new-britain": {
+      "scene_id": "shape-note",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "fisk-1871": {
+      "scene_id": "concert-archive",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "fisk-1909": {
+      "scene_id": "shellac-archive",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "migration": {
+      "scene_id": "migration-panels",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "cole-1948": {
+      "scene_id": "shellac-archive",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "ruth-porter": {
+      "scene_id": "family-listening",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "sting-1992": {
+      "scene_id": "cinema-title",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "porter-2017": {
+      "scene_id": "live-stage",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "vega-1987": {
+      "scene_id": "diner-editorial",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "dna-1990": {
+      "scene_id": "dance-remix",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "mp3": {
+      "scene_id": "listening-lab",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "amk-2019": {
+      "scene_id": "ensemble-daylight",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "sabbath-1972": {
+      "scene_id": "piano-studio",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "bradley-network": {
+      "scene_id": "soul-workshop",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "bradley-2013": {
+      "scene_id": "soul-sleeve",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    },
+    "bradley-live": {
+      "scene_id": "newsroom-session",
+      "note": "Reviewed editorial direction from the visual field guide; historical evidence stays on the event."
+    }
+  },
+  "recording_bindings": [
+    {
+      "recording_key": "url:https://www.loc.gov/item/jukebox-128141/",
+      "artist_aliases": [
+        "Fisk University Jubilee Quartet",
+        "Fisk University Jubilee Singers"
+      ],
+      "node_id": "fisk-1909",
+      "scene_id": "shellac-archive",
+      "title_aliases": [
+        "Swing Low, Sweet Chariot"
+      ]
+    },
+    {
+      "recording_key": "youtube:eY_xSaf4I2w",
+      "artist_aliases": [
+        "Nat King Cole",
+        "King Cole Trio"
+      ],
+      "node_id": "cole-1948",
+      "scene_id": "shellac-archive",
+      "title_aliases": [
+        "Nature Boy"
+      ]
+    },
+    {
+      "recording_key": "youtube:PEDSiTCw3kI",
+      "artist_aliases": [
+        "Sting"
+      ],
+      "node_id": "sting-1992",
+      "scene_id": "cinema-title",
+      "title_aliases": [
+        "It's Probably Me"
+      ]
+    },
+    {
+      "recording_key": "youtube:lSzICmwmRsA",
+      "artist_aliases": [
+        "Gregory Porter"
+      ],
+      "node_id": "porter-2017",
+      "scene_id": "live-stage",
+      "title_aliases": [
+        "It's Probably Me"
+      ]
+    },
+    {
+      "recording_key": "youtube:mto47BMT3yA",
+      "artist_aliases": [
+        "Suzanne Vega"
+      ],
+      "node_id": "vega-1987",
+      "scene_id": "diner-editorial",
+      "title_aliases": [
+        "Tom's Diner"
+      ]
+    },
+    {
+      "recording_key": "youtube:bJNxmMk8zvA",
+      "artist_aliases": [
+        "Suzanne Vega / DNA",
+        "DNA",
+        "Suzanne Vega"
+      ],
+      "node_id": "dna-1990",
+      "scene_id": "dance-remix",
+      "title_aliases": [
+        "Tom's Diner"
+      ]
+    },
+    {
+      "recording_key": "youtube:5r3B7yz6J68",
+      "artist_aliases": [
+        "AnnenMayKantereit x Giant Rooks",
+        "AnnenMayKantereit × Giant Rooks"
+      ],
+      "node_id": "amk-2019",
+      "scene_id": "ensemble-daylight",
+      "title_aliases": [
+        "Tom's Diner"
+      ]
+    },
+    {
+      "recording_key": "youtube:ESE0ohvyOmA",
+      "artist_aliases": [
+        "Black Sabbath"
+      ],
+      "node_id": "sabbath-1972",
+      "scene_id": "piano-studio",
+      "title_aliases": [
+        "Changes"
+      ]
+    },
+    {
+      "recording_key": "url:https://daptonerecords.bandcamp.com/track/changes",
+      "artist_aliases": [
+        "Charles Bradley"
+      ],
+      "node_id": "bradley-2013",
+      "scene_id": "soul-sleeve",
+      "title_aliases": [
+        "Changes"
+      ]
+    },
+    {
+      "recording_key": "youtube:zfaOf70M4xs",
+      "artist_aliases": [
+        "Charles Bradley"
+      ],
+      "node_id": "bradley-live",
+      "scene_id": "newsroom-session",
+      "title_aliases": [
+        "Changes"
+      ]
+    }
+  ]
+}

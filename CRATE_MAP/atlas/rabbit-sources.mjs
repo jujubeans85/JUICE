@@ -33,7 +33,8 @@ export function parseArticle(result){
     blocks.push({kind:el.tagName.toLowerCase(),heading,text:text.slice(0,1600),links:links.slice(0,100),references});if(blocks.length>=1600)break;
   }
   const musical=classifyArticle({title:p.title,blocks});const videos=[];for(const a of d.querySelectorAll('a.external[href]')){const id=youtubeReference(a.getAttribute('href'));if(id&&!videos.some(v=>v.id===id)){const context=cleanText(a.closest('p,li')?.textContent||a.textContent);if(musical||isMusicText(context))videos.push({id,title:context.slice(0,200)||p.title+' · source video',source_url:wikiURL(p.title,p.revid)})}}
-  const qid=wikibaseID(p.properties);const article={title:p.title,pageid:p.pageid,revision:p.revid||null,qid,blocks,videos:videos.slice(0,20),retrieved_at:new Date().toISOString(),stale:Boolean(result._stale),cached_at:result._cached_at||null};article.musical=classifyArticle(article);return article;
+  const infobox=[...d.querySelectorAll('table.infobox tr')].map(row=>({label:cleanText(row.querySelector('th')?.textContent||''),text:cleanText(row.querySelector('td')?.textContent||''),links:[...row.querySelectorAll('td a[href]')].map(a=>({title:articleTitle(a.getAttribute('href')),text:cleanText(a.textContent)})).filter(a=>a.title)})).filter(row=>row.label&&row.text).slice(0,60);
+  const qid=wikibaseID(p.properties);const article={title:p.title,pageid:p.pageid,revision:p.revid||null,qid,blocks,infobox,videos:videos.slice(0,20),retrieved_at:new Date().toISOString(),stale:Boolean(result._stale),cached_at:result._cached_at||null};article.musical=classifyArticle(article);return article;
 }
 export async function loadArticle(title,options={}){
   if(typeof title!=='string'||title.length>220||/^(File|Special|Category|Template|User|Wikipedia):/i.test(title))throw Error('Choose a normal music article.');

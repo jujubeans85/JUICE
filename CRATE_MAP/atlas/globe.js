@@ -1,5 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {BASE_THEME} from './era-theme.mjs';
+import {conceptSurface} from './concept-visuals.mjs';
 const rad=Math.PI/180;
 const xyz=(lat,lon,r=1)=>new T.Vector3(r*Math.cos(lat*rad)*Math.sin(lon*rad),r*Math.sin(lat*rad),r*Math.cos(lat*rad)*Math.cos(lon*rad));
 export class Globe{
@@ -27,7 +28,8 @@ export class Globe{
    for(const m of this.markers){const v=m.mesh.position.clone().applyMatrix4(this.world.matrixWorld);const toward=this.camera.position.clone().sub(v).normalize();const face=v.clone().normalize().dot(toward)>.05;m.label.hidden=!face;if(face){v.project(this.camera);m.label.style.transform=`translate(${(v.x*.5+.5)*cw}px,${(-v.y*.5+.5)*ch}px) translate(-50%,-50%)`}}
    this.renderer.render(this.scene,this.camera)};this.frame=requestAnimationFrame(this.tick);
  }
- setPalette(p){this.palette=p;this.ball.material.color.set(p.mid);this.ball.material.specular.set(p.top);this.halo.material.color.set(p.documented);this.borders.material.color.set(p.line);this.grid.material.color.set(p.grid)}
+ setPalette(p){this.palette=p;this.ball.material.color.set(this.ball.material.map?'#ffffff':p.mid);this.ball.material.specular.set(p.top);this.halo.material.color.set(p.documented);this.borders.material.color.set(p.line);this.grid.material.color.set(p.grid)}
+ setStyle(style){const key=JSON.stringify([style||null,this.palette]);if(key===this.styleKey)return;this.styleKey=key;this.ball.material.map?.dispose();const surface=conceptSurface(style,this.palette,{opaque:true});this.ball.material.map=surface?new T.CanvasTexture(surface):null;if(this.ball.material.map)this.ball.material.map.colorSpace=T.SRGBColorSpace;this.ball.material.color.set(surface?'#ffffff':this.palette.mid);this.ball.material.shininess=style?.shine??10;this.ball.material.needsUpdate=true;this.grid.material.opacity=style?.pattern==='pixels'?.35:.18;}
  clear(group){for(const x of [...group.children]){group.remove(x);x.geometry?.dispose();x.material?.dispose()}}
  setData(nodes,edges,selected){this.clear(this.points);this.clear(this.lines);this.labels.replaceChildren();this.markers=[];const located=nodes.filter(n=>n.place),by=new Map(located.map(n=>[n.id,n]));
   for(const n of located){const focus=n.id===selected,color=n.evidence==='context'?this.palette.context:focus?this.palette.documented:this.palette.line;const mesh=new T.Mesh(new T.SphereGeometry(focus?.023:.013,12,8),new T.MeshBasicMaterial({color}));mesh.position.copy(xyz(n.place.lat,n.place.lon,1.018));this.points.add(mesh);const label=document.createElement('button');label.className='map-pin'+(focus?' active':'');label.title=n.title+' · '+n.place.name;label.setAttribute('aria-label',label.title);label.textContent=focus?n.place.name.split(',')[0]:'•';label.onclick=e=>{e.stopPropagation();this.onSelect(n.id)};label.onpointerdown=e=>e.stopPropagation();this.labels.append(label);this.markers.push({mesh,label})}
@@ -36,5 +38,5 @@ export class Globe{
  focus(p){if(!p)return;this.paused=true;this.world.rotation.y=-p.lon*rad;this.world.rotation.x=p.lat*rad*.8}
  zoom(d){this.distance=Math.max(3.1,Math.min(6,this.distance+d));this.camera.position.z=this.distance*this.fit}
  reset(){this.distance=4.1;this.world.rotation.set(.18,.7,0);this.resize()}
- dispose(){this.disposed=true;cancelAnimationFrame(this.frame);this.observer.disconnect();this.scene.traverse(x=>{x.geometry?.dispose();x.material?.dispose()});this.renderer.dispose();this.renderer.forceContextLoss()}
+ dispose(){this.disposed=true;cancelAnimationFrame(this.frame);this.observer.disconnect();this.ball.material.map?.dispose();this.scene.traverse(x=>{x.geometry?.dispose();x.material?.dispose()});this.renderer.dispose();this.renderer.forceContextLoss()}
 }
