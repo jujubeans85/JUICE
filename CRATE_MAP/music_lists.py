@@ -65,7 +65,7 @@ def build(root):
     (root/'revision.json').write_text(json.dumps({'revision':revision,'entries':len(data),'complete_tracklists':sum(d.get('tracklist_status')=='complete' for d in data)})+'\n')
     sw=(root/'sw.template.js').read_text().replace('__REVISION__',revision)
     (root/'sw.js').write_text(sw)
-    print(json.dumps({'revision':revision,'entries':len(data),'complete_tracklists':sum(bool(d.get('tracks')) for d in data),'offline_bytes':(root/'offline.html').stat().st_size}))
+    print(json.dumps({'revision':revision,'entries':len(data),'complete_tracklists':sum(d.get('tracklist_status')=='complete' for d in data),'offline_bytes':(root/'offline.html').stat().st_size}))
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,default=Path(__file__).parent);p.add_argument('--upsert',type=Path);p.add_argument('--check',action='store_true');args=p.parse_args()

@@ -1,3 +1,4 @@
+import {soundCloudURL} from './soundcloud-widget.mjs';
 /** Pure contracts for on-demand, source-linked music exploration. */
 export const FACETS = [
   { id: 'politics', label: 'Politics & power', hint: 'Movements, conflict, migration and social conditions.' },
@@ -87,7 +88,7 @@ export function validCachedGraph(g) {
   try {
     if (!g || g.version!==1 || !Array.isArray(g.nodes) || !Array.isArray(g.edges) || !Array.isArray(g.sources) || !Array.isArray(g.trail)) return false;
     const sourceIds=new Set(g.sources.map(s=>s.id));
-    return g.nodes.every(n=>n && typeof n.id==='string' && n.id.length<400 && typeof n.title==='string' && n.live===true && Array.isArray(n.sources) && n.sources.every(s=>typeof s==='string') && (n.start===null||Number.isInteger(n.start)) && (!n.place||(Number.isFinite(n.place.lat)&&Math.abs(n.place.lat)<=90&&Number.isFinite(n.place.lon)&&Math.abs(n.place.lon)<=180)) && (!n.play||n.play.type==='youtube'&&/^[\w-]{11}$/.test(n.play.id||'')||n.play.type==='commons_audio'&&Boolean(safeCommonsAudio(n.play.url)))) && g.edges.every(e=>e && typeof e.id==='string' && typeof e.from_id==='string' && typeof e.to_id==='string' && e.evidence==='context' && e.live===true && Array.isArray(e.sources)) && g.sources.every(s=>s && typeof s.id==='string' && typeof s.url==='string' && new URL(s.url).protocol==='https:' && ['en.wikipedia.org','commons.wikimedia.org','www.wikidata.org'].includes(new URL(s.url).hostname)) && g.trail.every(id=>typeof id==='string');
+    return g.nodes.every(n=>n && typeof n.id==='string' && n.id.length<400 && typeof n.title==='string' && n.live===true && Array.isArray(n.sources) && n.sources.every(s=>typeof s==='string') && (n.start===null||Number.isInteger(n.start)) && (!n.place||(Number.isFinite(n.place.lat)&&Math.abs(n.place.lat)<=90&&Number.isFinite(n.place.lon)&&Math.abs(n.place.lon)<=180)) && (!n.play||n.play.type==='youtube'&&/^[\w-]{11}$/.test(n.play.id||'')||n.play.type==='soundcloud'&&(/^\d+$/.test(String(n.play.id||''))||Boolean(soundCloudURL(n.play.url)&&/^\/[^/]+\/[^/]+\/?$/.test(new URL(n.play.url).pathname)))||n.play.type==='commons_audio'&&Boolean(safeCommonsAudio(n.play.url)))) && g.edges.every(e=>e && typeof e.id==='string' && typeof e.from_id==='string' && typeof e.to_id==='string' && e.evidence==='context' && e.live===true && Array.isArray(e.sources)) && g.sources.every(s=>s && typeof s.id==='string' && typeof s.url==='string' && new URL(s.url).protocol==='https:' && ['en.wikipedia.org','commons.wikimedia.org','www.wikidata.org','soundcloud.com','api.soundcloud.com','w.soundcloud.com','www.youtube.com','youtube.com','youtu.be','open.spotify.com'].includes(new URL(s.url).hostname)) && g.trail.every(id=>typeof id==='string');
   } catch { return false; }
 }
 
