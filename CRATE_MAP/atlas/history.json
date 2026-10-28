@@ -264,7 +264,8 @@
         "hymn",
         "religion",
         "text"
-      ]
+      ],
+      "explore_topic": "Amazing Grace"
     },
     {
       "id": "new-britain",
@@ -297,7 +298,8 @@
         "hymn",
         "notation",
         "melody"
-      ]
+      ],
+      "explore_topic": "Amazing Grace"
     },
     {
       "id": "fisk-1871",
@@ -334,7 +336,8 @@
         "education",
         "emancipation",
         "touring"
-      ]
+      ],
+      "explore_topic": "Fisk Jubilee Singers"
     },
     {
       "id": "fisk-1909",
@@ -370,7 +373,8 @@
         "spiritual",
         "quartet",
         "recording"
-      ]
+      ],
+      "explore_topic": "Fisk Jubilee Singers"
     },
     {
       "id": "migration",
@@ -397,7 +401,8 @@
         "blues",
         "electric guitar",
         "work"
-      ]
+      ],
+      "explore_topic": "Chicago blues"
     },
     {
       "id": "cole-1948",
@@ -425,7 +430,8 @@
         "jazz",
         "voice",
         "family listening"
-      ]
+      ],
+      "explore_topic": "Nat King Cole"
     },
     {
       "id": "ruth-porter",
@@ -455,7 +461,8 @@
         "gospel",
         "family",
         "mentorship"
-      ]
+      ],
+      "explore_topic": "Gregory Porter"
     },
     {
       "id": "sting-1992",
@@ -485,7 +492,8 @@
         "film",
         "pop",
         "songwriting"
-      ]
+      ],
+      "explore_topic": "It's Probably Me"
     },
     {
       "id": "porter-2017",
@@ -522,7 +530,8 @@
         "orchestra",
         "cover",
         "live"
-      ]
+      ],
+      "explore_topic": "Gregory Porter"
     },
     {
       "id": "vega-1987",
@@ -556,7 +565,8 @@
         "a cappella",
         "songwriting",
         "city life"
-      ]
+      ],
+      "explore_topic": "Tom's Diner"
     },
     {
       "id": "dna-1990",
@@ -586,7 +596,8 @@
         "remix",
         "dance",
         "crossover"
-      ]
+      ],
+      "explore_topic": "Tom's Diner"
     },
     {
       "id": "mp3",
@@ -622,7 +633,8 @@
         "compression",
         "MP3",
         "engineering"
-      ]
+      ],
+      "explore_topic": "MP3"
     },
     {
       "id": "amk-2019",
@@ -655,7 +667,8 @@
         "voice",
         "trumpet",
         "production"
-      ]
+      ],
+      "explore_topic": "Tom's Diner"
     },
     {
       "id": "sabbath-1972",
@@ -694,7 +707,8 @@
         "rock",
         "piano",
         "studio"
-      ]
+      ],
+      "explore_topic": "Changes (Black Sabbath song)"
     },
     {
       "id": "bradley-network",
@@ -727,7 +741,8 @@
         "producer",
         "independent label",
         "mentorship"
-      ]
+      ],
+      "explore_topic": "Charles Bradley"
     },
     {
       "id": "bradley-2013",
@@ -761,7 +776,8 @@
         "soul",
         "cover",
         "independent label"
-      ]
+      ],
+      "explore_topic": "Charles Bradley"
     },
     {
       "id": "bradley-live",
@@ -795,7 +811,8 @@
         "soul",
         "cover",
         "live"
-      ]
+      ],
+      "explore_topic": "Charles Bradley"
     }
   ],
   "edges": [

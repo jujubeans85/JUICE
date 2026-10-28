@@ -17,3 +17,11 @@ See `SKILL_INDEX.md` for the automatically applied Music List Vault skill. Sourc
 The research pilot is at `/atlas/`, linked from the listening library. `atlas/history.json` is the canonical history graph; exact personal recording records stay in `catalogue.json`. The initial routes reference canonical YouTube recording keys rather than a competing catalogue. The build brief at `atlas/research.html` distinguishes implemented features, source findings and production work. No listening history has been inferred from saved playlists.
 
 Run `node --test CRATE_MAP/atlas/core.test.mjs` from the repository root, then rebuild the index with `python3 CRATE_MAP/music_lists.py`. The globe and all vendor assets are locally served. Imported CRATE JUICE JSON stays in browser storage and does not write to this repository. Atlas browsing is online-first; the standalone listening-library export remains independent. Audio needs internet.
+
+## On-demand exploration
+
+The atlas now loads source-linked branches when a listener chooses politics, divergence, people, places, instruments, technology/media or another recording. `atlas/rabbit-core.mjs` owns relevance and graph contracts; `atlas/rabbit-sources.mjs` owns fixed public API adapters and browser persistence; `atlas/rabbit-ui.mjs` owns exploration state. No model credentials, new backend or generated fact publication are used. English Wikipedia passages and Commons audio are live discovery sources, not reviewed ancestry.
+
+Live graphs remain in IndexedDB on the listener’s browser and in user-triggered exports. They are never committed to Git or merged into `catalogue.json` automatically. The atlas v2 export can restore explored branches. Provider failures preserve labelled cached responses. Normal source coverage and heuristics can miss connections; absence is not proof that no historical link exists.
+
+Run `node --test CRATE_MAP/atlas/*.test.mjs` for the data and relevance contracts. See `atlas/research.html#on-demand` for scope and remaining limits.
