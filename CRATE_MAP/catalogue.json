@@ -1,5 +1,224 @@
 [
   {
+    "id": "CJ-271",
+    "position": "A4",
+    "symbol": "We",
+    "title": "WednesdayCrate — Smoke, Gravel & Grace",
+    "edition": "2026-10-28",
+    "lines": [
+      "WednesdayCrate",
+      "Smoke, Gravel & Grace"
+    ],
+    "family": "WEEKDAYS",
+    "color": "#E9D56D",
+    "owned": true,
+    "status": "EXISTING",
+    "artwork_status": "map only",
+    "image": "covers/CJ-271.svg",
+    "url": "https://www.youtube.com/watch_videos?video_ids=lSzICmwmRsA,Ai9FaySosIY,C8wNpiBqn_0,0G383538qzQ,5r3B7yz6J68,_W9ewqSjkKk,k3Zb_4ZOM7M,AHeW8McMBS8,fuWq4RZnc6U,7QU1nvuxaMA,V8RTGhe4nzU,zfaOf70M4xs,nWK0kqjPSVI,_h-QdwXkpEo,w44dlsnJ1no,hp0KiJs0S5g",
+    "source_platform": "youtube",
+    "tracks_snapshot": 16,
+    "duration_snapshot": "1:26:39",
+    "tracklist_status": "complete",
+    "tracks": [
+      {
+        "position": 1,
+        "artist": "Gregory Porter",
+        "title": "It's Probably Me",
+        "version": "Polar Music Prize Ceremony 2017",
+        "duration": "5:28",
+        "url": "https://www.youtube.com/watch?v=lSzICmwmRsA",
+        "youtube_id": "lSzICmwmRsA",
+        "seed": true,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 2,
+        "artist": "Bobby Womack",
+        "title": "Please Forgive My Heart",
+        "version": "Studio recording",
+        "duration": "4:31",
+        "url": "https://www.youtube.com/watch?v=Ai9FaySosIY",
+        "youtube_id": "Ai9FaySosIY",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 3,
+        "artist": "Nick Hakim",
+        "title": "I Don't Know",
+        "version": "Brownswood Recordings upload",
+        "duration": "4:57",
+        "url": "https://www.youtube.com/watch?v=C8wNpiBqn_0",
+        "youtube_id": "C8wNpiBqn_0",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 4,
+        "artist": "Black Pumas",
+        "title": "Colors",
+        "version": "Official Live Session",
+        "duration": "6:47",
+        "url": "https://www.youtube.com/watch?v=0G383538qzQ",
+        "youtube_id": "0G383538qzQ",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 5,
+        "artist": "AnnenMayKantereit x Giant Rooks",
+        "title": "Tom's Diner",
+        "version": "Original supplied cover performance",
+        "duration": "4:34",
+        "url": "https://www.youtube.com/watch?v=5r3B7yz6J68",
+        "youtube_id": "5r3B7yz6J68",
+        "seed": true,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 6,
+        "artist": "Matt Corby",
+        "title": "Brother",
+        "version": "Stripped Back — Official Video",
+        "duration": "5:01",
+        "url": "https://www.youtube.com/watch?v=_W9ewqSjkKk",
+        "youtube_id": "_W9ewqSjkKk",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 7,
+        "artist": "Fink",
+        "title": "Looking Too Closely",
+        "version": "Official artist upload",
+        "duration": "5:11",
+        "url": "https://www.youtube.com/watch?v=k3Zb_4ZOM7M",
+        "youtube_id": "k3Zb_4ZOM7M",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 8,
+        "artist": "Lianne La Havas",
+        "title": "Weird Fishes",
+        "version": "2020 studio recording",
+        "duration": "5:55",
+        "url": "https://www.youtube.com/watch?v=AHeW8McMBS8",
+        "youtube_id": "AHeW8McMBS8",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 9,
+        "artist": "Hozier",
+        "title": "Do I Wanna Know?",
+        "version": "BBC Radio 1 Live Lounge",
+        "duration": "4:26",
+        "url": "https://www.youtube.com/watch?v=fuWq4RZnc6U",
+        "youtube_id": "fuWq4RZnc6U",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 10,
+        "artist": "Audioslave",
+        "title": "Like a Stone",
+        "version": "Original supplied Official Video",
+        "duration": "5:02",
+        "url": "https://www.youtube.com/watch?v=7QU1nvuxaMA",
+        "youtube_id": "7QU1nvuxaMA",
+        "seed": true,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 11,
+        "artist": "Terry Reid",
+        "title": "Seed of Memory",
+        "version": "Studio recording — Jan8546 upload",
+        "duration": "5:27",
+        "url": "https://www.youtube.com/watch?v=V8RTGhe4nzU",
+        "youtube_id": "V8RTGhe4nzU",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 12,
+        "artist": "Charles Bradley",
+        "title": "Changes",
+        "version": "Toronto Star Newsroom Concert Series",
+        "duration": "6:25",
+        "url": "https://www.youtube.com/watch?v=zfaOf70M4xs",
+        "youtube_id": "zfaOf70M4xs",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 13,
+        "artist": "Alice In Chains",
+        "title": "Down in a Hole",
+        "version": "Original supplied MTV Unplugged performance",
+        "duration": "5:52",
+        "url": "https://www.youtube.com/watch?v=nWK0kqjPSVI",
+        "youtube_id": "nWK0kqjPSVI",
+        "seed": true,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 14,
+        "artist": "Mark Lanegan",
+        "title": "One Way Street",
+        "version": "Field Songs — studio recording",
+        "duration": "4:19",
+        "url": "https://www.youtube.com/watch?v=_h-QdwXkpEo",
+        "youtube_id": "_h-QdwXkpEo",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 15,
+        "artist": "Michael Kiwanuka",
+        "title": "Love & Hate",
+        "version": "Full album recording",
+        "duration": "7:08",
+        "url": "https://www.youtube.com/watch?v=w44dlsnJ1no",
+        "youtube_id": "w44dlsnJ1no",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      },
+      {
+        "position": 16,
+        "artist": "Cleo Sol",
+        "title": "When I'm in Your Arms",
+        "version": "Rose in the Dark — studio recording",
+        "duration": "5:36",
+        "url": "https://www.youtube.com/watch?v=hp0KiJs0S5g",
+        "youtube_id": "hp0KiJs0S5g",
+        "seed": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-28"
+      }
+    ],
+    "updated_at": "2026-10-28",
+    "note": "Four exact supplied seeds. Original video IDs preserved. YouTube queues are temporary; use Fresh YouTube queue to rebuild. SoundCloud contains an opener-only bookmark, not the complete crate.",
+    "source_bookmark": "https://soundcloud.com/adam-marsh-356085218/sets/wednesdaycrate-smoke-gravel"
+  },
+  {
     "id": "CJ-002",
     "position": "A2",
     "symbol": "Tu",
@@ -22,7 +241,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/crate-juice-tuesday-v_003",
     "owned": true,
     "artwork_status": "verified",
-    "image": "covers/CJ-002.svg"
+    "image": "covers/CJ-002.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-009",
@@ -48,7 +268,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sunday-crate-004-foxy-sunday",
     "owned": true,
     "artwork_status": "verified",
-    "image": "covers/CJ-009.svg"
+    "image": "covers/CJ-009.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-007",
@@ -73,7 +294,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/saturday-crate-001-dark-room",
     "owned": true,
     "artwork_status": "verified",
-    "image": "covers/CJ-007.svg"
+    "image": "covers/CJ-007.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-017",
@@ -99,7 +321,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/cromium-icarus-outaa-gospipal",
     "owned": true,
     "artwork_status": "verified",
-    "image": "covers/CJ-017.svg"
+    "image": "covers/CJ-017.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-018",
@@ -125,7 +348,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sitty-pitty-gritty-committy",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-018.svg"
+    "image": "covers/CJ-018.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-019",
@@ -151,7 +375,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/bjorn-olymypad-classics",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-019.svg"
+    "image": "covers/CJ-019.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-006",
@@ -176,7 +401,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/friday-crate-004-23-october",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-006.svg"
+    "image": "covers/CJ-006.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-001",
@@ -201,7 +427,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/weekdays",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-001.svg"
+    "image": "covers/CJ-001.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-003",
@@ -226,7 +453,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/tuesday-crate-004-reworked",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-003.svg"
+    "image": "covers/CJ-003.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-008",
@@ -251,7 +479,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sunday-crate-003",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-008.svg"
+    "image": "covers/CJ-008.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-005",
@@ -276,7 +505,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/friday-crate-002",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-005.svg"
+    "image": "covers/CJ-005.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-004",
@@ -301,7 +531,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/friday-crate-001",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-004.svg"
+    "image": "covers/CJ-004.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-013",
@@ -326,7 +557,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/truth",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-013.svg"
+    "image": "covers/CJ-013.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-014",
@@ -352,7 +584,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/damn-i-wish-i-was-fem-vox-n",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-014.svg"
+    "image": "covers/CJ-014.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-016",
@@ -378,7 +611,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/lightly-n-pretty-mix-inspired",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-016.svg"
+    "image": "covers/CJ-016.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-010",
@@ -404,7 +638,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/michael-franti-spearhead-mix",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-010.svg"
+    "image": "covers/CJ-010.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-011",
@@ -430,7 +665,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/beats-international-playlist",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-011.svg"
+    "image": "covers/CJ-011.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-012",
@@ -456,7 +692,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/lovejus-reworked-funkier",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-012.svg"
+    "image": "covers/CJ-012.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-020",
@@ -482,7 +719,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/custom-extended-mixes-1",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-020.svg"
+    "image": "covers/CJ-020.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-021",
@@ -508,7 +746,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/juice-auditions-001",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-021.svg"
+    "image": "covers/CJ-021.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-015",
@@ -534,7 +773,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/fem-vox-beat-pop-80-95",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-015.svg"
+    "image": "covers/CJ-015.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-036",
@@ -558,7 +798,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/cj-pop-flirty-funk-v1",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-036.svg"
+    "image": "covers/CJ-036.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-037",
@@ -583,7 +824,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/whimsical-stares-any-night",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-037.svg"
+    "image": "covers/CJ-037.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-038",
@@ -608,7 +850,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/classics-up-to-80s-oldies",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-038.svg"
+    "image": "covers/CJ-038.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-039",
@@ -632,7 +875,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/custom-extended-mixes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-039.svg"
+    "image": "covers/CJ-039.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-040",
@@ -656,7 +900,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/chlobo",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-040.svg"
+    "image": "covers/CJ-040.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-041",
@@ -680,7 +925,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/flowers-for-ish-adults",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-041.svg"
+    "image": "covers/CJ-041.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-042",
@@ -704,7 +950,8 @@
     "url": "https://soundcloud.com/discover/sets/liked-by::30007440",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-042.svg"
+    "image": "covers/CJ-042.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-043",
@@ -728,7 +975,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/late-night-roomed-mix",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-043.svg"
+    "image": "covers/CJ-043.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-044",
@@ -752,7 +1000,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/hip-hop-re-roomed",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-044.svg"
+    "image": "covers/CJ-044.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-045",
@@ -777,7 +1026,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/music-to-refine-to-a-remix",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-045.svg"
+    "image": "covers/CJ-045.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-046",
@@ -801,7 +1051,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/acoustic-edm-v1",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-046.svg"
+    "image": "covers/CJ-046.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-047",
@@ -825,7 +1076,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/hideaway-boss-mix",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-047.svg"
+    "image": "covers/CJ-047.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-048",
@@ -850,7 +1102,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/copy-of-edm-crossovers",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-048.svg"
+    "image": "covers/CJ-048.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-049",
@@ -875,7 +1128,8 @@
     "url": "https://soundcloud.com/soundcloud-the-peak/sets/electrify-edm-crossovers",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-049.svg"
+    "image": "covers/CJ-049.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-050",
@@ -899,7 +1153,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/re-souled",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-050.svg"
+    "image": "covers/CJ-050.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-051",
@@ -924,7 +1179,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/ministry-os-2000-to-2010",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-051.svg"
+    "image": "covers/CJ-051.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-052",
@@ -949,7 +1205,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/global-concepts-and-more",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-052.svg"
+    "image": "covers/CJ-052.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-053",
@@ -973,7 +1230,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/jcaudition_001",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-053.svg"
+    "image": "covers/CJ-053.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-054",
@@ -997,7 +1255,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/jcaudition_02",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-054.svg"
+    "image": "covers/CJ-054.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-055",
@@ -1021,7 +1280,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/us3-mates-touched",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-055.svg"
+    "image": "covers/CJ-055.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-056",
@@ -1046,7 +1306,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/cratejuice-reroomed-daily-1",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-056.svg"
+    "image": "covers/CJ-056.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-057",
@@ -1071,7 +1332,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/re-roomed-retouched-daily",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-057.svg"
+    "image": "covers/CJ-057.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-058",
@@ -1095,7 +1357,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/big-wild-lights",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-058.svg"
+    "image": "covers/CJ-058.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-059",
@@ -1119,7 +1382,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/26-26-26",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-059.svg"
+    "image": "covers/CJ-059.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-060",
@@ -1143,7 +1407,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/prodigy-n-chums",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-060.svg"
+    "image": "covers/CJ-060.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-061",
@@ -1168,7 +1433,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/flight-facilities-in-flight",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-061.svg"
+    "image": "covers/CJ-061.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-062",
@@ -1193,7 +1459,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/john-mayer-daughters-inspired",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-062.svg"
+    "image": "covers/CJ-062.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-063",
@@ -1217,7 +1484,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/simon-says-noice-werk",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-063.svg"
+    "image": "covers/CJ-063.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-064",
@@ -1242,7 +1510,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/re-roomed-retouched-versions",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-064.svg"
+    "image": "covers/CJ-064.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-065",
@@ -1266,7 +1535,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/post-cockatoo-moderna",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-065.svg"
+    "image": "covers/CJ-065.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-066",
@@ -1290,7 +1560,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/v9-md-y-me",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-066.svg"
+    "image": "covers/CJ-066.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-067",
@@ -1315,7 +1586,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/re-roomed-retouched-v1",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-067.svg"
+    "image": "covers/CJ-067.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-068",
@@ -1339,7 +1611,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/playlist",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-068.svg"
+    "image": "covers/CJ-068.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-069",
@@ -1363,7 +1636,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/disclosure-friends",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-069.svg"
+    "image": "covers/CJ-069.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-070",
@@ -1387,7 +1661,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/dinner-juice-hip-jazzi",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-070.svg"
+    "image": "covers/CJ-070.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-071",
@@ -1411,7 +1686,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/bright-early-dem",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-071.svg"
+    "image": "covers/CJ-071.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-072",
@@ -1435,7 +1711,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/dance-only",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-072.svg"
+    "image": "covers/CJ-072.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-073",
@@ -1459,7 +1736,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/lo-fi-study-cry",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-073.svg"
+    "image": "covers/CJ-073.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-074",
@@ -1483,7 +1761,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/alien-room-remixes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-074.svg"
+    "image": "covers/CJ-074.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-075",
@@ -1507,7 +1786,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/reroom-dance",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-075.svg"
+    "image": "covers/CJ-075.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-076",
@@ -1531,7 +1811,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/disclosure-vibes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-076.svg"
+    "image": "covers/CJ-076.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-077",
@@ -1555,7 +1836,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/funk-auditions-fall-26",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-077.svg"
+    "image": "covers/CJ-077.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-078",
@@ -1580,7 +1862,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/dance-hits-2000-2026-top-100",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-078.svg"
+    "image": "covers/CJ-078.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-079",
@@ -1604,7 +1887,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/diverse-vibes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-079.svg"
+    "image": "covers/CJ-079.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-080",
@@ -1629,7 +1913,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/indietronica-friday-evening",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-080.svg"
+    "image": "covers/CJ-080.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-081",
@@ -1653,7 +1938,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sc-deep-diff_auditions",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-081.svg"
+    "image": "covers/CJ-081.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-082",
@@ -1677,7 +1963,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/eclectic-retouched-gems",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-082.svg"
+    "image": "covers/CJ-082.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-083",
@@ -1702,7 +1989,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/familiar-musical-inspirations",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-083.svg"
+    "image": "covers/CJ-083.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-084",
@@ -1726,7 +2014,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/expanded-retouched-gems",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-084.svg"
+    "image": "covers/CJ-084.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-085",
@@ -1751,7 +2040,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/orchestral-electronic-vibes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-085.svg"
+    "image": "covers/CJ-085.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-086",
@@ -1775,7 +2065,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/kings",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-086.svg"
+    "image": "covers/CJ-086.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-087",
@@ -1799,7 +2090,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/yes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-087.svg"
+    "image": "covers/CJ-087.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-088",
@@ -1823,7 +2115,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/orchestral-dance-vibes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-088.svg"
+    "image": "covers/CJ-088.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-089",
@@ -1848,7 +2141,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/2-350-a-lot-of-sun-beats",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-089.svg"
+    "image": "covers/CJ-089.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-090",
@@ -1872,7 +2166,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/my-friend-dale-2350",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-090.svg"
+    "image": "covers/CJ-090.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-091",
@@ -1896,7 +2191,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/beach-dusk-swagger",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-091.svg"
+    "image": "covers/CJ-091.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-092",
@@ -1920,7 +2216,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/my-friend-dale-100",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-092.svg"
+    "image": "covers/CJ-092.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-093",
@@ -1944,7 +2241,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/jazzy-now",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-093.svg"
+    "image": "covers/CJ-093.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-094",
@@ -1968,7 +2266,8 @@
     "url": "https://soundcloud.com/buzzing-playlists/sets/buzzing-electronic",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-094.svg"
+    "image": "covers/CJ-094.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-095",
@@ -1992,7 +2291,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sexy-times-yah",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-095.svg"
+    "image": "covers/CJ-095.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-096",
@@ -2017,7 +2317,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/aftermath-small-jewels-view",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-096.svg"
+    "image": "covers/CJ-096.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-097",
@@ -2042,7 +2343,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/emotional-groove-mutation",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-097.svg"
+    "image": "covers/CJ-097.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-098",
@@ -2067,7 +2369,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/alternatereworx-u-matter",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-098.svg"
+    "image": "covers/CJ-098.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-099",
@@ -2091,7 +2394,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/drive-coast-vibes-ish",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-099.svg"
+    "image": "covers/CJ-099.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-100",
@@ -2115,7 +2419,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/simply-red-more",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-100.svg"
+    "image": "covers/CJ-100.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-101",
@@ -2139,7 +2444,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/stax-on-fridays",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-101.svg"
+    "image": "covers/CJ-101.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-102",
@@ -2163,7 +2469,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/great_hop",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-102.svg"
+    "image": "covers/CJ-102.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-103",
@@ -2188,7 +2495,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/rebirth-of-cool-5-1995",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-103.svg"
+    "image": "covers/CJ-103.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-104",
@@ -2213,7 +2521,8 @@
     "url": "https://soundcloud.com/discover/sets/personalized-tracks::adam-marsh-356085218:259141260",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-104.svg"
+    "image": "covers/CJ-104.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-105",
@@ -2237,7 +2546,8 @@
     "url": "https://soundcloud.com/discover/sets/personalized-tracks::adam-marsh-356085218:1292259574",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-105.svg"
+    "image": "covers/CJ-105.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-106",
@@ -2262,7 +2572,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/7-seconds-chunkybiz-remix",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-106.svg"
+    "image": "covers/CJ-106.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-107",
@@ -2286,7 +2597,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/safe-for-guests",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-107.svg"
+    "image": "covers/CJ-107.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-108",
@@ -2310,7 +2622,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/funky-remix-collection",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-108.svg"
+    "image": "covers/CJ-108.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-109",
@@ -2334,7 +2647,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sing-along-gen-y",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-109.svg"
+    "image": "covers/CJ-109.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-110",
@@ -2358,7 +2672,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/march-26-juice-1",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-110.svg"
+    "image": "covers/CJ-110.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-111",
@@ -2382,7 +2697,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/useful-groove-stems",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-111.svg"
+    "image": "covers/CJ-111.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-112",
@@ -2407,7 +2723,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sophisticated-soulful-edits",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-112.svg"
+    "image": "covers/CJ-112.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-113",
@@ -2431,7 +2748,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/soulful-smooth-vibes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-113.svg"
+    "image": "covers/CJ-113.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-114",
@@ -2455,7 +2773,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/funky-grooves",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-114.svg"
+    "image": "covers/CJ-114.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-115",
@@ -2479,7 +2798,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/soulful-arrangements",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-115.svg"
+    "image": "covers/CJ-115.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-116",
@@ -2504,7 +2824,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/halfway-hallway-repoxs",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-116.svg"
+    "image": "covers/CJ-116.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-117",
@@ -2528,7 +2849,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/boss-at-work",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-117.svg"
+    "image": "covers/CJ-117.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-118",
@@ -2552,7 +2874,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/groove-style-vibes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-118.svg"
+    "image": "covers/CJ-118.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-119",
@@ -2577,7 +2900,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/hologram-heartland-core-5",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-119.svg"
+    "image": "covers/CJ-119.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-120",
@@ -2602,7 +2926,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/custom-remix-extended-mixes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-120.svg"
+    "image": "covers/CJ-120.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-121",
@@ -2626,7 +2951,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/we-made-it-out-alive",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-121.svg"
+    "image": "covers/CJ-121.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-122",
@@ -2650,7 +2976,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/chose-beauty-anyway",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-122.svg"
+    "image": "covers/CJ-122.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-123",
@@ -2674,7 +3001,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/remix-collection",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-123.svg"
+    "image": "covers/CJ-123.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-124",
@@ -2698,7 +3026,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/cosmic-journey",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-124.svg"
+    "image": "covers/CJ-124.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-125",
@@ -2722,7 +3051,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/mmm",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-125.svg"
+    "image": "covers/CJ-125.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-126",
@@ -2746,7 +3076,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/test-pop-fix",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-126.svg"
+    "image": "covers/CJ-126.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-127",
@@ -2771,7 +3102,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/did-i-ever-tell-you-im-vegyn",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-127.svg"
+    "image": "covers/CJ-127.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-128",
@@ -2796,7 +3128,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/top-tracks-2026-viral-hits",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-128.svg"
+    "image": "covers/CJ-128.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-129",
@@ -2820,7 +3153,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/mothersunday-inarama",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-129.svg"
+    "image": "covers/CJ-129.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-130",
@@ -2844,7 +3178,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/testv1-engines101",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-130.svg"
+    "image": "covers/CJ-130.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-131",
@@ -2868,7 +3203,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/groove-flow",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-131.svg"
+    "image": "covers/CJ-131.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-132",
@@ -2892,7 +3228,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/refined-funky-vibes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-132.svg"
+    "image": "covers/CJ-132.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-133",
@@ -2916,7 +3253,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/groove-emotion",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-133.svg"
+    "image": "covers/CJ-133.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-134",
@@ -2940,7 +3278,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/dan-flip-fuel-v2",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-134.svg"
+    "image": "covers/CJ-134.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-135",
@@ -2964,7 +3303,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/anytime-shill-vi",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-135.svg"
+    "image": "covers/CJ-135.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-136",
@@ -2988,7 +3328,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/curated-vibes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-136.svg"
+    "image": "covers/CJ-136.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-137",
@@ -3012,7 +3353,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/pop-remixes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-137.svg"
+    "image": "covers/CJ-137.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-138",
@@ -3037,7 +3379,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/indie-electro-remix-masters",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-138.svg"
+    "image": "covers/CJ-138.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-139",
@@ -3062,7 +3405,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/soul-funk-incense-monday",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-139.svg"
+    "image": "covers/CJ-139.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-140",
@@ -3086,7 +3430,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/krafty-meets-bag",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-140.svg"
+    "image": "covers/CJ-140.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-141",
@@ -3110,7 +3455,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/memory-pop-with-a-twist",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-141.svg"
+    "image": "covers/CJ-141.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-142",
@@ -3135,7 +3481,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/rare-bass-driven-grooves",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-142.svg"
+    "image": "covers/CJ-142.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-143",
@@ -3159,7 +3506,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/upbeat-pop-remixes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-143.svg"
+    "image": "covers/CJ-143.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-144",
@@ -3183,7 +3531,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/chill-jazzy-vibes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-144.svg"
+    "image": "covers/CJ-144.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-145",
@@ -3207,7 +3556,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/pop-bangers-remix-party",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-145.svg"
+    "image": "covers/CJ-145.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-146",
@@ -3231,7 +3581,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/left-field-flirt-funk",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-146.svg"
+    "image": "covers/CJ-146.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-147",
@@ -3256,7 +3607,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/musicpartner-loves-workout",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-147.svg"
+    "image": "covers/CJ-147.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-148",
@@ -3281,7 +3633,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/musicpartner-loves-workout-2",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-148.svg"
+    "image": "covers/CJ-148.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-149",
@@ -3305,7 +3658,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/for-u",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-149.svg"
+    "image": "covers/CJ-149.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-150",
@@ -3329,7 +3683,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/nu-pad-groove-remixes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-150.svg"
+    "image": "covers/CJ-150.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-151",
@@ -3353,7 +3708,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sun-kissed-funk",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-151.svg"
+    "image": "covers/CJ-151.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-152",
@@ -3377,7 +3733,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/pelican-playlist",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-152.svg"
+    "image": "covers/CJ-152.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-153",
@@ -3402,7 +3759,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/late-night-panthers-chillish",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-153.svg"
+    "image": "covers/CJ-153.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-154",
@@ -3426,7 +3784,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/meh-re-did",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-154.svg"
+    "image": "covers/CJ-154.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-155",
@@ -3450,7 +3809,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/letdown-cj",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-155.svg"
+    "image": "covers/CJ-155.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-156",
@@ -3474,7 +3834,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/tubbs-wilesa-radio",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-156.svg"
+    "image": "covers/CJ-156.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-157",
@@ -3498,7 +3859,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/requested-tracks",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-157.svg"
+    "image": "covers/CJ-157.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-158",
@@ -3522,7 +3884,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/forgive-yourself-slowly",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-158.svg"
+    "image": "covers/CJ-158.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-159",
@@ -3547,7 +3910,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/copy-of-spaece-g-at-v1-3-37s",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-159.svg"
+    "image": "covers/CJ-159.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-160",
@@ -3572,7 +3936,8 @@
     "url": "https://soundcloud.com/discover/sets/liked-by::94451321",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-160.svg"
+    "image": "covers/CJ-160.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-161",
@@ -3596,7 +3961,8 @@
     "url": "https://soundcloud.com/soundcloud-the-peak/sets/level-up-edm-next",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-161.svg"
+    "image": "covers/CJ-161.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-162",
@@ -3620,7 +3986,8 @@
     "url": "https://soundcloud.com/dj-reorange/sets/ol-skool",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-162.svg"
+    "image": "covers/CJ-162.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-163",
@@ -3645,7 +4012,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/the-annual-2008-ish-ministry",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-163.svg"
+    "image": "covers/CJ-163.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-164",
@@ -3669,7 +4037,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/beats",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-164.svg"
+    "image": "covers/CJ-164.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-165",
@@ -3694,7 +4063,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/cratejuice-vol3-rare-funk",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-165.svg"
+    "image": "covers/CJ-165.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-166",
@@ -3718,7 +4088,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/0-approval",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-166.svg"
+    "image": "covers/CJ-166.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-167",
@@ -3742,7 +4113,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/xmas-ma",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-167.svg"
+    "image": "covers/CJ-167.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-168",
@@ -3767,7 +4139,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/fancy-playlist-for-fancy",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-168.svg"
+    "image": "covers/CJ-168.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-169",
@@ -3791,7 +4164,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sexy-house-2018",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-169.svg"
+    "image": "covers/CJ-169.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-170",
@@ -3816,7 +4190,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/friction-after-forgiveness",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-170.svg"
+    "image": "covers/CJ-170.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-171",
@@ -3840,7 +4215,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/spring-matress-52",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-171.svg"
+    "image": "covers/CJ-171.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-172",
@@ -3864,7 +4240,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/drive-ausie-oy",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-172.svg"
+    "image": "covers/CJ-172.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-173",
@@ -3889,7 +4266,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/cj-cheeky-night-drive-funk",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-173.svg"
+    "image": "covers/CJ-173.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-174",
@@ -3914,7 +4292,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/late-night-drive-with-fem-vox",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-174.svg"
+    "image": "covers/CJ-174.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-175",
@@ -3938,7 +4317,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/cosmic-disco-vibes",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-175.svg"
+    "image": "covers/CJ-175.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-176",
@@ -3962,7 +4342,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/fall-change-2026",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-176.svg"
+    "image": "covers/CJ-176.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-177",
@@ -3986,7 +4367,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/cult-favorite-grooves",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-177.svg"
+    "image": "covers/CJ-177.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-178",
@@ -4010,7 +4392,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/dusty-desert-soul",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-178.svg"
+    "image": "covers/CJ-178.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-179",
@@ -4035,7 +4418,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/to-sharingz-behind-my-mothers",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-179.svg"
+    "image": "covers/CJ-179.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-180",
@@ -4059,7 +4443,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/gang-starry",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-180.svg"
+    "image": "covers/CJ-180.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-181",
@@ -4083,7 +4468,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/bangers-redone",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-181.svg"
+    "image": "covers/CJ-181.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-182",
@@ -4107,7 +4493,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/pop-wak-test",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-182.svg"
+    "image": "covers/CJ-182.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-183",
@@ -4132,7 +4519,8 @@
     "url": "https://soundcloud.com/discover/sets/personalized-tracks::adam-marsh-356085218:326028318",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-183.svg"
+    "image": "covers/CJ-183.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-184",
@@ -4156,7 +4544,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/anchonom",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-184.svg"
+    "image": "covers/CJ-184.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-185",
@@ -4180,7 +4569,8 @@
     "url": "https://soundcloud.com/buzzing-playlists/sets/buzzing-indie",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-185.svg"
+    "image": "covers/CJ-185.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-186",
@@ -4204,7 +4594,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/anc-cj-genretest",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-186.svg"
+    "image": "covers/CJ-186.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-187",
@@ -4228,7 +4619,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/nonfunk_chill_v1",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-187.svg"
+    "image": "covers/CJ-187.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-188",
@@ -4252,7 +4644,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/untitled-playlist-1",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-188.svg"
+    "image": "covers/CJ-188.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-189",
@@ -4276,7 +4669,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/alone-abab",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-189.svg"
+    "image": "covers/CJ-189.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-190",
@@ -4300,7 +4694,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/fb-06-gaz-bday",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-190.svg"
+    "image": "covers/CJ-190.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-191",
@@ -4324,7 +4719,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/pop-fem-vox",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-191.svg"
+    "image": "covers/CJ-191.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-192",
@@ -4348,7 +4744,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/pre-drops-4-me",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-192.svg"
+    "image": "covers/CJ-192.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-193",
@@ -4372,7 +4769,8 @@
     "url": "https://soundcloud.com/discover/sets/new-for-you::adam-marsh-356085218",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-193.svg"
+    "image": "covers/CJ-193.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-194",
@@ -4397,7 +4795,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/feb-1-2025-mixtape-for-play",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-194.svg"
+    "image": "covers/CJ-194.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-195",
@@ -4421,7 +4820,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/anc",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-195.svg"
+    "image": "covers/CJ-195.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-196",
@@ -4445,7 +4845,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/movin-on-up",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-196.svg"
+    "image": "covers/CJ-196.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-197",
@@ -4469,7 +4870,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/december-sunday-chill",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-197.svg"
+    "image": "covers/CJ-197.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-198",
@@ -4493,7 +4895,8 @@
     "url": "https://soundcloud.com/james-buckland/sets/fort-knox-five",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-198.svg"
+    "image": "covers/CJ-198.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-199",
@@ -4517,7 +4920,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/copy-of-dj-in-the-mix",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-199.svg"
+    "image": "covers/CJ-199.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-200",
@@ -4541,7 +4945,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/shawty-hype",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-200.svg"
+    "image": "covers/CJ-200.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-201",
@@ -4565,7 +4970,8 @@
     "url": "https://soundcloud.com/officialxephyr/sets/glitch-hop",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-201.svg"
+    "image": "covers/CJ-201.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-202",
@@ -4589,7 +4995,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/lil-mx-insprd",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-202.svg"
+    "image": "covers/CJ-202.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-203",
@@ -4613,7 +5020,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sunday-jazzhop",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-203.svg"
+    "image": "covers/CJ-203.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-204",
@@ -4637,7 +5045,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/turkish-house-funk",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-204.svg"
+    "image": "covers/CJ-204.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-205",
@@ -4661,7 +5070,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/dig-it-stax",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-205.svg"
+    "image": "covers/CJ-205.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-206",
@@ -4685,7 +5095,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/fem-vox",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-206.svg"
+    "image": "covers/CJ-206.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-207",
@@ -4709,7 +5120,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/soul-tuff-guy-and-mates",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-207.svg"
+    "image": "covers/CJ-207.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-208",
@@ -4733,7 +5145,8 @@
     "url": "https://soundcloud.com/user-424904585/sets/misc-4",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-208.svg"
+    "image": "covers/CJ-208.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-209",
@@ -4757,7 +5170,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/mmm-mirror-maze-manly",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-209.svg"
+    "image": "covers/CJ-209.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-210",
@@ -4782,7 +5196,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/maacaas-for-yo-shit-manan",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-210.svg"
+    "image": "covers/CJ-210.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-211",
@@ -4807,7 +5222,8 @@
     "url": "https://soundcloud.com/anyelostyle/sets/mcdonalds-music-playlist-o",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-211.svg"
+    "image": "covers/CJ-211.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-212",
@@ -4831,7 +5247,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/set15-lololo",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-212.svg"
+    "image": "covers/CJ-212.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-213",
@@ -4856,7 +5273,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/copy-of-beach-club-vibes-2025",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-213.svg"
+    "image": "covers/CJ-213.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-214",
@@ -4881,7 +5299,8 @@
     "url": "https://soundcloud.com/stormmusicgroup/sets/beach-club-music",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-214.svg"
+    "image": "covers/CJ-214.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-215",
@@ -4906,7 +5325,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/remixedclub-dance-mix-tiktok",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-215.svg"
+    "image": "covers/CJ-215.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-216",
@@ -4931,7 +5351,8 @@
     "url": "https://soundcloud.com/dirk-apoll-wolter-196048589/sets/remix-music-2023-dj-remixed",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-216.svg"
+    "image": "covers/CJ-216.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-217",
@@ -4955,7 +5376,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sept-house-free-d",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-217.svg"
+    "image": "covers/CJ-217.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-218",
@@ -4979,7 +5401,8 @@
     "url": "https://soundcloud.com/henry-milne-78562585/sets/t-house-free-d",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-218.svg"
+    "image": "covers/CJ-218.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-219",
@@ -5003,7 +5426,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/untitled-playlist",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-219.svg"
+    "image": "covers/CJ-219.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-220",
@@ -5027,7 +5451,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/copy-of-feel-good-rap",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-220.svg"
+    "image": "covers/CJ-220.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-221",
@@ -5051,7 +5476,8 @@
     "url": "https://soundcloud.com/sc-playlists/sets/bounce-and-groove",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-221.svg"
+    "image": "covers/CJ-221.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-222",
@@ -5075,7 +5501,8 @@
     "url": "https://soundcloud.com/trending-music-au/sets/house",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-222.svg"
+    "image": "covers/CJ-222.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-223",
@@ -5099,7 +5526,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/copy-of-pop-energy",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-223.svg"
+    "image": "covers/CJ-223.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-224",
@@ -5123,7 +5551,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/synth-city",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-224.svg"
+    "image": "covers/CJ-224.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-225",
@@ -5147,7 +5576,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/bleu-neuw",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-225.svg"
+    "image": "covers/CJ-225.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-226",
@@ -5172,7 +5602,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/tthe-end-24-day-augmentists-c",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-226.svg"
+    "image": "covers/CJ-226.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-227",
@@ -5196,7 +5627,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/soundkstax",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-227.svg"
+    "image": "covers/CJ-227.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-228",
@@ -5221,7 +5653,8 @@
     "url": "https://soundcloud.com/jedijace/sets/jazz-funk-soul-acid-groove",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-228.svg"
+    "image": "covers/CJ-228.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-229",
@@ -5245,7 +5678,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/calvin-insists",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-229.svg"
+    "image": "covers/CJ-229.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-230",
@@ -5269,7 +5703,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/cello-mix",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-230.svg"
+    "image": "covers/CJ-230.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-231",
@@ -5293,7 +5728,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sumdaze-in-srini-shpop",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-231.svg"
+    "image": "covers/CJ-231.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-232",
@@ -5317,7 +5753,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/sunday-mix-do-it",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-232.svg"
+    "image": "covers/CJ-232.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-233",
@@ -5341,7 +5778,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/u",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-233.svg"
+    "image": "covers/CJ-233.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-234",
@@ -5365,7 +5803,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/t",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-234.svg"
+    "image": "covers/CJ-234.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-235",
@@ -5389,7 +5828,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/s-1",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-235.svg"
+    "image": "covers/CJ-235.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-236",
@@ -5413,7 +5853,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/s",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-236.svg"
+    "image": "covers/CJ-236.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-237",
@@ -5438,7 +5879,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/untitled-playlist-nina-strings",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-237.svg"
+    "image": "covers/CJ-237.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-238",
@@ -5462,7 +5904,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/queen-dead-your-dead",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-238.svg"
+    "image": "covers/CJ-238.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-239",
@@ -5487,7 +5930,8 @@
     "url": "https://soundcloud.com/storemusic-974485696/sets/bohemian-rhapsody-queen-mama",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-239.svg"
+    "image": "covers/CJ-239.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-240",
@@ -5511,7 +5955,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/qennn-bee",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-240.svg"
+    "image": "covers/CJ-240.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-241",
@@ -5536,7 +5981,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/john-mayer-no-trust-inspired",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-241.svg"
+    "image": "covers/CJ-241.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-242",
@@ -5560,7 +6006,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/hous-sunday-dad-5",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-242.svg"
+    "image": "covers/CJ-242.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-243",
@@ -5585,7 +6032,8 @@
     "url": "https://soundcloud.com/bestplaylistcurator/sets/rooftop-2025-good-vibes-2025",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-243.svg"
+    "image": "covers/CJ-243.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-244",
@@ -5610,7 +6058,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/copy-of-renegades-of-jazz-mojo",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-244.svg"
+    "image": "covers/CJ-244.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-245",
@@ -5635,7 +6084,8 @@
     "url": "https://soundcloud.com/amine-laidia/sets/renegades-of-jazz-mojo-club-1",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-245.svg"
+    "image": "covers/CJ-245.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-246",
@@ -5660,7 +6110,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/copy-of-funk-mixes-funky-house",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-246.svg"
+    "image": "covers/CJ-246.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-247",
@@ -5684,7 +6135,8 @@
     "url": "https://soundcloud.com/djfraise/sets/funk-mixes",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-247.svg"
+    "image": "covers/CJ-247.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-248",
@@ -5709,7 +6161,8 @@
     "url": "https://soundcloud.com/calvinharris/sets/blessings-the-remixes-part-2",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-248.svg"
+    "image": "covers/CJ-248.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-249",
@@ -5733,7 +6186,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/almospring",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-249.svg"
+    "image": "covers/CJ-249.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-250",
@@ -5757,7 +6211,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/frog-metal-cover",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-250.svg"
+    "image": "covers/CJ-250.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-251",
@@ -5782,7 +6237,8 @@
     "url": "https://soundcloud.com/user-258640887/sets/metal-covers-by-leo-moracchioli",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-251.svg"
+    "image": "covers/CJ-251.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-252",
@@ -5807,7 +6263,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/untitled-playlistroxete-mash",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-252.svg"
+    "image": "covers/CJ-252.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-253",
@@ -5831,7 +6288,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/hottest-100-les-do-it",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-253.svg"
+    "image": "covers/CJ-253.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-254",
@@ -5855,7 +6313,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/june-1-25",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-254.svg"
+    "image": "covers/CJ-254.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-255",
@@ -5880,7 +6339,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/cold-x-ri-upnjump-b-etter",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-255.svg"
+    "image": "covers/CJ-255.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-256",
@@ -5904,7 +6364,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/jojo-we-creak-hand",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-256.svg"
+    "image": "covers/CJ-256.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-257",
@@ -5929,7 +6390,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/copy-of-throwback-rap-pop",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-257.svg"
+    "image": "covers/CJ-257.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-258",
@@ -5953,7 +6415,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/carosideexreiors",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-258.svg"
+    "image": "covers/CJ-258.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-259",
@@ -5977,7 +6440,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/phat-mix",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-259.svg"
+    "image": "covers/CJ-259.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-260",
@@ -6001,7 +6465,8 @@
     "url": "https://soundcloud.com/discover/sets/personalized-tracks::adam-marsh-356085218:1324021750",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-260.svg"
+    "image": "covers/CJ-260.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-261",
@@ -6025,7 +6490,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/now",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-261.svg"
+    "image": "covers/CJ-261.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-262",
@@ -6049,7 +6515,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/djay",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-262.svg"
+    "image": "covers/CJ-262.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-263",
@@ -6073,7 +6540,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/fnk-beat-recons",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-263.svg"
+    "image": "covers/CJ-263.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-264",
@@ -6097,7 +6565,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/jazzy-inspired",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-264.svg"
+    "image": "covers/CJ-264.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-265",
@@ -6122,7 +6591,8 @@
     "url": "https://soundcloud.com/jack-anderson-423154711/sets/whenever-you-come-around",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-265.svg"
+    "image": "covers/CJ-265.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-266",
@@ -6147,7 +6617,8 @@
     "url": "https://soundcloud.com/space_goat_v1/sets/glitch-hop-that-doesnt-suck-1",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-266.svg"
+    "image": "covers/CJ-266.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-267",
@@ -6171,7 +6642,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/funk-soul-crunch-hop",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-267.svg"
+    "image": "covers/CJ-267.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-268",
@@ -6196,7 +6668,8 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/copy-of-808-brigade-you-know",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-268.svg"
+    "image": "covers/CJ-268.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-269",
@@ -6221,7 +6694,8 @@
     "url": "https://soundcloud.com/playlistsmusic/sets/hits-of-the-80s-classic-pop",
     "owned": false,
     "artwork_status": "external — map only",
-    "image": "covers/CJ-269.svg"
+    "image": "covers/CJ-269.svg",
+    "tracklist_status": "index-only"
   },
   {
     "id": "CJ-270",
@@ -6245,6 +6719,7 @@
     "url": "https://soundcloud.com/adam-marsh-356085218/sets/mixing",
     "owned": true,
     "artwork_status": "pending",
-    "image": "covers/CJ-270.svg"
+    "image": "covers/CJ-270.svg",
+    "tracklist_status": "index-only"
   }
 ]

@@ -1,37 +1,13 @@
 # CRATE JUICE — Crate Map
 
-256 linked playlists, 225 owned playlists, 31 saved/external entries.
+`catalogue.json` is the single canonical catalogue. Existing IDs, source links, artwork status and favourites are preserved. Exact ordered recordings live in an entry's `tracks` array. An `index-only` entry is a playlist link, not an exported tracklist.
 
-Live private deployment: https://crate-juice-map.xntfsstt5z.chatgpt.site
+Run `python3 music_lists.py --check` to validate and `python3 music_lists.py` to rebuild derived exports. Use `--upsert /absolute/path/entry.json` to update a stable entry and regenerate outputs. Do not edit generated `index.html`, `offline.html`, `music-index.txt`, `revision.json` or `sw.js` directly.
 
-`catalogue.json` is the canonical catalogue. IDs stay attached to the same playlist.
-The app searches title, symbol, edition and ID, filters by family and ownership,
-and saves favourites locally on each device. Playlist tiles open exact observed
-SoundCloud URLs. Private playlists require the owner’s SoundCloud sign-in.
+Open the hosted map at https://crate-juice-map.xntfsstt5z.chatgpt.site . Exact YouTube recording IDs generate fresh queues when clicked, in chunks of at most 50. Temporary TL queue IDs are not canonical links. Unresolved exact platform mappings remain explicit. A queue is not a named public playlist saved in an account.
 
-## Local run
+Open `offline.html` directly without a server. It embeds all catalogue data, archived tracklists, covers, CSS and JavaScript. Audio streams still need internet. Downloaded snapshots do not update themselves; replace them from the live map when online. The hosted page checks the canonical catalogue when opened/foregrounded online and uses its service worker and local catalogue cache offline after first preparation. Browser storage can be evicted; the downloaded HTML is the independent offline fallback.
 
-From this folder, run `python3 -m http.server 8080` and open http://localhost:8080.
-Do not double-click index.html: browsers generally block local-file JSON requests.
+The Site deployment is a generated projection of this directory. Preserve its identity `appgprj_6ae092c4a3748191a1d56b61841da627` and current audience. Synchronize the source before deploying through Sites. Do not modify the existing JUICE CONTROL server, music data roots or source playlists as part of catalogue maintenance.
 
-## Artwork and maintenance
-
-Run `python3 build_covers.py` after editing the catalogue to regenerate all 256
-editable SVG covers. No dependencies or external assets are needed.
-Browser Save Image downloads SVG; export to JPG/PNG for SoundCloud uploads.
-
-The four verified SoundCloud replacements are CJ-002, CJ-007, CJ-009 and CJ-017.
-221 owned-playlist uploads remain pending. A generated cover is not proof of an
-upload. Update `artwork_status` only after confirming the saved image on SoundCloud.
-External playlist covers are local map graphics; only their owners can change
-the SoundCloud originals. No source playlists were renamed, deleted or made public.
-
-Catalogue snapshot: 27 October 2026. Families are filing suggestions based on
-playlist titles, not a track-level audio analysis. Favourites do not sync between
-devices. The application works on a normal static web server and under a subpath.
-
-## JUICE Control
-
-The launcher in `CONTROL/server.py` points to the live private map. Pull the JUICE
-repository and restart Control to receive it. The hosted map and this Git source
-are separately deployed; the live version must be published after source changes.
+See `SKILL_INDEX.md` for the automatically applied Music List Vault skill. Source playlists keep their existing privacy. No streaming audio is mirrored or downloaded.
