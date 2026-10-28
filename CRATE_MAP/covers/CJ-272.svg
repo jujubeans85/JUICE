@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#343b40"/>
+  <circle cx="318" cy="112" r="56" fill="#e9d56d"/>
+  <path d="M0 150 Q90 110 177 151 T400 145 V224 H0Z" fill="#6b7479"/>
+  <path d="M0 181 Q90 140 183 182 T400 176 V248 H0Z" fill="#4b555b"/>
+  <text x="26" y="40" fill="#f4f0e2" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">CRATE JUICE / CJ-272</text>
+  <text x="25" y="275" fill="#e9d56d" font-family="Arial,sans-serif" font-weight="bold" font-size="100">We 002</text>
+  <text x="27" y="323" fill="#f4f0e2" font-family="Arial,sans-serif" font-size="23" font-weight="bold">GREY SKIES,</text>
+  <text x="27" y="355" fill="#f4f0e2" font-family="Arial,sans-serif" font-size="23" font-weight="bold">GOOD NEWS</text>
+  <text x="27" y="383" fill="#bec5c4" font-family="Arial,sans-serif" font-size="12" letter-spacing="1">SOMBRE SOUND / HAPPY HEART</text>
+</svg>
