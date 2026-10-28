@@ -11,3 +11,9 @@ Open `offline.html` directly without a server. It embeds all catalogue data, arc
 The Site deployment is a generated projection of this directory. Preserve its identity `appgprj_6ae092c4a3748191a1d56b61841da627` and current audience. Synchronize the source before deploying through Sites. Do not modify the existing JUICE CONTROL server, music data roots or source playlists as part of catalogue maintenance.
 
 See `SKILL_INDEX.md` for the automatically applied Music List Vault skill. Source playlists keep their existing privacy. No streaming audio is mirrored or downloaded.
+
+## Music history atlas
+
+The research pilot is at `/atlas/`, linked from the listening library. `atlas/history.json` is the canonical history graph; exact personal recording records stay in `catalogue.json`. The initial routes reference canonical YouTube recording keys rather than a competing catalogue. The build brief at `atlas/research.html` distinguishes implemented features, source findings and production work. No listening history has been inferred from saved playlists.
+
+Run `node --test CRATE_MAP/atlas/core.test.mjs` from the repository root, then rebuild the index with `python3 CRATE_MAP/music_lists.py`. The globe and all vendor assets are locally served. Imported CRATE JUICE JSON stays in browser storage and does not write to this repository. Atlas browsing is online-first; the standalone listening-library export remains independent. Audio needs internet.

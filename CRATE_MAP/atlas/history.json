@@ -1,0 +1,1127 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-28",
+  "scope": "Research pilot, not a complete history or listening-history import",
+  "sources": [
+    {
+      "id": "porter",
+      "title": "Gregory Porter — official biography",
+      "url": "https://www.gregoryporter.com/about/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "cole",
+      "title": "Blue Note — Nat King Cole & Me, artist interview",
+      "url": "https://www.bluenote.com/spotlight/gregory-porter-nat-king-cole-me/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "polar",
+      "title": "Polar Music Prize — Sting, ceremony and performance",
+      "url": "https://www.polarmusicprize.org/laureates/sting/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "sting",
+      "title": "Sting — It’s Probably Me, release notes",
+      "url": "https://sting.com/products/it-s-probably-me-cd",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": "Page contains an apparently erroneous 1983 live date; that date is not used."
+    },
+    {
+      "id": "grace",
+      "title": "Library of Congress — Amazing Grace timeline",
+      "url": "https://www.loc.gov/collections/amazing-grace/articles-and-essays/timeline/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "newton",
+      "title": "Cowper & Newton Museum — Amazing Grace",
+      "url": "https://cowperandnewtonmuseum.org.uk/bulletin/amazing-grace/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "spirituals",
+      "title": "Library of Congress — Spirituals",
+      "url": "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/ritual-and-worship/spirituals/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "fisk",
+      "title": "Smithsonian — Fisk Jubilee Singers and Ella Sheppard",
+      "url": "https://music.si.edu/story/fisk-jubilee-singers-preserving-african-american-spirituals",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "fisk-audio",
+      "title": "Library of Congress — Swing Low, Sweet Chariot, 1 December 1909",
+      "url": "https://www.loc.gov/item/jukebox-128141/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "grace-audio",
+      "title": "Library of Congress — New Britain, July 1922",
+      "url": "https://www.loc.gov/item/ihas.200049050/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "migration",
+      "title": "Library of Congress — Blues and the Great Migration",
+      "url": "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/blues/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "vega",
+      "title": "Suzanne Vega — official biography",
+      "url": "https://www.suzannevega.com/bio",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "mp3",
+      "title": "Fraunhofer — Karlheinz Brandenburg interview",
+      "url": "https://www.fraunhofer.de/en/quick-links/alumni/news/mp3-inventor-brandenburg-interview.html",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "vega-loc",
+      "title": "Library of Congress — Suzanne Vega and the birth of MP3",
+      "url": "https://www.loc.gov/static/programs/national-recording-preservation-plan/tools-and-resources/documents/Interview_Susan-Vega.pdf",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": "This essay contains chronology errors (including its Seinfeld date and DNA interval); use artist/institute accounts and release records to cross-check dates."
+    },
+    {
+      "id": "dna",
+      "title": "MusicBrainz — DNA featuring Suzanne Vega, 1990 releases",
+      "url": "https://musicbrainz.org/release-group/73428411-e74b-3b8a-8d8c-89243c6826fe",
+      "kind": "community metadata",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "amk-video",
+      "title": "AnnenMayKantereit — exact saved cover video",
+      "url": "https://www.youtube.com/watch?v=5r3B7yz6J68",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "sabbath",
+      "title": "Tony Iommi — Volume 4, recording and production credits",
+      "url": "https://www.iommi.com/album/volume-4/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "bradley",
+      "title": "Daptone — Charles Bradley biography",
+      "url": "https://daptonerecords.com/artists/charles-bradley/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "bradley-single",
+      "title": "Daptone — Changes / Ain’t It a Sin, 2013",
+      "url": "https://daptonerecords.com/discography/changes-aint-it-a-sin/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "daptone",
+      "title": "Daptone — label history, Brooklyn 2001",
+      "url": "https://daptonerecords.com/about/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "bradley-live",
+      "title": "Toronto Star — exact archived Changes performance",
+      "url": "https://www.youtube.com/watch?v=zfaOf70M4xs",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": "Exact video preserved from CJ-271. Audio not auditioned. Performance date requires primary-source recheck."
+    },
+    {
+      "id": "womack",
+      "title": "Rock & Roll Hall of Fame — Bobby Womack",
+      "url": "https://rockhall.com/inductees/bobby-womack/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "fink",
+      "title": "Ninja Tune — Fink, biography and artist recollections",
+      "url": "https://ninjatune.net/artist/fink",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "blackpumas",
+      "title": "KCRW — Black Pumas interview and Austin formation",
+      "url": "https://www.kcrw.com/shows/live-from/stories/black-pumas-chronicles-of-a-diamond-live-video-interview",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "lianne",
+      "title": "AEG Presents — Lianne La Havas biography",
+      "url": "https://www.aegpresents.co.uk/event/lianne-la-havas/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "hozier",
+      "title": "Bray — local notable residents",
+      "url": "https://bray.ie/famous-residents-bray/",
+      "kind": "primary",
+      "accessed": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "bradley-interview",
+      "title": "Charles Bradley — first-person interview, Under the Radar",
+      "url": "https://www.undertheradarmag.com/interviews/charles_bradley",
+      "kind": "primary interview",
+      "accessed": "2026-10-28",
+      "note": "Bradley describes Brenneck bringing him the Black Sabbath song."
+    },
+    {
+      "id": "amk-origin",
+      "title": "Universal Music — AnnenMayKantereit biography",
+      "url": "https://www.universal-music.de/annenmaykantereit/biografie",
+      "kind": "primary label biography",
+      "accessed": "2026-10-28",
+      "note": "Cologne is the band’s home association, not a claim about cover session location."
+    },
+    {
+      "id": "rooks-origin",
+      "title": "Universal Music — Giant Rooks biography / Hamm origin",
+      "url": "https://www.universalmusic.ca/2024/02/02/giant-rooks-debut-new-album-how-have-you-been-out-now/",
+      "kind": "primary label biography",
+      "accessed": "2026-10-28",
+      "note": "Hamm is the band’s origin, not the cover recording location."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "grace-1773",
+      "title": "A text before a fixed tune",
+      "date": "1773",
+      "start": 1773,
+      "end": 1773,
+      "place": {
+        "name": "Olney, England",
+        "lat": 52.153,
+        "lon": -0.702,
+        "role": "hymn text / sermon",
+        "precision": "city centroid"
+      },
+      "kind": "history",
+      "description": "John Newton wrote Amazing Grace for a 1773 sermon. The familiar melody came later. This is hymn history, not evidence that this particular hymn directly influenced Porter’s saved performance.",
+      "sources": [
+        "newton",
+        "grace"
+      ],
+      "play": null,
+      "people": [
+        "John Newton"
+      ],
+      "tags": [
+        "hymn",
+        "religion",
+        "text"
+      ]
+    },
+    {
+      "id": "new-britain",
+      "title": "Words meet New Britain",
+      "date": "1835",
+      "start": 1835,
+      "end": 1835,
+      "place": {
+        "name": "South Carolina, United States",
+        "lat": 34,
+        "lon": -81,
+        "role": "William Walker’s region; not the printing site",
+        "precision": "regional anchor"
+      },
+      "kind": "instrument",
+      "description": "William Walker paired the text with New Britain in Southern Harmony. Hear a short modern synthesizer demonstration of the traditional melody; it is not a recording or reconstruction of an 1835 performance.",
+      "sources": [
+        "grace",
+        "newton"
+      ],
+      "play": {
+        "type": "synth",
+        "label": "Hear the traditional melody · modern demonstration",
+        "verification": "modern educational synthesis; not historical audio"
+      },
+      "people": [
+        "William Walker"
+      ],
+      "tags": [
+        "hymn",
+        "notation",
+        "melody"
+      ]
+    },
+    {
+      "id": "fisk-1871",
+      "title": "Students carry spirituals abroad",
+      "date": "1871–1878",
+      "start": 1871,
+      "end": 1878,
+      "place": {
+        "name": "Nashville, United States",
+        "lat": 36.1627,
+        "lon": -86.7816,
+        "role": "Fisk University / touring ensemble origin",
+        "precision": "city centroid"
+      },
+      "kind": "history",
+      "description": "The Fisk Jubilee Singers toured to support their university. Pianist and mentor Ella Sheppard helped sustain the ensemble. This spiritual tradition is a parallel historical context; it is not presented as a descendant of Amazing Grace. The audio example is from a later ensemble in 1909.",
+      "sources": [
+        "fisk",
+        "spirituals"
+      ],
+      "play": {
+        "type": "source",
+        "url": "https://www.loc.gov/item/jukebox-128141/",
+        "label": "Hear a later Fisk ensemble · 1909 archive",
+        "verification": "archive catalogue verified; streaming not auditioned"
+      },
+      "people": [
+        "Ella Sheppard",
+        "Thomas Rutling",
+        "Fisk student singers"
+      ],
+      "tags": [
+        "spiritual",
+        "education",
+        "emancipation",
+        "touring"
+      ]
+    },
+    {
+      "id": "fisk-1909",
+      "title": "A spiritual enters the record",
+      "date": "1 December 1909",
+      "start": 1909,
+      "end": 1909,
+      "place": {
+        "name": "Camden, New Jersey",
+        "lat": 39.9259,
+        "lon": -75.1196,
+        "role": "recording session",
+        "precision": "city centroid"
+      },
+      "kind": "recording",
+      "description": "The Library of Congress identifies this Victor recording of Swing Low, Sweet Chariot, its date, location and named singers. The recording date is separate from the much older musical tradition.",
+      "sources": [
+        "fisk-audio"
+      ],
+      "play": {
+        "type": "source",
+        "url": "https://www.loc.gov/item/jukebox-128141/",
+        "label": "Play the 1909 recording at the archive",
+        "verification": "archive catalogue verified; streaming not auditioned"
+      },
+      "people": [
+        "John Wesley Work",
+        "J. A. Myers",
+        "Noah Walker Ryder",
+        "Alfred Garfield King"
+      ],
+      "tags": [
+        "spiritual",
+        "quartet",
+        "recording"
+      ]
+    },
+    {
+      "id": "migration",
+      "title": "Migration changes the band",
+      "date": "1920s–1950s",
+      "start": 1920,
+      "end": 1959,
+      "place": {
+        "name": "Chicago, United States",
+        "lat": 41.8781,
+        "lon": -87.6298,
+        "role": "one destination; not the whole migration",
+        "precision": "city anchor for a multi-region process"
+      },
+      "kind": "history",
+      "description": "The movement of Black Americans from the South helped carry blues to northern cities. Amplified ensembles and electric guitars reshaped urban blues. This is scene history, not a documented influence on every later rock recording.",
+      "sources": [
+        "migration"
+      ],
+      "play": null,
+      "people": [],
+      "tags": [
+        "migration",
+        "blues",
+        "electric guitar",
+        "work"
+      ]
+    },
+    {
+      "id": "cole-1948",
+      "title": "A record in a family collection",
+      "date": "1948",
+      "start": 1948,
+      "end": 1948,
+      "place": null,
+      "kind": "recording",
+      "description": "Nat King Cole recorded Nature Boy in 1948. Porter explicitly names Cole as an influence. This example illustrates the artist’s sound; it is not proof that this exact recording supplied material for It’s Probably Me. Session geography is not established here.",
+      "sources": [
+        "cole"
+      ],
+      "play": {
+        "type": "youtube",
+        "id": "eY_xSaf4I2w",
+        "url": "https://www.youtube.com/watch?v=eY_xSaf4I2w",
+        "label": "Hear Nat King Cole · Nature Boy",
+        "verification": "metadata-verified; playback not auditioned"
+      },
+      "people": [
+        "Nat King Cole"
+      ],
+      "tags": [
+        "jazz",
+        "voice",
+        "family listening"
+      ]
+    },
+    {
+      "id": "ruth-porter",
+      "title": "The person who put the record on",
+      "date": "Porter’s childhood · date unresolved",
+      "start": null,
+      "end": null,
+      "place": {
+        "name": "Bakersfield, United States",
+        "lat": 35.3733,
+        "lon": -119.0187,
+        "role": "upbringing and family listening",
+        "precision": "city centroid"
+      },
+      "kind": "person",
+      "description": "Ruth Porter’s ministry and record collection connected Gregory with gospel and Nat King Cole. A family member belongs in this atlas as much as a star or producer. Exact childhood dates are not assigned.",
+      "sources": [
+        "porter",
+        "cole"
+      ],
+      "play": null,
+      "people": [
+        "Ruth Porter",
+        "Gregory Porter"
+      ],
+      "tags": [
+        "gospel",
+        "family",
+        "mentorship"
+      ]
+    },
+    {
+      "id": "sting-1992",
+      "title": "A song written for cinema",
+      "date": "1992",
+      "start": 1992,
+      "end": 1992,
+      "place": null,
+      "kind": "recording",
+      "description": "Sting’s release notes credit Eric Clapton and Michael Kamen as co-writers and identify the song’s film-theme connection. This original and Porter’s later cover are distinct recordings of the same work. The session location is unresolved.",
+      "sources": [
+        "sting"
+      ],
+      "play": {
+        "type": "youtube",
+        "id": "PEDSiTCw3kI",
+        "url": "https://www.youtube.com/watch?v=PEDSiTCw3kI",
+        "label": "Hear Sting · It’s Probably Me",
+        "verification": "metadata-verified; playback not auditioned"
+      },
+      "people": [
+        "Sting",
+        "Eric Clapton",
+        "Michael Kamen"
+      ],
+      "tags": [
+        "film",
+        "pop",
+        "songwriting"
+      ]
+    },
+    {
+      "id": "porter-2017",
+      "title": "Your recording: Stockholm",
+      "date": "15 June 2017",
+      "start": 2017,
+      "end": 2017,
+      "place": {
+        "name": "Stockholm, Sweden",
+        "lat": 59.3293,
+        "lon": 18.0686,
+        "role": "Polar Music Prize performance",
+        "precision": "city centroid"
+      },
+      "kind": "recording",
+      "description": "Gregory Porter performed It’s Probably Me in tribute to Sting. The event’s orchestra was led by Hans Ek. This is the exact Polar Music Prize video saved in your crate; the location is the performance venue’s city, not Porter’s hometown.",
+      "sources": [
+        "polar"
+      ],
+      "play": {
+        "type": "youtube",
+        "id": "lSzICmwmRsA",
+        "url": "https://www.youtube.com/watch?v=lSzICmwmRsA",
+        "label": "Play your exact saved performance",
+        "verification": "metadata-verified; playback not auditioned"
+      },
+      "people": [
+        "Gregory Porter",
+        "Hans Ek",
+        "Royal Stockholm Philharmonic Orchestra"
+      ],
+      "tags": [
+        "jazz",
+        "orchestra",
+        "cover",
+        "live"
+      ]
+    },
+    {
+      "id": "vega-1987",
+      "title": "One voice, a New York diner",
+      "date": "1987",
+      "start": 1987,
+      "end": 1987,
+      "place": {
+        "name": "New York, United States",
+        "lat": 40.7128,
+        "lon": -74.006,
+        "role": "song setting; not a verified studio",
+        "precision": "city centroid"
+      },
+      "kind": "recording",
+      "description": "Suzanne Vega’s unaccompanied Tom’s Diner opens Solitude Standing. Its New York setting and bare voice are separate facts from later dance remixes and cover arrangements.",
+      "sources": [
+        "vega"
+      ],
+      "play": {
+        "type": "youtube",
+        "id": "mto47BMT3yA",
+        "url": "https://www.youtube.com/watch?v=mto47BMT3yA",
+        "label": "Hear Suzanne Vega · a cappella version",
+        "verification": "metadata-verified; playback not auditioned"
+      },
+      "people": [
+        "Suzanne Vega"
+      ],
+      "tags": [
+        "a cappella",
+        "songwriting",
+        "city life"
+      ]
+    },
+    {
+      "id": "dna-1990",
+      "title": "A separate dance branch",
+      "date": "1990",
+      "start": 1990,
+      "end": 1990,
+      "place": null,
+      "kind": "recording",
+      "description": "DNA’s version is a 1990 branch of Tom’s Diner. A later cover of the same composition is not automatically a descendant of this remix; that connection needs its own evidence. Location remains unresolved in this pilot.",
+      "sources": [
+        "dna",
+        "vega"
+      ],
+      "play": {
+        "type": "youtube",
+        "id": "bJNxmMk8zvA",
+        "url": "https://www.youtube.com/watch?v=bJNxmMk8zvA",
+        "label": "Hear Suzanne Vega / DNA · dance version",
+        "verification": "metadata-verified; playback not auditioned"
+      },
+      "people": [
+        "DNA",
+        "Suzanne Vega"
+      ],
+      "tags": [
+        "remix",
+        "dance",
+        "crossover"
+      ]
+    },
+    {
+      "id": "mp3",
+      "title": "A voice tests compression",
+      "date": "Late 1980s–1990s",
+      "start": 1987,
+      "end": 1995,
+      "place": {
+        "name": "Erlangen, Germany",
+        "lat": 49.5897,
+        "lon": 11.0078,
+        "role": "audio technology research; representative city anchor",
+        "precision": "city centroid"
+      },
+      "kind": "technology",
+      "description": "Brandenburg describes using Vega’s demanding voice while developing audio compression. This is a technological use of a recording, not a musical parent of the cover. The story also involves engineers and institutions beyond a single inventor.",
+      "sources": [
+        "mp3"
+      ],
+      "play": {
+        "type": "youtube",
+        "id": "mto47BMT3yA",
+        "url": "https://www.youtube.com/watch?v=mto47BMT3yA",
+        "label": "Hear the source voice · not an MP3 A/B test",
+        "verification": "metadata-verified; playback not auditioned"
+      },
+      "people": [
+        "Karlheinz Brandenburg",
+        "Jürgen Herre",
+        "James Johnston"
+      ],
+      "tags": [
+        "compression",
+        "MP3",
+        "engineering"
+      ]
+    },
+    {
+      "id": "amk-2019",
+      "title": "Your recording: a new ensemble",
+      "date": "2019 · release year",
+      "start": 2019,
+      "end": 2019,
+      "place": null,
+      "kind": "recording",
+      "description": "Your exact AnnenMayKantereit × Giant Rooks cover is preserved. The video credits Fabian Langer for recording/mixing, Alex Kloss for mastering, and Ferdinand Schwarz for trumpet. Recording location needs verification.",
+      "sources": [
+        "amk-video"
+      ],
+      "play": {
+        "type": "youtube",
+        "id": "5r3B7yz6J68",
+        "url": "https://www.youtube.com/watch?v=5r3B7yz6J68",
+        "label": "Play your exact saved cover",
+        "verification": "metadata-verified; playback not auditioned"
+      },
+      "people": [
+        "Fabian Langer",
+        "Alex Kloss",
+        "Ferdinand Schwarz",
+        "Henning May",
+        "Frederik Rabe"
+      ],
+      "tags": [
+        "cover",
+        "voice",
+        "trumpet",
+        "production"
+      ]
+    },
+    {
+      "id": "sabbath-1972",
+      "title": "A rock band chooses piano",
+      "date": "1972",
+      "start": 1972,
+      "end": 1972,
+      "place": {
+        "name": "Los Angeles, United States",
+        "lat": 34.0522,
+        "lon": -118.2437,
+        "role": "Record Plant album sessions; city centroid",
+        "precision": "city centroid"
+      },
+      "kind": "recording",
+      "description": "Tony Iommi’s album page identifies piano-led Changes on Vol. 4 and the Record Plant sessions in Los Angeles. Studio credits include engineers Colin Caldwell and Vic Smith. Artist origin and recording location must remain separate.",
+      "sources": [
+        "sabbath"
+      ],
+      "play": {
+        "type": "youtube",
+        "id": "ESE0ohvyOmA",
+        "url": "https://www.youtube.com/watch?v=ESE0ohvyOmA",
+        "label": "Hear Black Sabbath · Changes",
+        "verification": "metadata-verified; playback not auditioned"
+      },
+      "people": [
+        "Tony Iommi",
+        "Geezer Butler",
+        "Bill Ward",
+        "Ozzy Osbourne",
+        "Colin Caldwell",
+        "Vic Smith"
+      ],
+      "tags": [
+        "rock",
+        "piano",
+        "studio"
+      ]
+    },
+    {
+      "id": "bradley-network",
+      "title": "The people who opened the studio",
+      "date": "2001–2003",
+      "start": 2001,
+      "end": 2003,
+      "place": {
+        "name": "Brooklyn, New York",
+        "lat": 40.6782,
+        "lon": -73.9442,
+        "role": "label and professional network",
+        "precision": "city centroid"
+      },
+      "kind": "person",
+      "description": "Daptone documents Bradley’s James Brown tribute act, his introduction to the label’s founders, and his 2003 introduction to Tom Brenneck. Those relationships are documented; a direct line from every earlier soul or blues record is not.",
+      "sources": [
+        "bradley",
+        "daptone"
+      ],
+      "play": null,
+      "people": [
+        "Gabriel Roth",
+        "Neal Sugarman",
+        "Tom Brenneck",
+        "Charles Bradley"
+      ],
+      "tags": [
+        "soul",
+        "producer",
+        "independent label",
+        "mentorship"
+      ]
+    },
+    {
+      "id": "bradley-2013",
+      "title": "A new recording of Changes",
+      "date": "2013",
+      "start": 2013,
+      "end": 2013,
+      "place": {
+        "name": "Brooklyn, New York",
+        "lat": 40.6782,
+        "lon": -73.9442,
+        "role": "label context; session not established",
+        "precision": "city centroid"
+      },
+      "kind": "recording",
+      "description": "Daptone lists Changes / Ain’t It a Sin as a 2013 single, catalogue DUN-115. The label’s stream offers a Bradley rendition; it is not the exact Toronto performance saved in your crate.",
+      "sources": [
+        "bradley-single",
+        "bradley"
+      ],
+      "play": {
+        "type": "source",
+        "url": "https://daptonerecords.bandcamp.com/track/changes",
+        "label": "Hear Charles Bradley · label stream",
+        "verification": "archive catalogue verified; streaming not auditioned"
+      },
+      "people": [
+        "Charles Bradley"
+      ],
+      "tags": [
+        "soul",
+        "cover",
+        "independent label"
+      ]
+    },
+    {
+      "id": "bradley-live",
+      "title": "Your recording: the newsroom",
+      "date": "Performance date unresolved",
+      "start": null,
+      "end": null,
+      "place": {
+        "name": "Toronto, Canada",
+        "lat": 43.6532,
+        "lon": -79.3832,
+        "role": "Toronto Star Newsroom Concert Series",
+        "precision": "city centroid"
+      },
+      "kind": "recording",
+      "description": "The exact saved video is the Toronto Star newsroom performance. Its source identity is archived, but the event date and detailed arrangement credits still need primary-source verification. No date is invented to complete the timeline.",
+      "sources": [
+        "bradley-live"
+      ],
+      "play": {
+        "type": "youtube",
+        "id": "zfaOf70M4xs",
+        "url": "https://www.youtube.com/watch?v=zfaOf70M4xs",
+        "label": "Play your exact saved newsroom performance",
+        "verification": "metadata-verified; playback not auditioned"
+      },
+      "people": [
+        "Charles Bradley"
+      ],
+      "tags": [
+        "soul",
+        "cover",
+        "live"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "grace-1773--new-britain",
+      "from_id": "grace-1773",
+      "to_id": "new-britain",
+      "type": "text set to tune",
+      "evidence": "documented",
+      "label": "A later setting of the text",
+      "sources": [
+        "grace",
+        "newton"
+      ]
+    },
+    {
+      "id": "fisk-1871--fisk-1909",
+      "from_id": "fisk-1871",
+      "to_id": "fisk-1909",
+      "type": "tradition documented by later ensemble",
+      "evidence": "documented",
+      "label": "A later recording, not the original 1871 singers",
+      "sources": [
+        "fisk",
+        "fisk-audio"
+      ]
+    },
+    {
+      "id": "fisk-1871--ruth-porter",
+      "from_id": "fisk-1871",
+      "to_id": "ruth-porter",
+      "type": "historical context",
+      "evidence": "context",
+      "label": "Spiritual and gospel histories: context, not a proved chain",
+      "sources": [
+        "spirituals",
+        "porter"
+      ]
+    },
+    {
+      "id": "new-britain--ruth-porter",
+      "from_id": "new-britain",
+      "to_id": "ruth-porter",
+      "type": "historical context",
+      "evidence": "context",
+      "label": "Hymn tradition: no claim Porter learned this exact hymn",
+      "sources": [
+        "grace",
+        "porter"
+      ]
+    },
+    {
+      "id": "cole-1948--ruth-porter",
+      "from_id": "cole-1948",
+      "to_id": "ruth-porter",
+      "type": "stated artist influence",
+      "evidence": "documented",
+      "label": "Cole’s music in the family collection; example choice is editorial",
+      "sources": [
+        "cole"
+      ]
+    },
+    {
+      "id": "ruth-porter--porter-2017",
+      "from_id": "ruth-porter",
+      "to_id": "porter-2017",
+      "type": "artist background",
+      "evidence": "documented",
+      "label": "Documented upbringing, not track-specific musical borrowing",
+      "sources": [
+        "porter",
+        "cole"
+      ]
+    },
+    {
+      "id": "sting-1992--porter-2017",
+      "from_id": "sting-1992",
+      "to_id": "porter-2017",
+      "type": "cover of work",
+      "evidence": "documented",
+      "label": "Same composition, different performance",
+      "sources": [
+        "polar",
+        "sting"
+      ]
+    },
+    {
+      "id": "vega-1987--dna-1990",
+      "from_id": "vega-1987",
+      "to_id": "dna-1990",
+      "type": "remix branch",
+      "evidence": "documented",
+      "label": "Separate 1990 version",
+      "sources": [
+        "vega",
+        "dna"
+      ]
+    },
+    {
+      "id": "vega-1987--mp3",
+      "from_id": "vega-1987",
+      "to_id": "mp3",
+      "type": "used in technology development",
+      "evidence": "documented",
+      "label": "Vocal recording as a compression test",
+      "sources": [
+        "mp3"
+      ]
+    },
+    {
+      "id": "vega-1987--amk-2019",
+      "from_id": "vega-1987",
+      "to_id": "amk-2019",
+      "type": "cover of work",
+      "evidence": "documented",
+      "label": "Same composition, new ensemble",
+      "sources": [
+        "amk-video",
+        "vega"
+      ]
+    },
+    {
+      "id": "migration--sabbath-1972",
+      "from_id": "migration",
+      "to_id": "sabbath-1972",
+      "type": "historical context",
+      "evidence": "context",
+      "label": "Amplified blues background; no direct track influence asserted",
+      "sources": [
+        "migration",
+        "sabbath"
+      ]
+    },
+    {
+      "id": "sabbath-1972--bradley-2013",
+      "from_id": "sabbath-1972",
+      "to_id": "bradley-2013",
+      "type": "cover of work",
+      "evidence": "documented",
+      "label": "Black Sabbath composition reinterpreted by Bradley",
+      "sources": [
+        "sabbath",
+        "bradley-interview"
+      ]
+    },
+    {
+      "id": "bradley-network--bradley-2013",
+      "from_id": "bradley-network",
+      "to_id": "bradley-2013",
+      "type": "professional network",
+      "evidence": "documented",
+      "label": "People and label behind the recording career",
+      "sources": [
+        "bradley",
+        "bradley-single"
+      ]
+    },
+    {
+      "id": "bradley-2013--bradley-live",
+      "from_id": "bradley-2013",
+      "to_id": "bradley-live",
+      "type": "same artist and work",
+      "evidence": "documented",
+      "label": "Studio-era rendition and exact saved live version; date unresolved",
+      "sources": [
+        "bradley-single",
+        "bradley-live"
+      ]
+    }
+  ],
+  "journeys": [
+    {
+      "id": "porter",
+      "recording_key": "youtube:lSzICmwmRsA",
+      "title": "A voice, a mother, a movie",
+      "subtitle": "Gregory Porter · It’s Probably Me",
+      "nodes": [
+        "grace-1773",
+        "new-britain",
+        "fisk-1871",
+        "fisk-1909",
+        "cole-1948",
+        "ruth-porter",
+        "sting-1992",
+        "porter-2017"
+      ],
+      "focus": "porter-2017",
+      "summary": "Trace a documented cover and the people who shaped Porter’s voice. Open the context branches to explore older hymn and spiritual histories.",
+      "limits": "The 1773 and 1835 material supplies historical context. It does not establish an unbroken ancestry of this song. Nat King Cole is a stated artist influence, not a confirmed source of this particular arrangement."
+    },
+    {
+      "id": "diner",
+      "recording_key": "youtube:5r3B7yz6J68",
+      "title": "The diner that reached the codec",
+      "subtitle": "AnnenMayKantereit × Giant Rooks · Tom’s Diner",
+      "nodes": [
+        "vega-1987",
+        "dna-1990",
+        "mp3",
+        "amk-2019"
+      ],
+      "focus": "vega-1987",
+      "summary": "A composition branches into a dance remix, a compression test and the cover you saved. Follow the branches without mistaking them for a single chain.",
+      "limits": "This researched route begins in 1987. Earlier musical influences and the cover’s session geography remain unverified; no centuries-old genealogy is fabricated."
+    },
+    {
+      "id": "changes",
+      "recording_key": "youtube:zfaOf70M4xs",
+      "title": "A piano ballad becomes soul",
+      "subtitle": "Charles Bradley · Changes",
+      "nodes": [
+        "migration",
+        "sabbath-1972",
+        "bradley-network",
+        "bradley-2013",
+        "bradley-live"
+      ],
+      "focus": "sabbath-1972",
+      "summary": "Move between album sessions in Los Angeles, a Brooklyn professional network and your Toronto live recording.",
+      "limits": "Urban blues is historical context, not a proved direct source for Changes. The date of the saved Toronto performance remains unresolved."
+    }
+  ],
+  "origins": [
+    {
+      "artist": "Gregory Porter",
+      "place": {
+        "name": "Bakersfield, United States",
+        "lat": 35.3733,
+        "lon": -119.0187,
+        "role": "upbringing",
+        "precision": "city centroid"
+      },
+      "sources": [
+        "porter"
+      ]
+    },
+    {
+      "artist": "Bobby Womack",
+      "place": {
+        "name": "Cleveland, United States",
+        "lat": 41.4993,
+        "lon": -81.6944,
+        "role": "birthplace / hometown",
+        "precision": "city centroid"
+      },
+      "sources": [
+        "womack"
+      ]
+    },
+    {
+      "artist": "Black Pumas",
+      "place": {
+        "name": "Austin, United States",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "role": "band formation",
+        "precision": "city centroid"
+      },
+      "sources": [
+        "blackpumas"
+      ]
+    },
+    {
+      "artist": "Fink",
+      "place": {
+        "name": "Bristol, England",
+        "lat": 51.4545,
+        "lon": -2.5879,
+        "role": "Fin Greenall’s upbringing / scene; born in Cornwall",
+        "precision": "city centroid"
+      },
+      "sources": [
+        "fink"
+      ]
+    },
+    {
+      "artist": "Lianne La Havas",
+      "place": {
+        "name": "South London, England",
+        "lat": 51.45,
+        "lon": -0.1,
+        "role": "upbringing",
+        "precision": "city centroid"
+      },
+      "sources": [
+        "lianne"
+      ]
+    },
+    {
+      "artist": "Hozier",
+      "place": {
+        "name": "Bray, Ireland",
+        "lat": 53.2,
+        "lon": -6.1,
+        "role": "hometown",
+        "precision": "city centroid"
+      },
+      "sources": [
+        "hozier"
+      ]
+    },
+    {
+      "artist": "AnnenMayKantereit",
+      "place": {
+        "name": "Cologne, Germany",
+        "lat": 50.9375,
+        "lon": 6.9603,
+        "role": "band origin / home association",
+        "precision": "city centroid"
+      },
+      "sources": [
+        "amk-origin"
+      ]
+    },
+    {
+      "artist": "Giant Rooks",
+      "place": {
+        "name": "Hamm, Germany",
+        "lat": 51.6739,
+        "lon": 7.815,
+        "role": "band origin / home association",
+        "precision": "city centroid"
+      },
+      "sources": [
+        "rooks-origin"
+      ]
+    }
+  ]
+}

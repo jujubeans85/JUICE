@@ -1,4 +1,4 @@
-const VERSION='cj-map-0df393794a61cafe',BASE=new URL('./',self.location.href),CORE=['./','index.html','app.js','style.css','catalogue.json','revision.json','offline.html','music-index.txt','manifest.webmanifest'];
+const VERSION='cj-map-5ac366eed6381eee',BASE=new URL('./',self.location.href),CORE=['./','index.html','app.js','style.css','catalogue.json','revision.json','offline.html','music-index.txt','manifest.webmanifest'];
 async function prepare(){const cache=await caches.open(VERSION);await cache.addAll(CORE.map(p=>new URL(p,BASE)));const response=await cache.match(new URL('catalogue.json',BASE));const data=await response.json();for(let i=0;i<data.length;i+=12)await Promise.allSettled(data.slice(i,i+12).map(d=>cache.add(new URL(d.image,BASE))));for(const client of await self.clients.matchAll())client.postMessage('OFFLINE_READY')}
 self.addEventListener('install',event=>event.waitUntil(prepare().then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const k of await caches.keys())if(k.startsWith('cj-map-')&&k!==VERSION)await caches.delete(k);await self.clients.claim()})()));

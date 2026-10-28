@@ -1,0 +1,38 @@
+import * as T from './vendor/three.module.js';
+const rad=Math.PI/180;
+const xyz=(lat,lon,r=1)=>new T.Vector3(r*Math.cos(lat*rad)*Math.sin(lon*rad),r*Math.sin(lat*rad),r*Math.cos(lat*rad)*Math.cos(lon*rad));
+export class Globe{
+ constructor(host,topo,onSelect){
+  this.host=host;this.onSelect=onSelect;this.paused=matchMedia('(prefers-reduced-motion: reduce)').matches;this.reduced=this.paused;this.pointers=new Map();this.selected=null;this.disposed=false;
+  this.renderer=new T.WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'});this.renderer.setPixelRatio(Math.min(devicePixelRatio,1.65));this.renderer.setClearColor(0,0);this.renderer.domElement.setAttribute('aria-hidden','true');host.prepend(this.renderer.domElement);
+  this.scene=new T.Scene();this.camera=new T.PerspectiveCamera(36,1,.1,30);this.distance=4.1;this.camera.position.z=this.distance;this.world=new T.Group();this.world.rotation.set(.18,.7,0);this.scene.add(this.world);
+  this.scene.add(new T.AmbientLight(0xffffff,1.5));const sun=new T.DirectionalLight(0xb9ffe4,2);sun.position.set(-3,2,4);this.scene.add(sun);
+  const ball=new T.Mesh(new T.SphereGeometry(1,64,48),new T.MeshPhongMaterial({color:0x112d27,specular:0x244a3b,shininess:10}));this.world.add(ball);
+  const halo=new T.Mesh(new T.SphereGeometry(1.025,48,32),new T.MeshBasicMaterial({color:0x91d8ad,transparent:true,opacity:.035,side:T.BackSide}));halo.scale.setScalar(1.05);this.world.add(halo);
+  const arcs=topo.arcs.map(a=>{let x=0,y=0;return a.map(p=>{x+=p[0];y+=p[1];return [x*topo.transform.scale[0]+topo.transform.translate[0],y*topo.transform.scale[1]+topo.transform.translate[1]]})});const pts=[];
+  for(const a of arcs)for(let i=1;i<a.length;i++){pts.push(xyz(a[i-1][1],a[i-1][0],1.003),xyz(a[i][1],a[i][0],1.003))}
+  this.world.add(new T.LineSegments(new T.BufferGeometry().setFromPoints(pts),new T.LineBasicMaterial({color:0x668c76,transparent:true,opacity:.65})));
+  const grid=[];for(let lat=-60;lat<=60;lat+=30)for(let lon=-180;lon<180;lon+=3)grid.push(xyz(lat,lon,1.001),xyz(lat,lon+3,1.001));for(let lon=-180;lon<180;lon+=30)for(let lat=-90;lat<90;lat+=3)grid.push(xyz(lat,lon,1.001),xyz(lat+3,lon,1.001));
+  this.world.add(new T.LineSegments(new T.BufferGeometry().setFromPoints(grid),new T.LineBasicMaterial({color:0x52806d,transparent:true,opacity:.18})));
+  this.points=new T.Group();this.lines=new T.Group();this.world.add(this.points,this.lines);this.labels=document.createElement('div');this.labels.className='globe-labels';host.append(this.labels);this.markers=[];
+  this.down=e=>{this.pointers.set(e.pointerId,[e.clientX,e.clientY]);this.paused=true;host.setPointerCapture(e.pointerId)};
+  this.move=e=>{if(!this.pointers.has(e.pointerId))return;const old=this.pointers.get(e.pointerId),next=[e.clientX,e.clientY];if(this.pointers.size===2){const other=[...this.pointers.entries()].find(([i])=>i!==e.pointerId)[1];const before=Math.hypot(old[0]-other[0],old[1]-other[1]),after=Math.hypot(next[0]-other[0],next[1]-other[1]);this.zoom((before-after)*.01)}else{this.world.rotation.y+=(next[0]-old[0])*.006;this.world.rotation.x=Math.max(-1.3,Math.min(1.3,this.world.rotation.x+(next[1]-old[1])*.006))}this.pointers.set(e.pointerId,next)};
+  this.up=e=>this.pointers.delete(e.pointerId);
+  this.wheel=e=>{e.preventDefault();this.zoom(e.deltaY*.002)};
+  this.key=e=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','-','='].includes(e.key))return;e.preventDefault();this.paused=true;if(e.key==='ArrowLeft')this.world.rotation.y-=.15;if(e.key==='ArrowRight')this.world.rotation.y+=.15;if(e.key==='ArrowUp')this.world.rotation.x-=.1;if(e.key==='ArrowDown')this.world.rotation.x+=.1;if(e.key==='+'||e.key==='=')this.zoom(-.2);if(e.key==='-')this.zoom(.2)};
+  for(const [k,f]of [['pointerdown',this.down],['pointermove',this.move],['pointerup',this.up],['pointercancel',this.up],['wheel',this.wheel],['keydown',this.key]])host.addEventListener(k,f,{passive:false});
+  this.resize=()=>{const w=host.clientWidth,h=host.clientHeight;this.renderer.setSize(w,h);this.camera.aspect=w/h;this.camera.updateProjectionMatrix();this.fit=Math.max(1,1/this.camera.aspect);this.camera.position.z=this.distance*this.fit};this.observer=new ResizeObserver(this.resize);this.observer.observe(host);
+  this.last=0;this.tick=t=>{if(this.disposed)return;this.frame=requestAnimationFrame(this.tick);if(document.hidden||t-this.last<32)return;const delta=this.last?Math.min(t-this.last,70):0;this.last=t;if(!this.paused)this.world.rotation.y+=delta*.000025;this.world.updateMatrixWorld();const cw=host.clientWidth,ch=host.clientHeight;
+   for(const m of this.markers){const v=m.mesh.position.clone().applyMatrix4(this.world.matrixWorld);const toward=this.camera.position.clone().sub(v).normalize();const face=v.clone().normalize().dot(toward)>.05;m.label.hidden=!face;if(face){v.project(this.camera);m.label.style.transform=`translate(${(v.x*.5+.5)*cw}px,${(-v.y*.5+.5)*ch}px) translate(-50%,-50%)`}}
+   this.renderer.render(this.scene,this.camera)};this.frame=requestAnimationFrame(this.tick);
+ }
+ clear(group){for(const x of [...group.children]){group.remove(x);x.geometry?.dispose();x.material?.dispose()}}
+ setData(nodes,edges,selected){this.clear(this.points);this.clear(this.lines);this.labels.replaceChildren();this.markers=[];const located=nodes.filter(n=>n.place),by=new Map(located.map(n=>[n.id,n]));
+  for(const n of located){const focus=n.id===selected,color=n.evidence==='context'?0xe69b78:n.kind==='technology'?0xb6a8ff:focus?0xf4df7e:0xa6dfb8;const mesh=new T.Mesh(new T.SphereGeometry(focus?.023:.013,12,8),new T.MeshBasicMaterial({color}));mesh.position.copy(xyz(n.place.lat,n.place.lon,1.018));this.points.add(mesh);const label=document.createElement('button');label.className='map-pin'+(focus?' active':'');label.title=n.title+' · '+n.place.name;label.setAttribute('aria-label',label.title);label.textContent=focus?n.place.name.split(',')[0]:'•';label.onclick=e=>{e.stopPropagation();this.onSelect(n.id)};label.onpointerdown=e=>e.stopPropagation();this.labels.append(label);this.markers.push({mesh,label})}
+  for(const e of edges){const a=by.get(e.from_id),b=by.get(e.to_id);if(!a||!b)continue;const av=xyz(a.place.lat,a.place.lon),bv=xyz(b.place.lat,b.place.lon),angle=av.angleTo(bv);if(angle<.005)continue;const p=[];for(let i=0;i<=80;i++){const t=i/80,s=Math.sin(angle);const v=av.clone().multiplyScalar(Math.sin((1-t)*angle)/s).add(bv.clone().multiplyScalar(Math.sin(t*angle)/s));p.push(v.normalize().multiplyScalar(1.02+Math.sin(Math.PI*t)*Math.min(.3,angle*.15)))}const mat=e.evidence==='context'?new T.LineDashedMaterial({color:0xd99d79,dashSize:.025,gapSize:.018,transparent:true,opacity:.75}):new T.LineBasicMaterial({color:0xead878,transparent:true,opacity:.8});const line=new T.Line(new T.BufferGeometry().setFromPoints(p),mat);line.computeLineDistances();this.lines.add(line)}
+ }
+ focus(p){if(!p)return;this.paused=true;this.world.rotation.y=-p.lon*rad;this.world.rotation.x=p.lat*rad*.8}
+ zoom(d){this.distance=Math.max(3.1,Math.min(6,this.distance+d));this.camera.position.z=this.distance*this.fit}
+ reset(){this.distance=4.1;this.world.rotation.set(.18,.7,0);this.resize()}
+ dispose(){this.disposed=true;cancelAnimationFrame(this.frame);this.observer.disconnect();this.scene.traverse(x=>{x.geometry?.dispose();x.material?.dispose()});this.renderer.dispose();this.renderer.forceContextLoss()}
+}
