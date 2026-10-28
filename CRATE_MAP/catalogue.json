@@ -1,5 +1,256 @@
 [
   {
+    "id": "CJ-272",
+    "position": "A4",
+    "symbol": "We",
+    "title": "WednesdayCrate 002 — Grey Skies, Good News",
+    "edition": "2026-10-28",
+    "lines": [
+      "WednesdayCrate 002",
+      "Grey Skies, Good News"
+    ],
+    "family": "WEEKDAYS",
+    "color": "#E9D56D",
+    "owned": true,
+    "status": "EXISTING",
+    "artwork_status": "map only",
+    "image": "covers/CJ-272.svg",
+    "url": "https://www.youtube.com/watch_videos?video_ids=cI0QizfB7qo,xJIPn_20lxE,Mh5km2xKlfk,wnNOKvvA2uE,UzpHdHQANfw,cfsmETjZhwY",
+    "source_platform": "youtube",
+    "tracks_snapshot": 6,
+    "duration_snapshot": "25:07 (Spotify recording runtime)",
+    "tracklist_status": "complete",
+    "created_at": "2026-10-29",
+    "updated_at": "2026-10-29",
+    "theme": "Songs that sound sombre or depressing while their lyrics express fulfilled love, pleasure, security or contentment.",
+    "selection_policy": "Six strong fits only. Positive meaning must survive the whole lyric. Exclude grief songs with a consoling line, bleak lyrics, mere requests for love, and upbeat arrangements with only a reputation for sadness.",
+    "note": "Wednesday 28 October 2026, second crate. Six selected recordings; no supplied seeds. Seed candidates: Beautiful, Small Plane, Gorecki. Sound-versus-meaning contrast is an editorial judgment. All sources are metadata checked, not playback checked. Individual Spotify links identify the corresponding studio performances; Lovesong uses the album remaster and Into My Arms uses the 2011 remaster on Spotify. The YouTube queue is a convenience link, not a saved named playlist. Tracklists work offline; streaming needs internet.",
+    "tracks": [
+      {
+        "position": 1,
+        "artist": "The Cure",
+        "title": "Lovesong",
+        "version": "Disintegration — album studio recording, 2010 remaster",
+        "duration": "3:28",
+        "duration_ms": 208266,
+        "duration_source": "Spotify catalogue metadata; YouTube video runtime can differ",
+        "url": "https://www.youtube.com/watch?v=cI0QizfB7qo",
+        "youtube_id": "cI0QizfB7qo",
+        "spotify_uri": "spotify:track:1y6XHeNN5DSX5PYy7gT0qL",
+        "spotify_url": "https://open.spotify.com/track/1y6XHeNN5DSX5PYy7gT0qL?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=351af573-9e8a-469d-8380-c5e443265daf",
+        "spotify_album": "Disintegration (Remastered)",
+        "spotify_version": "Lovesong - Remastered",
+        "artwork_url": "https://i.scdn.co/image/ab67616d0000b273858ed9e2832801189187391a",
+        "seed": false,
+        "seed_candidate": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-29",
+        "sounds_like": "Cold organ, a circling bass line and Robert Smith's plaintive vocal give it a distinctly melancholy cast.",
+        "positive_meaning": "The lyric describes feeling whole, free and at home with a loved partner, and promises enduring love.",
+        "curation_note": "The clearest statement of the theme: gothic melancholy carrying a direct, happy declaration of love.",
+        "interpretation_status": "Editorial reading of complete lyric and released arrangement; no claim of artist-confirmed intention unless cited.",
+        "sources": [
+          {
+            "url": "https://www.radiox.co.uk/artists/the-cure/how-love-song-became-their-biggest-us-hit/",
+            "type": "artist-quote-report",
+            "supports": "Smith describes the song as a wedding present for Mary."
+          },
+          {
+            "url": "https://lyricsweb.com/song/the-cure/the-cure-lovesong",
+            "type": "licensed-lyrics",
+            "supports": "Whole-lyric check: love, home, wholeness and commitment."
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "artist": "Meshell Ndegeocello",
+        "title": "Beautiful",
+        "version": "Bitter — original album studio recording",
+        "duration": "2:45",
+        "duration_ms": 164533,
+        "duration_source": "Spotify catalogue metadata; YouTube video runtime can differ",
+        "url": "https://www.youtube.com/watch?v=xJIPn_20lxE",
+        "youtube_id": "xJIPn_20lxE",
+        "spotify_uri": "spotify:track:47ZTqPgefAROYCjFxmVPJH",
+        "spotify_url": "https://open.spotify.com/track/47ZTqPgefAROYCjFxmVPJH?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=e37ab3ea-9a5e-4173-bbfc-55ba0c391f5a",
+        "spotify_album": "Bitter",
+        "spotify_version": "Beautiful",
+        "artwork_url": "https://i.scdn.co/image/ab67616d0000b2739551e00a2a9aac993bd97536",
+        "seed": false,
+        "seed_candidate": true,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-29",
+        "sounds_like": "Bare, fragile soul with a hushed vocal and aching string textures; it can sound like the aftermath of heartbreak.",
+        "positive_meaning": "The actual scene is intimate pleasure and admiration for a lover who is present.",
+        "curation_note": "Its mournful surface disguises a tender, sensual moment. The most distinctive soul discovery in this selection.",
+        "interpretation_status": "Editorial reading of complete lyric and released arrangement; no claim of artist-confirmed intention unless cited.",
+        "sources": [
+          {
+            "url": "https://s.awa.fm/track/ff4a50d6c971099ec994",
+            "type": "licensed-lyrics",
+            "supports": "Whole lyric describes kissing, beauty and present pleasure."
+          },
+          {
+            "url": "https://albumism.com/features/meshell-ndegeocello-bitter-album-anniversary",
+            "type": "review",
+            "supports": "Sparse lyric and hesitant, yearning delivery."
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "artist": "Bill Callahan",
+        "title": "Small Plane",
+        "version": "Dream River — album studio recording, Drag City official video",
+        "duration": "3:57",
+        "duration_ms": 236600,
+        "duration_source": "Spotify catalogue metadata; YouTube video runtime can differ",
+        "url": "https://www.youtube.com/watch?v=Mh5km2xKlfk",
+        "youtube_id": "Mh5km2xKlfk",
+        "spotify_uri": "spotify:track:1LhsGxrAQUV279TdvRl8lS",
+        "spotify_url": "https://open.spotify.com/track/1LhsGxrAQUV279TdvRl8lS?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=4cde6c42-ca63-4f30-be16-c0d20108e91c",
+        "spotify_album": "Dream River",
+        "spotify_version": "Small Plane",
+        "artwork_url": "https://i.scdn.co/image/ab67616d0000b2730a3cf121721efa3316a500f8",
+        "seed": false,
+        "seed_candidate": true,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-29",
+        "sounds_like": "A grave baritone and spare, wistful guitars make it easy to mistake for a lament.",
+        "positive_meaning": "Sharing the controls becomes a picture of mutual trust, a secure home and the narrator's gratitude for his life with someone.",
+        "curation_note": "Quiet contentment without a hidden breakup. My strongest discovery seed for the concept.",
+        "interpretation_status": "Editorial reading of complete lyric and released arrangement; no claim of artist-confirmed intention unless cited.",
+        "sources": [
+          {
+            "url": "https://readdork.com/lyrics/bill-callahan-small-plane",
+            "type": "lyrics-transcription",
+            "supports": "Whole-lyric check: reciprocal trust, home and feeling lucky."
+          },
+          {
+            "url": "https://www.upr.org/npr-news/2013-10-02/heavy-rotation-10-songs-public-radio-cant-stop-playing",
+            "type": "review",
+            "supports": "Earthy baritone, calm accompaniment and peaceful emotional centre."
+          },
+          {
+            "url": "https://www.dragcity.com/artists/bill-callahan/videos/small-plane",
+            "type": "official-video",
+            "supports": "Exact video identity."
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "artist": "Iron & Wine",
+        "title": "Such Great Heights",
+        "version": "2003 acoustic studio cover — Such Great Heights single",
+        "duration": "4:11",
+        "duration_ms": 251280,
+        "duration_source": "Spotify catalogue metadata; YouTube video runtime can differ",
+        "url": "https://www.youtube.com/watch?v=wnNOKvvA2uE",
+        "youtube_id": "wnNOKvvA2uE",
+        "spotify_uri": "spotify:track:3hofUe6yEmZx2RiUqhHtI4",
+        "spotify_url": "https://open.spotify.com/track/3hofUe6yEmZx2RiUqhHtI4?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=a7a76aa0-4c5c-497f-afd7-5c7dfdcbe229",
+        "spotify_album": "Such Great Heights",
+        "spotify_version": "Such Great Heights",
+        "artwork_url": "https://i.scdn.co/image/ab67616d0000b2732cace303d0b11ac0d36997af",
+        "seed": false,
+        "seed_candidate": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-29",
+        "sounds_like": "A slow, close-miked acoustic performance whose hushed delivery can register as sadness.",
+        "positive_meaning": "Two people see themselves as perfectly matched and delight in being in love, even while apart.",
+        "curation_note": "The positive love lyric survives intact inside a much more wistful arrangement.",
+        "interpretation_status": "Editorial reading of complete lyric and released arrangement; no claim of artist-confirmed intention unless cited.",
+        "sources": [
+          {
+            "url": "https://www.subpop.com/releases/iron_and_wine/such_great_heights_2",
+            "type": "official-label",
+            "supports": "Identifies the acoustic cover and original single release context."
+          },
+          {
+            "url": "https://readdork.com/track/iron-wine-such-great-heights-2006",
+            "type": "lyrics-and-review",
+            "supports": "Whole-lyric check and sparse, hushed arrangement."
+          }
+        ]
+      },
+      {
+        "position": 5,
+        "artist": "Nick Cave & The Bad Seeds",
+        "title": "Into My Arms",
+        "version": "The Boatman's Call — studio recording, official audio",
+        "duration": "4:16",
+        "duration_ms": 256120,
+        "duration_source": "Spotify catalogue metadata; YouTube video runtime can differ",
+        "url": "https://www.youtube.com/watch?v=UzpHdHQANfw",
+        "youtube_id": "UzpHdHQANfw",
+        "spotify_uri": "spotify:track:39CFOvYse9fcMhIwyS73Fl",
+        "spotify_url": "https://open.spotify.com/track/39CFOvYse9fcMhIwyS73Fl?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=8093fe2f-8e22-430f-955d-47b64ef73cf8",
+        "spotify_album": "The Boatman's Call (2011 - Remaster)",
+        "spotify_version": "Into My Arms",
+        "artwork_url": "https://i.scdn.co/image/ab67616d0000b27388f436c4a60e459f793f7b74",
+        "seed": false,
+        "seed_candidate": false,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-29",
+        "sounds_like": "Solemn piano and a low, hymn-like vocal can suggest mourning.",
+        "positive_meaning": "The narrator affirms love and asks for his beloved's safety and a shared path together.",
+        "curation_note": "A song of devotion and blessing delivered with the weight of an elegy.",
+        "interpretation_status": "Editorial reading of complete lyric and released arrangement; no claim of artist-confirmed intention unless cited.",
+        "sources": [
+          {
+            "url": "https://www.nickcave.com/lyric/into-my-arms/",
+            "type": "official-lyrics",
+            "supports": "Whole-lyric check: shared belief in love, protection and a future path."
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "artist": "Lamb",
+        "title": "Gorecki",
+        "display_title": "Górecki",
+        "version": "Lamb — full original album studio recording, approximately 6:30",
+        "duration": "6:30",
+        "duration_ms": 390426,
+        "duration_source": "Spotify catalogue metadata; YouTube video runtime can differ",
+        "url": "https://www.youtube.com/watch?v=cfsmETjZhwY",
+        "youtube_id": "cfsmETjZhwY",
+        "spotify_uri": "spotify:track:5VRkJsYcf9z4Wni19FxICi",
+        "spotify_url": "https://open.spotify.com/track/5VRkJsYcf9z4Wni19FxICi?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=332e33f2-63bc-4c56-bacf-09fcf1d3efc2",
+        "spotify_album": "Lamb",
+        "spotify_version": "Gorecki",
+        "artwork_url": "https://i.scdn.co/image/ab67616d0000b27337d83b420166a6d46021d0d1",
+        "seed": false,
+        "seed_candidate": true,
+        "verification": "metadata-verified",
+        "checked_at": "2026-10-29",
+        "sounds_like": "A dark, suspended opening and an exposed vocal initially suggest an elegy; the full arrangement eventually surges into release.",
+        "positive_meaning": "The narrator has found the person they wanted, feels complete and at peace, and wants the moment to last.",
+        "curation_note": "The biggest emotional reversal here. The mournful opening holds lyrics about fulfilled love from the outset.",
+        "interpretation_status": "Editorial reading of complete lyric and released arrangement; no claim of artist-confirmed intention unless cited.",
+        "sources": [
+          {
+            "url": "https://readdork.com/lyrics/lamb-gorecki",
+            "type": "lyrics-transcription",
+            "supports": "Whole-lyric check: completeness, peace and found love."
+          },
+          {
+            "url": "https://www.shakenstir.co.uk/2019/10/",
+            "type": "artist-quote-report",
+            "supports": "Rhodes describes the inspiration as one of life's perfect moments."
+          },
+          {
+            "url": "https://www.chartsurfer.de/artist/lamb/gorecki-song_hpgnn.html",
+            "type": "recording-metadata",
+            "supports": "YouTube video cfsmETjZhwY is the full 6:31 recording; tSRYvYN1ayw is the short video edit."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "CJ-271",
     "position": "A4",
     "symbol": "We",
