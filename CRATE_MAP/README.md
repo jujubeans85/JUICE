@@ -25,3 +25,9 @@ The atlas now loads source-linked branches when a listener chooses politics, div
 Live graphs remain in IndexedDB on the listener’s browser and in user-triggered exports. They are never committed to Git or merged into `catalogue.json` automatically. The atlas v2 export can restore explored branches. Provider failures preserve labelled cached responses. Normal source coverage and heuristics can miss connections; absence is not proof that no historical link exists.
 
 Run `node --test CRATE_MAP/atlas/*.test.mjs` for the data and relevance contracts. See `atlas/research.html#on-demand` for scope and remaining limits.
+
+## Era-aware appearance
+
+The atlas entrance uses the actual AFTERWORLDS slate/lime tokens. `atlas/era-theme.mjs` owns visual palettes; the shared CSS and both globe renderers consume them. Selecting a dated point applies its period automatically: manuscript, engraving, deco, mid-century, pop art, analog, electric, rave or digital. These are visual interpretations, not regional genre classifications. A date interval uses its opening year, disclosed beside the appearance control. Undated branches can retain a dated parent’s atmosphere with an explicit unresolved-date label; arbitrary dates in prose and artist birth dates are never used to infer a period.
+
+The Appearance control can pin AFTERWORLDS or preview any era. That browser-local preference changes presentation only. New public source topics retain their supplied event/inception/publication dates, including when geographic coordinates are also available. Failed date lookups retain known coordinates. All catalogue, recording and history identities are preserved.

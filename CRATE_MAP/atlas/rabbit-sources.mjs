@@ -45,18 +45,19 @@ export async function searchTopics(term,options={}){
 }
 export async function geolocateArticle(article,options={}){
   const parentSignal=options.signal,controller=new AbortController(),cancel=()=>controller.abort(),timer=setTimeout(cancel,10000);parentSignal?.addEventListener('abort',cancel,{once:true});options={...options,signal:controller.signal};
+  let knownPlace=null;
   try{
     const r=await jsonAPI(WIKI,{action:'query',titles:article.title,prop:'pageprops|coordinates',colimit:'max',coprimary:'primary'},options),p=r.query?.pages?.[0];
-    const direct=p?.coordinates?.[0];if(direct)return {place:{name:article.title,lat:direct.lat,lon:direct.lon,role:'topic location, from source coordinates',precision:'source geographic anchor'},qid:p.pageprops?.wikibase_item||null,start:null};
-    const qid=p?.pageprops?.wikibase_item;if(!/^Q\d+$/.test(qid||''))return {};
+    const direct=p?.coordinates?.[0],place=direct?{name:article.title,lat:direct.lat,lon:direct.lon,role:'topic location, from source coordinates',precision:'source geographic anchor'}:null;knownPlace=place;
+    const qid=p?.pageprops?.wikibase_item;if(!/^Q\d+$/.test(qid||''))return place?{place,start:null}:{};
     const w=await jsonAPI(WD,{action:'wbgetentities',ids:qid,props:'claims|labels',languages:'en'},options),entity=w.entities?.[qid],claims=entity?.claims||{};
     const fact=k=>claims[k]?.find(x=>x.rank!=='deprecated')?.mainsnak?.datavalue?.value;
-    const dates=sourceDates(claims);
+    const dates=sourceDates(claims);if(place)return {place,qid,...dates};
     let anchor=fact('P19'),role='person’s birthplace; not a style origin';if(!anchor){anchor=fact('P740');role='group formation place; not the recording location'}
     if(!anchor?.id)return {qid,...dates};
     const a=await jsonAPI(WD,{action:'wbgetentities',ids:anchor.id,props:'claims|labels',languages:'en'},options),e=a.entities?.[anchor.id],coord=e?.claims?.P625?.find(x=>x.rank!=='deprecated')?.mainsnak?.datavalue?.value;
     if(!coord||coord.globe!=='http://www.wikidata.org/entity/Q2')return {qid,...dates};return {qid,place:{name:e.labels?.en?.value||anchor.id,lat:coord.latitude,lon:coord.longitude,role,precision:'Wikidata place anchor'},place_source:'https://www.wikidata.org/wiki/'+anchor.id,...dates};
-  }catch(e){if(parentSignal?.aborted)throw e;return {geography_error:e.message}}finally{clearTimeout(timer);parentSignal?.removeEventListener('abort',cancel)}
+  }catch(e){if(parentSignal?.aborted)throw e;return {...(knownPlace?{place:knownPlace,start:null}:{}),geography_error:e.message}}finally{clearTimeout(timer);parentSignal?.removeEventListener('abort',cancel)}
 }
 export async function findAudio(article,{offset=0,...options}={}){
   const term=article.title.replace(/\s*\([^)]*\)/g,'').trim();
