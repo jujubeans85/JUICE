@@ -55,7 +55,10 @@ export function validateBackup(data, registry) {
     if (!validCachedGraph(data.exploration)) throw Error('Invalid exploration graph.');
     for (const k of ['nodes','edges','sources']) unique(data.exploration[k],'id','exploration '+k);
   }
-  if (data.concepts) validateConceptExport(data.concepts,registry);
+  if (data.concepts) {
+    validateConceptExport(data.concepts,registry);
+    if(new Set(data.concepts.contexts.map(c=>normalize(c.artist))).size!==data.concepts.contexts.length || new Set(data.concepts.overrides.map(o=>o.recording_key)).size!==data.concepts.overrides.length) throw Error('Duplicate concept context or choice.');
+  }
   // Exploration can legitimately refer to a reviewed-history parent.
   const graphs=[data.research,data.automatic_research?.graph,data.exploration].filter(Boolean);
   const nodes=new Set(graphs.flatMap(g=>g.nodes.map(n=>n.id))), sources=new Set(graphs.flatMap(g=>g.sources.map(s=>s.id)));
@@ -86,7 +89,10 @@ export function backupFilename(data) {
 const mergeRows=(a=[],b=[],key='id')=>[...new Map([...a,...b].map(x=>[x[key],x])).values()];
 function graphMerge(a,b) {
   a=a||emptyGraph(); b=b||emptyGraph();
-  return {...a,...b,version:1,nodes:mergeRows(a.nodes,b.nodes),edges:mergeRows(a.edges,b.edges),sources:mergeRows(a.sources,b.sources),trail:stableJSON(a.trail)===stableJSON(b.trail)?a.trail:[...a.trail,...b.trail]};
+  let overlap=0;
+  for(let n=Math.min(a.trail.length,b.trail.length);n>0;n--)if(a.trail.slice(-n).every((id,i)=>id===b.trail[i])){overlap=n;break;}
+  const trail=[...a.trail,...b.trail.slice(overlap)],cursor=b.trail.length?a.trail.length-overlap+(Number.isInteger(b.cursor)&&b.cursor>=0&&b.cursor<b.trail.length?b.cursor:b.trail.length-1):a.cursor;
+  return {...a,...b,version:1,nodes:mergeRows(a.nodes,b.nodes),edges:mergeRows(a.edges,b.edges),sources:mergeRows(a.sources,b.sources),trail,...(cursor===undefined?{}:{cursor})};
 }
 function newerRows(a=[],b=[],key,date) {
   const out=new Map(a.map(x=>[key(x),x]));
