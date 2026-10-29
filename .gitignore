@@ -1,0 +1,5 @@
+# Personal Atlas exports and owner-only runtime assets never belong in public Git.
+CRATE_JUICE_Music_Atlas*.json
+private-library.json
+research-bootstrap.json
+**/personal-backups/
