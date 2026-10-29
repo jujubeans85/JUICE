@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-29T04:14:25Z",
+  "canonical": {
+    "repository": "jujubeans85/JUICE",
+    "branch": "main",
+    "path": "CRATE_MAP/catalogue.json",
+    "source_commit": "7accea039d18285dabf79f9799536c26f69160f3",
+    "catalogue_blob_sha": "04f55e7bd234a8d61f00d5fcedd7bffaf2b89113"
+  },
+  "coverage": {
+    "indexed_lists": 258,
+    "public_complete_tracklists": 196,
+    "public_index_only_privacy_placeholders": 62,
+    "owner_private_complete_tracklists": 62,
+    "owner_complete_tracklists": 258,
+    "owner_partial_tracklists": 0,
+    "owner_index_only_tracklists": 0,
+    "public_ordered_track_slots": 9987,
+    "owner_private_ordered_track_slots": 2387,
+    "total_owner_ordered_track_slots": 12374,
+    "supplied_seeds_preserved": 4
+  },
+  "verification": {
+    "maintenance_checked_at": "2026-10-29T04:14:25Z",
+    "scope": "Canonical saved catalogue, existing owner-private overlay and identified saved exports only. This run checked schema, exact export equality, order, IDs and source privacy; it did not recapture playlists or assume access to other conversations or devices.",
+    "retained_track_verification": "metadata-verified",
+    "retained_checked_at_counts": {
+      "2026-10-28": 12368,
+      "2026-10-29": 6
+    },
+    "missing_track_verification": 0,
+    "missing_track_checked_at": 0
+  },
+  "unresolved": [
+    {
+      "code": "performing_artist_identity",
+      "track_slots": 7121,
+      "status": "retained-explicit-unknown",
+      "note": "Captured display credits and native source context are preserved; uploader identity is not assumed to be the performing artist."
+    },
+    {
+      "code": "soundcloud_numeric_recording_id",
+      "track_slots": 2120,
+      "status": "retained-explicit-unknown",
+      "note": "Native track permalinks and saved recording versions are retained; a numeric ID was not present in these captured rows. Do not invent IDs or YouTube equivalents."
+    }
+  ],
+  "backfill": {
+    "per_run_limit": 3,
+    "completed_this_run": 0,
+    "eligible_owner_index_only_lists": 0,
+    "note": "All accessible owner snapshots are complete. The 62 public index-only rows are intentional privacy placeholders, not permission to publish private memberships."
+  },
+  "replay": {
+    "exact_youtube_archives": 2,
+    "queue_batches": 2,
+    "ordered_youtube_recording_ids": 22,
+    "queue_generator": "https://www.youtube.com/watch_videos?video_ids=COMMA_SEPARATED_EXACT_IDS",
+    "note": "Fresh temporary queues are generated from exact archived IDs and are not saved public playlists. SoundCloud remixes retain native source and individual track links."
+  },
+  "exports": {
+    "public": {
+      "revision": "9cf3bf19a52d574b",
+      "derived_files_match_canonical": true
+    },
+    "owner": {
+      "revision": "397f0d2b58ff2a95",
+      "offline_sha256": "a15e816f12de5704d7c8a53a06647c1ac2f126b44c063670edcabb4e328e500a",
+      "offline_bytes": 11508015,
+      "text_index_matches_merged_source": true,
+      "offline_file_name": "CRATE_JUICE_Offline.html",
+      "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
+      "library_version": 2
+    },
+    "site": {
+      "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
+      "url": "https://crate-juice-map.xntfsstt5z.chatgpt.site",
+      "source_commit": "6f635e514132c4c09cf0c96e05b1ac123190f953",
+      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_781b67fbc86081918bc187a9f8394cfd",
+      "deployment_status": "succeeded",
+      "audience": "existing-owner-private-unchanged"
+    }
+  },
+  "device_scope": {
+    "hosted_cache": "Refreshes when reopened online; revision includes the owner overlay.",
+    "downloaded_files": "Snapshots until replaced; no inaccessible device was updated.",
+    "audio": "No streaming audio downloaded. Offline exports preserve tracklists and links, not offline streaming."
+  },
+  "blockers": [],
+  "notifications": {
+    "policy": "Suppress unchanged routine success. Report each concrete blocker once until its situation changes.",
+    "reported_blockers": [],
+    "routine_notification_suppressed": true
+  },
+  "history_limit": 12,
+  "history": [
+    {
+      "checked_at": "2026-10-29T04:14:25Z",
+      "outcome": "maintained",
+      "new_or_changed_lists": 0,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 258,
+        "owner_complete": 258,
+        "ordered_track_slots": 12374
+      },
+      "actions": [
+        "Validated existing public catalogue and owner-private overlay without changing source memberships.",
+        "Verified public derived files match canonical blobs and owner offline/text match the merged saved source.",
+        "Replaced the same persistent offline export, version 1 to 2.",
+        "Regenerated owner revision and service worker; published the same owner-private Site."
+      ]
+    }
+  ]
+}
