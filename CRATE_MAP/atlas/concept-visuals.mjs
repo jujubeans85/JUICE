@@ -1,6 +1,6 @@
 // Shared graphic language for the WebGL and CPU globes. These are original
 // editorial surfaces, never simulated evidence of an archival capture process.
-export const PATTERNS=new Set(['clear','paper','hatch','rays','cutout','halftone','grooves','diagonal','pixels','chrome','notation','cinema','spotlight','keys']);
+export const PATTERNS=new Set(['clear','paper','hatch','rays','cutout','halftone','grooves','diagonal','pixels','mosaic','chrome','notation','cinema','spotlight','keys']);
 export function paintConceptPattern(ctx,style,palette,width,height){
  if(!style||!PATTERNS.has(style.pattern))return;
  ctx.save();ctx.strokeStyle=palette.line;ctx.fillStyle=palette.line;ctx.globalAlpha=.17;ctx.lineWidth=1;
@@ -8,6 +8,7 @@ export function paintConceptPattern(ctx,style,palette,width,height){
  const unit=width/512;
  ctx.scale(unit,unit);const w=width/unit,h=height/unit;
  switch(style.pattern){
+  case 'mosaic':ctx.globalAlpha=1;for(let y=0;y<h;y+=12)for(let x=0;x<w;x+=12){const noise=Math.abs(Math.sin(x*12.91+y*7.31)*43758.55)%1,hue=x<w/2?310:210;ctx.fillStyle=`hsl(${hue} 15% ${11+noise*14}%)`;ctx.fillRect(x+1,y+1,10,10);ctx.strokeStyle='#c5d6e530';ctx.lineWidth=.6;ctx.strokeRect(x+1,y+1,10,10)}break;
   case 'paper':for(let y=9;y<h;y+=14)path(0,y,w,y);ctx.globalAlpha=.09;for(let x=11;x<w;x+=43)path(x,0,x+9,h);break;
   case 'hatch':for(let x=-h;x<w;x+=8)path(x,0,x+h,h);break;
   case 'rays':for(let i=0;i<32;i++){const a=i*Math.PI/16;path(w/2,h/2,w/2+Math.cos(a)*w,h/2+Math.sin(a)*w)}break;
