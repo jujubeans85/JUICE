@@ -1,33 +1,33 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-29T04:14:25Z",
+  "updated_at": "2026-10-30T04:56:28Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "7accea039d18285dabf79f9799536c26f69160f3",
-    "catalogue_blob_sha": "04f55e7bd234a8d61f00d5fcedd7bffaf2b89113"
+    "source_commit": "4f919fd9c683d4f26d28afa796beb10466eb8d0e",
+    "catalogue_blob_sha": "8476ff30598be8170a8e5c73ad7edb14e1609641"
   },
   "coverage": {
-    "indexed_lists": 258,
-    "public_complete_tracklists": 196,
+    "indexed_lists": 259,
+    "public_complete_tracklists": 197,
     "public_index_only_privacy_placeholders": 62,
     "owner_private_complete_tracklists": 62,
-    "owner_complete_tracklists": 258,
+    "owner_complete_tracklists": 259,
     "owner_partial_tracklists": 0,
     "owner_index_only_tracklists": 0,
-    "public_ordered_track_slots": 9987,
+    "public_ordered_track_slots": 10011,
     "owner_private_ordered_track_slots": 2387,
-    "total_owner_ordered_track_slots": 12374,
+    "total_owner_ordered_track_slots": 12398,
     "supplied_seeds_preserved": 4
   },
   "verification": {
-    "maintenance_checked_at": "2026-10-29T04:14:25Z",
+    "maintenance_checked_at": "2026-10-30T04:56:28Z",
     "scope": "Canonical saved catalogue, existing owner-private overlay and identified saved exports only. This run checked schema, exact export equality, order, IDs and source privacy; it did not recapture playlists or assume access to other conversations or devices.",
     "retained_track_verification": "metadata-verified",
     "retained_checked_at_counts": {
       "2026-10-28": 12368,
-      "2026-10-29": 6
+      "2026-10-29": 30
     },
     "missing_track_verification": 0,
     "missing_track_checked_at": 0
@@ -44,6 +44,28 @@
       "track_slots": 2120,
       "status": "retained-explicit-unknown",
       "note": "Native track permalinks and saved recording versions are retained; a numeric ID was not present in these captured rows. Do not invent IDs or YouTube equivalents."
+    },
+    {
+      "code": "thursday_soundcloud_transfer",
+      "crate_id": "CJ-273",
+      "status": "saved-worksheet-only",
+      "metadata_candidates": 22,
+      "exact_audio_equivalence": "not-verified",
+      "playlist_created": false,
+      "proposed_visibility": "private",
+      "unresolved_positions": [
+        {
+          "position": 15,
+          "note": "Matching Groovejet remix upload is a 90-second preview; excluded."
+        },
+        {
+          "position": 23,
+          "note": "Exact Make Luv Flight Facilities edit not located; no substitution."
+        }
+      ],
+      "evidence_library_file_id": "libfile_f3b5e740da4c819186bb984f8f59eed9",
+      "source_checked_at": "2026-10-29",
+      "note": "Retain the original 24 exact YouTube IDs. Candidate URLs and notes remain in the identified existing worksheet; they do not constitute a saved SoundCloud playlist or verified cross-platform equivalents."
     }
   ],
   "backfill": {
@@ -53,31 +75,33 @@
     "note": "All accessible owner snapshots are complete. The 62 public index-only rows are intentional privacy placeholders, not permission to publish private memberships."
   },
   "replay": {
-    "exact_youtube_archives": 2,
-    "queue_batches": 2,
-    "ordered_youtube_recording_ids": 22,
+    "exact_youtube_archives": 3,
+    "queue_batches": 3,
+    "ordered_youtube_recording_ids": 46,
     "queue_generator": "https://www.youtube.com/watch_videos?video_ids=COMMA_SEPARATED_EXACT_IDS",
     "note": "Fresh temporary queues are generated from exact archived IDs and are not saved public playlists. SoundCloud remixes retain native source and individual track links."
   },
   "exports": {
     "public": {
-      "revision": "9cf3bf19a52d574b",
+      "revision": "d2b99aa94034616e",
       "derived_files_match_canonical": true
     },
     "owner": {
-      "revision": "397f0d2b58ff2a95",
-      "offline_sha256": "a15e816f12de5704d7c8a53a06647c1ac2f126b44c063670edcabb4e328e500a",
-      "offline_bytes": 11508015,
+      "revision": "a992f7f247f27509",
+      "offline_sha256": "c012bbc110004e508c874207a624c2223ca46bb17054205367e72b6155fce8f0",
+      "offline_bytes": 11523751,
       "text_index_matches_merged_source": true,
       "offline_file_name": "CRATE_JUICE_Offline.html",
       "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
-      "library_version": 2
+      "library_version": 3,
+      "existing_library_bytes_match": true,
+      "last_comparison_at": "2026-10-30T04:56:28Z"
     },
     "site": {
       "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
       "url": "https://crate-juice-map.xntfsstt5z.chatgpt.site",
-      "source_commit": "6f635e514132c4c09cf0c96e05b1ac123190f953",
-      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_781b67fbc86081918bc187a9f8394cfd",
+      "source_commit": "3e96951904239f36595edb774f1fd56afbbe37b7",
+      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_71b21cad24988191a3fa3e62bd678772",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged"
     }
@@ -91,7 +115,7 @@
   "notifications": {
     "policy": "Suppress unchanged routine success. Report each concrete blocker once until its situation changes.",
     "reported_blockers": [],
-    "routine_notification_suppressed": true
+    "routine_notification_suppressed": false
   },
   "history_limit": 12,
   "history": [
@@ -111,6 +135,42 @@
         "Replaced the same persistent offline export, version 1 to 2.",
         "Regenerated owner revision and service worker; published the same owner-private Site."
       ]
+    },
+    {
+      "checked_at": "2026-10-30T04:56:28Z",
+      "outcome": "reconciled",
+      "new_or_changed_lists": 1,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 259,
+        "owner_complete": 259,
+        "ordered_track_slots": 12398
+      },
+      "actions": [
+        "Reconciled CJ-273 from the identical saved 24-track JSON and current Site source into the canonical catalogue; no existing list was overwritten.",
+        "Regenerated public derivatives without private memberships; retained the existing 62-entry owner overlay.",
+        "Restored owner offline/text exports and regenerated the owner-aware revision and service worker; published the same private Site.",
+        "Byte-compared persistent offline version 3 with the regenerated owner export: identical, so no replacement was needed.",
+        "Read and indexed the existing SoundCloud transfer worksheet as candidate evidence; retained two gaps and all original YouTube IDs."
+      ]
+    }
+  ],
+  "identified_saved_exports": [
+    {
+      "library_file_id": "libfile_d473bd7757688191af2ed78825f9ea29",
+      "name": "ThursdayCrate_001.json",
+      "crate_id": "CJ-273",
+      "track_count": 24,
+      "reviewed_at": "2026-10-30T04:56:28Z",
+      "result": "Exact equality with the Site source entry; reconciled into the canonical public catalogue."
+    },
+    {
+      "library_file_id": "libfile_f3b5e740da4c819186bb984f8f59eed9",
+      "name": "ThursdayCrate_001_SoundCloud_transfer.html",
+      "crate_id": "CJ-273",
+      "track_count": 24,
+      "reviewed_at": "2026-10-30T04:56:28Z",
+      "result": "Complete saved worksheet read; original order preserved. 22 metadata candidates and 2 unresolved gaps; no SoundCloud playlist created."
     }
   ]
 }
