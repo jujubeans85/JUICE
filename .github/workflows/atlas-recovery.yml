@@ -1,0 +1,19 @@
+name: Atlas recovery
+on:
+  pull_request:
+    paths: ['CRATE_MAP/atlas/**', '.github/workflows/atlas-recovery.yml']
+  push:
+    paths: ['CRATE_MAP/atlas/**', '.github/workflows/atlas-recovery.yml']
+permissions:
+  contents: read
+jobs:
+  recovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --test CRATE_MAP/atlas/*.test.mjs
+      - run: npm ci --prefix CRATE_MAP/atlas/tests --ignore-scripts --no-audit --no-fund
+      - run: npm test --prefix CRATE_MAP/atlas/tests

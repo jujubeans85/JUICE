@@ -1,9 +1,10 @@
+import {STORE_SCHEMAS} from './storage-schema.mjs';
 import {articleTitle, cleanText, wikiURL, youtubeReference, safeCommonsAudio, classifyArticle, wikibaseID, isMusicText, sourceDates} from './rabbit-core.mjs';
 const WIKI='https://en.wikipedia.org/w/api.php', COMMONS='https://commons.wikimedia.org/w/api.php', WD='https://www.wikidata.org/w/api.php';
 const memory=new Map(), pending=new Map(); let nextRequest=0;
 export class ExplorationStore {
   constructor(){this.persistent=false;this.ready=this.open();}
-  async open(){if(!globalThis.indexedDB)return;try{this.db=await new Promise((resolve,reject)=>{const r=indexedDB.open('cj-music-exploration-v1',1);r.onupgradeneeded=()=>{r.result.createObjectStore('state');r.result.createObjectStore('cache')};r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)});this.persistent=true}catch{}}
+  async open(){if(!globalThis.indexedDB)return;try{this.db=await new Promise((resolve,reject)=>{const r=indexedDB.open(STORE_SCHEMAS.exploration.name,STORE_SCHEMAS.exploration.version);r.onupgradeneeded=()=>{for(const name of STORE_SCHEMAS.exploration.stores)r.result.createObjectStore(name)};r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)});this.persistent=true}catch{}}
   async get(store,key){await this.ready;if(!this.db)return memory.get(store+':'+key);try{return await new Promise((resolve,reject)=>{const r=this.db.transaction(store).objectStore(store).get(key);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)})}catch{return memory.get(store+':'+key)}}
   async put(store,key,value){memory.set(store+':'+key,value);await this.ready;if(!this.db)return false;try{await new Promise((resolve,reject)=>{const tx=this.db.transaction(store,'readwrite');tx.objectStore(store).put(value,key);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)});return true}catch{this.persistent=false;return false}}
   async clear(){await this.ready;memory.clear();if(this.db)await new Promise((resolve,reject)=>{const tx=this.db.transaction(['state','cache'],'readwrite');tx.objectStore('state').clear();tx.objectStore('cache').clear();tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)})}
