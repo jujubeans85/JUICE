@@ -1,0 +1,53 @@
+name: Portfolio maintenance audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 0 1 * *'
+  pull_request:
+    paths:
+      - 'MAINTENANCE/**'
+      - 'CONTROL/server.py'
+      - '.github/workflows/portfolio-audit.yml'
+
+# The collector cannot write source, issues, PRs, deployments or settings.
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: portfolio-audit-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Test collection, reporting, privacy and Control integration
+        run: python3 -m unittest discover -s MAINTENANCE/tests -v
+      - name: Collect public portfolio evidence
+        id: collect
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 MAINTENANCE/portfolio_audit.py --previous-from-actions
+      - name: Preserve default-branch state and report
+        if: always() && steps.collect.outputs.complete == 'true' && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: portfolio-state
+          path: MAINTENANCE/output/
+          retention-days: 90
+          if-no-files-found: error
+      - name: Preserve review evidence separately from monthly state
+        if: always() && (steps.collect.outputs.complete != 'true' || github.event_name == 'pull_request' || github.ref != 'refs/heads/main')
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: portfolio-review-${{ github.run_id }}
+          path: MAINTENANCE/output/
+          retention-days: 90
+          if-no-files-found: error
+
