@@ -1,33 +1,34 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-30T04:56:28Z",
+  "updated_at": "2026-10-31T04:47:15Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "4f919fd9c683d4f26d28afa796beb10466eb8d0e",
-    "catalogue_blob_sha": "8476ff30598be8170a8e5c73ad7edb14e1609641"
+    "source_commit": "ede3905a7d2c2c99fd5ce10046776c168b7805bc",
+    "catalogue_blob_sha": "54173d387674ceb3174c72ed514e7fc84bcc49b4"
   },
   "coverage": {
-    "indexed_lists": 259,
-    "public_complete_tracklists": 197,
-    "public_index_only_privacy_placeholders": 62,
-    "owner_private_complete_tracklists": 62,
-    "owner_complete_tracklists": 259,
+    "indexed_lists": 261,
+    "public_complete_tracklists": 198,
+    "public_index_only_privacy_placeholders": 63,
+    "owner_private_complete_tracklists": 63,
+    "owner_complete_tracklists": 261,
     "owner_partial_tracklists": 0,
     "owner_index_only_tracklists": 0,
-    "public_ordered_track_slots": 10011,
-    "owner_private_ordered_track_slots": 2387,
-    "total_owner_ordered_track_slots": 12398,
-    "supplied_seeds_preserved": 4
+    "public_ordered_track_slots": 10031,
+    "owner_private_ordered_track_slots": 2394,
+    "total_owner_ordered_track_slots": 12425,
+    "supplied_seeds_preserved": 5
   },
   "verification": {
-    "maintenance_checked_at": "2026-10-30T04:56:28Z",
+    "maintenance_checked_at": "2026-10-31T04:47:15Z",
     "scope": "Canonical saved catalogue, existing owner-private overlay and identified saved exports only. This run checked schema, exact export equality, order, IDs and source privacy; it did not recapture playlists or assume access to other conversations or devices.",
     "retained_track_verification": "metadata-verified",
     "retained_checked_at_counts": {
-      "2026-10-28": 12368,
-      "2026-10-29": 30
+      "2026-10-30": 27,
+      "2026-10-29": 30,
+      "2026-10-28": 12368
     },
     "missing_track_verification": 0,
     "missing_track_checked_at": 0
@@ -41,7 +42,7 @@
     },
     {
       "code": "soundcloud_numeric_recording_id",
-      "track_slots": 2120,
+      "track_slots": 2139,
       "status": "retained-explicit-unknown",
       "note": "Native track permalinks and saved recording versions are retained; a numeric ID was not present in these captured rows. Do not invent IDs or YouTube equivalents."
     },
@@ -66,42 +67,54 @@
       "evidence_library_file_id": "libfile_f3b5e740da4c819186bb984f8f59eed9",
       "source_checked_at": "2026-10-29",
       "note": "Retain the original 24 exact YouTube IDs. Candidate URLs and notes remain in the identified existing worksheet; they do not constitute a saved SoundCloud playlist or verified cross-platform equivalents."
+    },
+    {
+      "code": "friday_native_playlist",
+      "crate_id": "CJ-275",
+      "status": "not-established-by-saved-exports",
+      "native_playlist_url": null,
+      "note": "The saved HTML and revised text preserve 20 exact ordered SoundCloud recordings but say no native account playlist was created. Preserve individual track URLs, edit versions and the numeric recording ID present in the source; do not fabricate a playlist URL or YouTube equivalents.",
+      "evidence_library_file_ids": [
+        "libfile_228ad94887488191bdfc4fca121da579",
+        "libfile_b8645705449881918e3daad2b664d957"
+      ],
+      "source_checked_at": "2026-10-30"
     }
   ],
   "backfill": {
     "per_run_limit": 3,
     "completed_this_run": 0,
     "eligible_owner_index_only_lists": 0,
-    "note": "All accessible owner snapshots are complete. The 62 public index-only rows are intentional privacy placeholders, not permission to publish private memberships."
+    "note": "All accessible owner snapshots are complete. The 63 public index-only rows are intentional privacy placeholders; private recordings and the new private seed remain owner-only."
   },
   "replay": {
-    "exact_youtube_archives": 3,
-    "queue_batches": 3,
-    "ordered_youtube_recording_ids": 46,
+    "exact_youtube_archives": 4,
+    "queue_batches": 4,
+    "ordered_youtube_recording_ids": 53,
     "queue_generator": "https://www.youtube.com/watch_videos?video_ids=COMMA_SEPARATED_EXACT_IDS",
-    "note": "Fresh temporary queues are generated from exact archived IDs and are not saved public playlists. SoundCloud remixes retain native source and individual track links."
+    "note": "Includes one owner-private exact-ID queue generated only in the owner exports. Queues are temporary, not saved public playlists. Friday 005 retains only exact native SoundCloud sources."
   },
   "exports": {
     "public": {
-      "revision": "d2b99aa94034616e",
+      "revision": "6c47d4e822a255d1",
       "derived_files_match_canonical": true
     },
     "owner": {
-      "revision": "a992f7f247f27509",
-      "offline_sha256": "c012bbc110004e508c874207a624c2223ca46bb17054205367e72b6155fce8f0",
-      "offline_bytes": 11523751,
+      "revision": "fb8b0004281faeea",
+      "offline_sha256": "c92093ad32686be0866d96af6154643ec625ca60347ee236b113eaf245d58656",
+      "offline_bytes": 11543814,
       "text_index_matches_merged_source": true,
       "offline_file_name": "CRATE_JUICE_Offline.html",
       "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
-      "library_version": 3,
+      "library_version": 4,
       "existing_library_bytes_match": true,
-      "last_comparison_at": "2026-10-30T04:56:28Z"
+      "last_comparison_at": "2026-10-31T04:47:15Z"
     },
     "site": {
       "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
       "url": "https://crate-juice-map.xntfsstt5z.chatgpt.site",
-      "source_commit": "3e96951904239f36595edb774f1fd56afbbe37b7",
-      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_71b21cad24988191a3fa3e62bd678772",
+      "source_commit": "32e6edc080247dd137abb85386010bbb701f7edc",
+      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_ce15ee9611dc81919976dc5985462f5d",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged"
     }
@@ -153,6 +166,24 @@
         "Byte-compared persistent offline version 3 with the regenerated owner export: identical, so no replacement was needed.",
         "Read and indexed the existing SoundCloud transfer worksheet as candidate evidence; retained two gaps and all original YouTube IDs."
       ]
+    },
+    {
+      "checked_at": "2026-10-31T04:47:15Z",
+      "outcome": "reconciled",
+      "new_or_changed_lists": 2,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 261,
+        "owner_complete": 261,
+        "ordered_track_slots": 12425
+      },
+      "actions": [
+        "Reconciled CJ-274 private source evidence with its existing owner overlay; added a generic canonical placeholder without publishing recordings, original seed or private artwork.",
+        "Archived CJ-275 from agreeing saved HTML and revised text: 20 exact ordered SoundCloud recordings, including supplied source links and metadata dates.",
+        "Regenerated public and owner derivatives separately; retained 63 owner-private memberships.",
+        "Replaced the same persistent offline export with version 4; published the same Site without an audience change.",
+        "Carried forward identity gaps and Thursday transfer uncertainties; preserved Friday native-playlist creation as unconfirmed."
+      ]
     }
   ],
   "identified_saved_exports": [
@@ -171,6 +202,31 @@
       "track_count": 24,
       "reviewed_at": "2026-10-30T04:56:28Z",
       "result": "Complete saved worksheet read; original order preserved. 22 metadata candidates and 2 unresolved gaps; no SoundCloud playlist created."
+    },
+    {
+      "library_file_id": "libfile_8c6ebb70da7081918f0e7529e981c935",
+      "name": "Solo_Time_001.html",
+      "crate_id": "CJ-274",
+      "track_count": 7,
+      "reviewed_at": "2026-10-31T04:47:15Z",
+      "result": "Exact saved tracks equal the existing owner-private overlay. Canonical public index contains a generic private placeholder only; source recordings and supplied seed remain private."
+    },
+    {
+      "library_file_id": "libfile_b8645705449881918e3daad2b664d957",
+      "name": "Friday_Crate_005_Tracklist_30_Oct_2026.txt",
+      "source_version": 1,
+      "crate_id": "CJ-275",
+      "track_count": 20,
+      "reviewed_at": "2026-10-31T04:47:15Z",
+      "result": "Exact ordered URLs agree with the saved player HTML; archived with original versions and inherited verification date."
+    },
+    {
+      "library_file_id": "libfile_228ad94887488191bdfc4fca121da579",
+      "name": "Friday_Crate_005_Play_30_Oct_2026.html",
+      "crate_id": "CJ-275",
+      "track_count": 20,
+      "reviewed_at": "2026-10-31T04:47:15Z",
+      "result": "Saved source recording metadata retained, including native SoundCloud player URL and known numeric ID. Native account playlist creation is not established."
     }
   ]
 }
