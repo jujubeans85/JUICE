@@ -1,5 +1,57 @@
 [
   {
+    "id": "CJ-277",
+    "position": "H2",
+    "symbol": "D2",
+    "edition": "2026-11-01",
+    "family": "PLAY HISTORY",
+    "color": "#8F99AA",
+    "owned": true,
+    "status": "EXISTING",
+    "artwork_status": "map only",
+    "image": "covers/CJ-277.svg",
+    "tracks_snapshot": 23,
+    "created_at": "2026-11-01",
+    "updated_at": "2026-11-01",
+    "title": "Owner-private crate CJ-277",
+    "lines": [
+      "Owner-private",
+      "CJ-277"
+    ],
+    "url": "https://crate-juice-map.xntfsstt5z.chatgpt.site/?q=CJ-277",
+    "source_platform": "private",
+    "source_visibility": "owner-only",
+    "tracklist_status": "index-only",
+    "tracks": [],
+    "note": "Exact archive retained only in the owner-private overlay."
+  },
+  {
+    "id": "CJ-276",
+    "position": "H1",
+    "symbol": "D1",
+    "edition": "2026-11-01",
+    "family": "PLAY HISTORY",
+    "color": "#8F99AA",
+    "owned": true,
+    "status": "EXISTING",
+    "artwork_status": "map only",
+    "image": "covers/CJ-276.svg",
+    "tracks_snapshot": 82,
+    "created_at": "2026-11-01",
+    "updated_at": "2026-11-01",
+    "title": "Owner-private crate CJ-276",
+    "lines": [
+      "Owner-private",
+      "CJ-276"
+    ],
+    "url": "https://crate-juice-map.xntfsstt5z.chatgpt.site/?q=CJ-276",
+    "source_platform": "private",
+    "source_visibility": "owner-only",
+    "tracklist_status": "index-only",
+    "tracks": [],
+    "note": "Exact archive retained only in the owner-private overlay."
+  },
+  {
     "id": "CJ-275",
     "position": "B6",
     "symbol": "F5",

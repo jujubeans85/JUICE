@@ -1,42 +1,50 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T04:47:15Z",
+  "updated_at": "2026-11-01T04:20:37Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "ede3905a7d2c2c99fd5ce10046776c168b7805bc",
-    "catalogue_blob_sha": "54173d387674ceb3174c72ed514e7fc84bcc49b4"
+    "source_commit": "0918ec66476e1a6d783d2d14e6c13e9bc151ad05",
+    "catalogue_blob_sha": "3bf996629eb176ce748237cb1cb3f68da5170ee1"
   },
   "coverage": {
-    "indexed_lists": 261,
+    "indexed_lists": 263,
     "public_complete_tracklists": 198,
-    "public_index_only_privacy_placeholders": 63,
-    "owner_private_complete_tracklists": 63,
-    "owner_complete_tracklists": 261,
+    "public_index_only_privacy_placeholders": 65,
+    "owner_private_complete_tracklists": 65,
+    "owner_complete_tracklists": 263,
     "owner_partial_tracklists": 0,
     "owner_index_only_tracklists": 0,
     "public_ordered_track_slots": 10031,
-    "owner_private_ordered_track_slots": 2394,
-    "total_owner_ordered_track_slots": 12425,
-    "supplied_seeds_preserved": 5
+    "owner_private_ordered_track_slots": 2499,
+    "total_owner_ordered_track_slots": 12530,
+    "supplied_seeds_preserved": 5,
+    "curated_list_archives": 261,
+    "play_history_export_archives": 2,
+    "play_history_ordered_events": 105
   },
   "verification": {
-    "maintenance_checked_at": "2026-10-31T04:47:15Z",
+    "maintenance_checked_at": "2026-11-01T04:20:37Z",
     "scope": "Canonical saved catalogue, existing owner-private overlay and identified saved exports only. This run checked schema, exact export equality, order, IDs and source privacy; it did not recapture playlists or assume access to other conversations or devices.",
-    "retained_track_verification": "metadata-verified",
+    "retained_track_verification": "Mixed: source metadata verification retained per recording; new djay export rows remain unverified.",
     "retained_checked_at_counts": {
+      "2026-11-01": 105,
       "2026-10-30": 27,
       "2026-10-29": 30,
       "2026-10-28": 12368
     },
     "missing_track_verification": 0,
-    "missing_track_checked_at": 0
+    "missing_track_checked_at": 0,
+    "track_verification_counts": {
+      "unverified": 105,
+      "metadata-verified": 12425
+    }
   },
   "unresolved": [
     {
       "code": "performing_artist_identity",
-      "track_slots": 7121,
+      "track_slots": 7226,
       "status": "retained-explicit-unknown",
       "note": "Captured display credits and native source context are preserved; uploader identity is not assumed to be the performing artist."
     },
@@ -79,13 +87,29 @@
         "libfile_b8645705449881918e3daad2b664d957"
       ],
       "source_checked_at": "2026-10-30"
+    },
+    {
+      "code": "djay_export_metadata",
+      "crate_ids": [
+        "CJ-276",
+        "CJ-277"
+      ],
+      "track_slots": 105,
+      "status": "unverified-user-export-metadata",
+      "note": "Source display credits, full titles and version labels retained verbatim with IDs, repeats, times, durations, BPM, key and deck fields in the owner-only archive. CSVs agree with saved recovery HTML. Performing-artist identity, release version, measured BPM/key, playability and full listening are not independently verified. Do not publish private play history or use it to assert a native saved playlist.",
+      "evidence_library_file_ids": [
+        "libfile_76a6445005748191920e46d754e963b0",
+        "libfile_087316d58e5c8191aec0932206865a6e",
+        "libfile_45e95ba8b3688191b8fe590f1ed44d4b"
+      ],
+      "checked_at": "2026-11-01"
     }
   ],
   "backfill": {
     "per_run_limit": 3,
     "completed_this_run": 0,
     "eligible_owner_index_only_lists": 0,
-    "note": "All accessible owner snapshots are complete. The 63 public index-only rows are intentional privacy placeholders; private recordings and the new private seed remain owner-only."
+    "note": "All accessible owner archives are complete. The 65 public index-only rows are privacy placeholders; no eligible historical owner index-only lists remain."
   },
   "replay": {
     "exact_youtube_archives": 4,
@@ -96,25 +120,25 @@
   },
   "exports": {
     "public": {
-      "revision": "6c47d4e822a255d1",
+      "revision": "ebf2eaf0b59c5298",
       "derived_files_match_canonical": true
     },
     "owner": {
-      "revision": "fb8b0004281faeea",
-      "offline_sha256": "c92093ad32686be0866d96af6154643ec625ca60347ee236b113eaf245d58656",
-      "offline_bytes": 11543814,
+      "revision": "12423e01116ea03a",
+      "offline_sha256": "32c99ba113d3336bf4a09ab6f3e901060ac62e6e68021a4df1044cd1a92b43b5",
+      "offline_bytes": 11712282,
       "text_index_matches_merged_source": true,
       "offline_file_name": "CRATE_JUICE_Offline.html",
       "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
-      "library_version": 4,
+      "library_version": 5,
       "existing_library_bytes_match": true,
-      "last_comparison_at": "2026-10-31T04:47:15Z"
+      "last_comparison_at": "2026-11-01T04:20:37Z"
     },
     "site": {
       "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
       "url": "https://crate-juice-map.xntfsstt5z.chatgpt.site",
-      "source_commit": "32e6edc080247dd137abb85386010bbb701f7edc",
-      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_ce15ee9611dc81919976dc5985462f5d",
+      "source_commit": "ae0929d0f67a8c038f8b3fa4c5b4f18330f7f8dd",
+      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_80c5563344f481918a52f1e53488801a",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged"
     }
@@ -184,6 +208,26 @@
         "Replaced the same persistent offline export with version 4; published the same Site without an audience change.",
         "Carried forward identity gaps and Thursday transfer uncertainties; preserved Friday native-playlist creation as unconfirmed."
       ]
+    },
+    {
+      "checked_at": "2026-11-01T04:20:37Z",
+      "outcome": "preserved-private-exports",
+      "new_or_changed_lists": 2,
+      "new_or_changed_curated_playlists": 0,
+      "play_history_export_archives": 2,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 263,
+        "owner_complete": 263,
+        "ordered_track_slots": 12530
+      },
+      "actions": [
+        "Recovered the existing Site source after workspace pruning; preserved the current Site identity, audience and existing private overlay.",
+        "Cross-compared two saved CSVs against recovery HTML: 82 and 23 exact ordered events with repeats. Archived metadata as unverified and private.",
+        "Added only generic canonical public index placeholders; no play-history recordings, timestamps, source artist credits or IDs were published in public Git.",
+        "Regenerated public and owner exports independently. Replaced the same persistent offline export, version 4 to 5, and published the same private Site.",
+        "Carried forward prior identity and native-playlist uncertainties; retained four exact-ID YouTube queue generators without inventing SoundCloud equivalents."
+      ]
     }
   ],
   "identified_saved_exports": [
@@ -227,6 +271,34 @@
       "track_count": 20,
       "reviewed_at": "2026-10-31T04:47:15Z",
       "result": "Saved source recording metadata retained, including native SoundCloud player URL and known numeric ID. Native account playlist creation is not established."
+    },
+    {
+      "library_file_id": "libfile_76a6445005748191920e46d754e963b0",
+      "name": "djay_Set_Recovery.html",
+      "source_version": 2,
+      "crate_ids": [
+        "CJ-276",
+        "CJ-277"
+      ],
+      "track_count": 105,
+      "reviewed_at": "2026-11-01T04:20:37Z",
+      "result": "Two distinct export blocks retained privately as play-history evidence, not deduplicated or represented as curated/native playlists."
+    },
+    {
+      "library_file_id": "libfile_087316d58e5c8191aec0932206865a6e",
+      "name": "djay_82_plays_Soundiiz.csv",
+      "crate_id": "CJ-276",
+      "track_count": 82,
+      "reviewed_at": "2026-11-01T04:20:37Z",
+      "result": "Exact ordered IDs, titles, source artist credits and duration agree with recovery HTML block 1. Original timestamps, deck and other fields retained from HTML."
+    },
+    {
+      "library_file_id": "libfile_45e95ba8b3688191b8fe590f1ed44d4b",
+      "name": "djay_23_plays_Soundiiz.csv",
+      "crate_id": "CJ-277",
+      "track_count": 23,
+      "reviewed_at": "2026-11-01T04:20:37Z",
+      "result": "Exact ordered IDs, titles, source artist credits and duration agree with recovery HTML block 2. Original timestamps, deck and other fields retained from HTML."
     }
   ]
 }
