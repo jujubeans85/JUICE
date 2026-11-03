@@ -48,3 +48,7 @@ The app fallback should still work even before the CLI is installed, as long as 
 ## Project build intake
 
 - [AFTERWORLDS](projects/afterworlds/README.md) — screenshot points, research leads and image/file intake. The repository handoff is ready; live Universal Capture wiring must be verified against the current Mac checkout.
+
+## Optional Skill Radar
+
+[Review reusable workflows inside JC](SKILL_RADAR.md). Disabled by default; only approved manual summaries are supported. The canonical private JUICE-SKILLS checkout owns logic and decisions. Check the actual Mac server before installing; this does not claim an automatic conversation feed.
