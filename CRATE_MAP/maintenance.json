@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-03T04:25:27Z",
+  "updated_at": "2026-11-04T04:52:09Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "b8ffe9fa0fdfa3019d248209610c16846e4a1b20",
+    "source_commit": "cf0a5338419b6d0591789283a6fef7272fe8d3a8",
     "catalogue_blob_sha": "583f60a895b226357b1997f80d4fea889348339d"
   },
   "coverage": {
@@ -27,7 +27,7 @@
     "supplied_seed_count_basis": "15 marked positions across archived lists; 10 distinct recordings, with five N5P seeds intentionally repeated in Sunday 005."
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-03T04:25:27Z",
+    "maintenance_checked_at": "2026-11-04T04:52:09Z",
     "scope": "Canonical saved catalogue, existing owner-private overlay and identified saved exports only. This run checked schema, exact export equality, order, IDs and source privacy; it did not recapture playlists or assume access to other conversations or devices.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
@@ -156,7 +156,7 @@
       "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
       "library_version": 6,
       "existing_library_bytes_match": true,
-      "last_comparison_at": "2026-11-03T04:25:27Z",
+      "last_comparison_at": "2026-11-04T04:52:09Z",
       "export_comparison_basis": "Current owner export hash equals the recorded saved bytes; Library remains at the same immutable version 6. No replacement performed."
     },
     "site": {
@@ -166,7 +166,7 @@
       "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_fd92957b52cc81918eb290d9123f6a17",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-03T04:25:27Z",
+      "last_access_check_at": "2026-11-04T04:52:09Z",
       "last_checked_version": 15
     }
   },
@@ -292,6 +292,22 @@
         "Validated standalone owner export, text index, revision/service-worker consistency, seeds and four exact-ID replay generators.",
         "Confirmed persistent offline version 6 and the recorded owner export hash remain current. No export replacement or Site redeployment was necessary.",
         "Carried all unresolved identities, source availability notes and inaccessible local-file references forward unchanged. No eligible historical owner index-only lists remain."
+      ]
+    },
+    {
+      "checked_at": "2026-11-04T04:52:09Z",
+      "outcome": "unchanged",
+      "new_or_changed_lists": 0,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 266,
+        "owner_complete": 266,
+        "ordered_track_slots": 12631
+      },
+      "actions": [
+        "Validated the current canonical blob, private Site source, owner archive coverage, four replay queues and export revision.",
+        "Checked all eleven identified export revisions and recent accessible Library metadata for changes.",
+        "Confirmed the owner snapshot hash and retained Library version 6. Carried unresolved items forward."
       ]
     }
   ],
