@@ -1,5 +1,31 @@
 [
   {
+    "id": "CJ-281",
+    "position": "D6",
+    "symbol": "SS",
+    "edition": "2026-11-05",
+    "family": "SOUL / BREAKS",
+    "color": "#edb4a3",
+    "owned": true,
+    "status": "EXISTING",
+    "artwork_status": "typographic map tile",
+    "image": "covers/CJ-281.svg",
+    "tracks_snapshot": 20,
+    "created_at": "2026-11-05",
+    "updated_at": "2026-11-05",
+    "title": "Owner-private crate CJ-281",
+    "lines": [
+      "Owner-private",
+      "CJ-281"
+    ],
+    "url": "https://crate-juice-map.xntfsstt5z.chatgpt.site/?q=CJ-281",
+    "source_platform": "private",
+    "source_visibility": "owner-only",
+    "tracklist_status": "index-only",
+    "tracks": [],
+    "note": "Exact archive retained only in the owner-private overlay."
+  },
+  {
     "id": "CJ-280",
     "position": "H3",
     "symbol": "D3",
