@@ -1,5 +1,158 @@
 [
   {
+    "id": "CJ-282",
+    "position": "D7",
+    "symbol": "OE",
+    "edition": "2026-11-05",
+    "family": "SOUTH ASIAN / BASS / SOUL",
+    "color": "#e1a15c",
+    "owned": true,
+    "status": "EXISTING",
+    "title": "OPEN EARS — six-track conversation",
+    "lines": [
+      "OPEN",
+      "EARS"
+    ],
+    "created_at": "2026-11-05",
+    "updated_at": "2026-11-05",
+    "url": "https://soundcloud.com/adam-marsh-356085218/sets/open-ears-six-track",
+    "source_platform": "SoundCloud",
+    "source_visibility": "public",
+    "tracklist_status": "complete",
+    "tracks_snapshot": 6,
+    "duration_snapshot": "about 24 minutes",
+    "artwork_status": "typographic map tile",
+    "image": "covers/CJ-282.svg",
+    "tracks": [
+      {
+        "position": 1,
+        "artist": "Real Boss",
+        "title": "I Know",
+        "version": "Original single recording",
+        "url": "https://soundcloud.com/realboss-music/i-know",
+        "duration": "3:38",
+        "seed": true,
+        "note": "Your shared starting point; Punjabi rap over a head-nod groove.",
+        "source_platform": "SoundCloud",
+        "platform_recording_id": "realboss-music/i-know",
+        "verification": "metadata-verified",
+        "checked_at": "2026-11-05",
+        "duration_scope": "SoundCloud displayed duration, rounded; full-track playback not independently audited",
+        "youtube_id": "RiXCZkt6mLo"
+      },
+      {
+        "position": 2,
+        "artist": "Panjabi MC",
+        "title": "Mundian To Bach Ke",
+        "version": "Original recording; official SoundCloud upload",
+        "url": "https://soundcloud.com/panjabi-mc-official/mundian-to-bach-ke-2",
+        "duration": "4:05",
+        "seed": false,
+        "note": "The familiar bhangra hook that opens the door.",
+        "source_platform": "SoundCloud",
+        "platform_recording_id": "panjabi-mc-official/mundian-to-bach-ke-2",
+        "verification": "metadata-verified",
+        "checked_at": "2026-11-05",
+        "duration_scope": "SoundCloud displayed duration, rounded; full-track playback not independently audited"
+      },
+      {
+        "position": 3,
+        "artist": "Swet Shop Boys",
+        "title": "T5",
+        "version": "Cashmere album version; Customs label upload",
+        "url": "https://soundcloud.com/customsmusic/swet-shop-boys-t5",
+        "duration": "2:27",
+        "seed": false,
+        "note": "Witty, bristling diaspora rap; the conversational left turn.",
+        "source_platform": "SoundCloud",
+        "platform_recording_id": "customsmusic/swet-shop-boys-t5",
+        "verification": "metadata-verified",
+        "checked_at": "2026-11-05",
+        "duration_scope": "SoundCloud displayed duration, rounded; full-track playback not independently audited"
+      },
+      {
+        "position": 4,
+        "artist": "Nucleya feat. Avneet Khurmi",
+        "title": "Laung Gawacha",
+        "version": "Bass Rani original version",
+        "url": "https://soundcloud.com/nucleya/laung-gawacha-feat-avneet-khurmi",
+        "duration": "3:34",
+        "seed": false,
+        "note": "Punjabi folk melody meets playful, heavy bass.",
+        "source_platform": "SoundCloud",
+        "platform_recording_id": "nucleya/laung-gawacha-feat-avneet-khurmi",
+        "verification": "metadata-verified",
+        "checked_at": "2026-11-05",
+        "duration_scope": "SoundCloud displayed duration, rounded; full-track playback not independently audited"
+      },
+      {
+        "position": 5,
+        "artist": "Thievery Corporation",
+        "title": "Lebanese Blonde",
+        "version": "The Mirror Conspiracy original version",
+        "url": "https://soundcloud.com/thieverycorporation/lebanese-blonde",
+        "duration": "4:49",
+        "seed": false,
+        "note": "Sitar, unhurried drums and smoky soul: the Juice landing.",
+        "source_platform": "SoundCloud",
+        "platform_recording_id": "thieverycorporation/lebanese-blonde",
+        "verification": "metadata-verified",
+        "checked_at": "2026-11-05",
+        "duration_scope": "SoundCloud displayed duration, rounded; full-track playback not independently audited"
+      },
+      {
+        "position": 6,
+        "artist": "Nusrat Fateh Ali Khan",
+        "title": "Mustt Mustt",
+        "version": "Original version; Real World 25 label upload (not Massive Attack remix)",
+        "url": "https://soundcloud.com/realworldrecords/nusrat-fateh-ali-khan-mustt",
+        "duration": "5:12",
+        "seed": false,
+        "note": "A warm qawwali-fusion finish, leaving the door open.",
+        "source_platform": "SoundCloud",
+        "platform_recording_id": "realworldrecords/nusrat-fateh-ali-khan-mustt",
+        "verification": "metadata-verified",
+        "checked_at": "2026-11-05",
+        "duration_scope": "SoundCloud displayed duration, rounded; full-track playback not independently audited"
+      }
+    ],
+    "seed_references": [
+      {
+        "artist": "Real Boss",
+        "title": "I Know",
+        "in_playlist": true
+      },
+      {
+        "artist": "Real Boss & BIG KAY SMG",
+        "title": "Murder",
+        "in_playlist": false
+      },
+      {
+        "artist": "Real Boss & Arvin Beatz",
+        "title": "XYZ",
+        "in_playlist": false
+      }
+    ],
+    "note": "Six-track bridge from Punjabi rap through bhangra and bass into sitar-led soul and qawwali. Exact order and public source playlist verified in SoundCloud; no claim of a full listening audit.",
+    "lyrics_notes": {
+      "Murder": "The recurring hook asks why the narrator's enemies want him dead. The verses assert independent progress and status, with distrust and threat underneath the bravado. Interpretation: success feels inseparable from being targeted. This is a reading of the narrator, not a claim about the artist or listeners.",
+      "I_Know": "Reliable full lyric text or translation not located; meaning unresolved.",
+      "XYZ": "Reliable full lyric text or translation not located; meaning unresolved."
+    },
+    "evidence_urls": [
+      "https://www.lyricsgoal.com/murder-lyrics-real-boss/",
+      "https://www.lyricswiz.com/real-boss-murder-lyrics-english-translation/",
+      "https://realworldrecords.com/releases/mustt-mustt/",
+      "https://thieverycorporation.com/portfolio/the-mirror-conspiracy/"
+    ],
+    "verification": {
+      "native_order_verified": true,
+      "native_count": 6,
+      "checked_at": "2026-11-05",
+      "audio_downloaded": false
+    }
+  },
+  {
     "id": "CJ-281",
     "position": "D6",
     "symbol": "SS",
