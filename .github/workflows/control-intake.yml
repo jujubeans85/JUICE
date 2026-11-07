@@ -1,0 +1,31 @@
+name: Control audio intake
+on:
+  push:
+    paths: ['CONTROL/**', '.github/workflows/control-intake.yml']
+  pull_request:
+    paths: ['CONTROL/**', '.github/workflows/control-intake.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  intake:
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.12'
+          - os: macos-latest
+            python: '3.9'
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: bash CONTROL/scripts/test-intake.sh
