@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-07T04:32:41Z",
+  "updated_at": "2026-11-08T04:15:08Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "0d449b090246b85b25cfa47532d113d984c88a2a",
+    "source_commit": "723c92d9ab8970ae8991faf7eae9b84a369b7d64",
     "catalogue_blob_sha": "23c5a58f1e6f79a65882731f6ef1d724ee2e86d9"
   },
   "coverage": {
@@ -28,7 +28,7 @@
     "inspiration_references_outside_track_order": 4
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-07T04:32:41Z",
+    "maintenance_checked_at": "2026-11-08T04:15:08Z",
     "scope": "Canonical saved catalogue, existing owner-private overlay and identified saved exports only. This run checked schema, exact export equality, order, IDs and source privacy; it did not recapture playlists or assume access to other conversations or devices.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
@@ -47,9 +47,9 @@
       "unavailable": 2,
       "unverified": 179
     },
-    "saved_exports_reviewed": 1,
+    "saved_exports_reviewed": 14,
     "saved_exports_match_archived_source": true,
-    "new_or_changed_archives": 1
+    "new_or_changed_archives": 0
   },
   "unresolved": [
     {
@@ -166,7 +166,7 @@
       "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
       "library_version": 9,
       "existing_library_bytes_match": true,
-      "last_comparison_at": "2026-11-07T04:32:41Z",
+      "last_comparison_at": "2026-11-08T04:15:08Z",
       "export_comparison_basis": "Materialized existing immutable version 9 and verified its complete embedded records and covers against merged canonical source. Retained the same snapshot without an unnecessary replacement."
     },
     "site": {
@@ -176,7 +176,7 @@
       "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_f3304e2b36508191b7f695feb41d6080",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-07T04:32:41Z",
+      "last_access_check_at": "2026-11-08T04:15:08Z",
       "last_checked_version": 19
     }
   },
@@ -189,7 +189,7 @@
   "notifications": {
     "policy": "Suppress unchanged routine success. Report each concrete blocker once until its situation changes.",
     "reported_blockers": [],
-    "routine_notification_suppressed": false
+    "routine_notification_suppressed": true
   },
   "history_limit": 12,
   "history": [
@@ -367,6 +367,21 @@
         "Preserved CJ-283 source entry exactly in the owner overlay and added a generic canonical index placeholder. Source playlist visibility and existing archive memberships were preserved.",
         "Regenerated public exports and the owner text/revision/service worker. Existing offline snapshot was verified against complete source records and retained.",
         "Published the same private Site and carried unresolved source limitations forward."
+      ]
+    },
+    {
+      "checked_at": "2026-11-08T04:15:08Z",
+      "outcome": "unchanged",
+      "new_or_changed_lists": 0,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 269,
+        "owner_complete": 269,
+        "ordered_track_slots": 12677
+      },
+      "actions": [
+        "Matched current canonical catalogue and private Site source to the prior verified revisions.",
+        "Checked the fourteen identified export revisions and recent Library entries. Retained offline version 9 and existing unresolved items."
       ]
     }
   ],
