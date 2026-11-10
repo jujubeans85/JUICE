@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-09T04:57:53Z",
+  "updated_at": "2026-11-10T04:10:33Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
@@ -28,8 +28,8 @@
     "inspiration_references_outside_track_order": 4
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-09T04:57:53Z",
-    "scope": "Checked the current canonical catalogue, owner-private overlay, identified saved exports, and recent accessible saved-file metadata. Matched the new private archive to its complete saved export and corroborated recording metadata from SoundCloud listings. Playback and regional availability were not tested.",
+    "maintenance_checked_at": "2026-11-10T04:10:33Z",
+    "scope": "Checked current canonical and owner-private Site source, fifteen identified saved export revisions, recent accessible Library entries, and the supplied offline attachment. Validated order, complete archive coverage, offline data equality, and the six existing exact-ID queue exports. Playback and device-local changes were outside this check.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
       "2026-11-06": 20,
@@ -50,7 +50,7 @@
     },
     "saved_exports_reviewed": 15,
     "saved_exports_match_archived_source": true,
-    "new_or_changed_archives": 1
+    "new_or_changed_archives": 0
   },
   "unresolved": [
     {
@@ -176,8 +176,8 @@
       "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
       "library_version": 10,
       "existing_library_bytes_match": true,
-      "last_comparison_at": "2026-11-09T04:57:53Z",
-      "export_comparison_basis": "Validated all embedded ordered archive records and covers against merged source, replaced version 9 in place, and confirmed version 10 metadata on the original persistent identity."
+      "last_comparison_at": "2026-11-10T04:10:33Z",
+      "export_comparison_basis": "The supplied offline attachment SHA-256 matches the validated Site snapshot. Persistent version 10 retains the same immutable file ID and byte size verified after replacement."
     },
     "site": {
       "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
@@ -186,7 +186,7 @@
       "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_ae30b9f2633c81918700f409ff601b99",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-09T04:57:53Z",
+      "last_access_check_at": "2026-11-10T04:10:33Z",
       "last_checked_version": 20
     }
   },
@@ -199,27 +199,10 @@
   "notifications": {
     "policy": "Suppress unchanged routine success. Report each concrete blocker once until its situation changes.",
     "reported_blockers": [],
-    "routine_notification_suppressed": false
+    "routine_notification_suppressed": true
   },
   "history_limit": 12,
   "history": [
-    {
-      "checked_at": "2026-10-29T04:14:25Z",
-      "outcome": "maintained",
-      "new_or_changed_lists": 0,
-      "backfilled_lists": 0,
-      "coverage": {
-        "indexed": 258,
-        "owner_complete": 258,
-        "ordered_track_slots": 12374
-      },
-      "actions": [
-        "Validated existing public catalogue and owner-private overlay without changing source memberships.",
-        "Verified public derived files match canonical blobs and owner offline/text match the merged saved source.",
-        "Replaced the same persistent offline export, version 1 to 2.",
-        "Regenerated owner revision and service worker; published the same owner-private Site."
-      ]
-    },
     {
       "checked_at": "2026-10-30T04:56:28Z",
       "outcome": "reconciled",
@@ -410,6 +393,22 @@
         "Validated all prior ordered records and artwork unchanged. Rebuilt public and owner offline HTML, text indexes, revisions and service workers.",
         "Replaced persistent offline version 9 with version 10 and published the same owner-only Site. Verified the access policy remains identical.",
         "Carried prior unresolved items and six exact-ID YouTube queue generators forward. Retained five exact native SoundCloud permalink IDs with numeric IDs unresolved."
+      ]
+    },
+    {
+      "checked_at": "2026-11-10T04:10:33Z",
+      "outcome": "unchanged",
+      "new_or_changed_lists": 0,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 270,
+        "owner_complete": 270,
+        "ordered_track_slots": 12682
+      },
+      "actions": [
+        "Matched the canonical catalogue, public revision and owner-private Site to the prior checkpoint. Validated the owner offline contents against merged source and confirmed the six queue exports.",
+        "Reviewed fifteen identified saved export revisions and recent accessible saved files. The separate discovery hub projection showed an empty shortlist and no saved tracklist change.",
+        "Matched the supplied HTML attachment to the owner export SHA-256. Confirmed the same persistent version 10 and retained existing playback limitations and privacy placeholders."
       ]
     }
   ],
