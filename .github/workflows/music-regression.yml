@@ -1,0 +1,33 @@
+name: Music regression
+on:
+  push:
+    paths: ['CONTROL/music/**', 'CONTROL/tests/test_music*.py', 'CONTROL/server.py', 'CONTROL/start.command', '.github/workflows/music-regression.yml']
+  pull_request:
+    paths: ['CONTROL/music/**', 'CONTROL/tests/test_music*.py', 'CONTROL/server.py', 'CONTROL/start.command', '.github/workflows/music-regression.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  music:
+    name: Music queue, private access and Comfy adapter
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Queue, recovery, transport, workflow and HTTP boundaries
+        run: python3 -m unittest discover -s CONTROL/tests -p 'test_music*.py' -v
+      - name: App and launcher syntax
+        run: |
+          node --check CONTROL/music/web/app.js
+          node --check CONTROL/music/web/sw.js
+          bash -n CONTROL/start.command
+      - name: Build offline interface preview
+        run: python3 CONTROL/music/build_preview.py --output /tmp/JUICE_Music_Preview.html

@@ -18,15 +18,19 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qs, urlparse
+from urllib.request import urlopen
+
+from music.http import MusicHTTP
 
 APP_NAME = "JUICE Control"
-APP_VERSION = "2026.07-zed-fix"
+APP_VERSION = "2026.11-yue2-music-v1"
 HOST = os.environ.get("JUICE_CONTROL_HOST", "127.0.0.1")
 PORT = int(os.environ.get("JUICE_CONTROL_PORT", "8765"))
 HOME = Path.home()
 CONTROL_ROOT = Path(os.environ.get("JUICE_CONTROL_ROOT", HOME / "JUICE" / "CONTROL")).expanduser()
 DATA_ROOT = Path(os.environ.get("JUICE_DATA_ROOT", HOME / "JUICE_DATA")).expanduser()
 OPEN_IN_ZED = CONTROL_ROOT / "scripts" / "open_in_zed.sh"
+MUSIC = MusicHTTP(DATA_ROOT)
 
 TARGETS: dict[str, Path] = {
     "control": CONTROL_ROOT,
@@ -152,6 +156,11 @@ def render_page(message: str | None = None, ok: bool = True) -> bytes:
   <h1>{APP_NAME}</h1>
   <p class="muted">Local-only control interface. Zed status: <strong>{html.escape(status_text)}</strong>.</p>
   {banner}
+  <section class="card" aria-label="Music creation">
+    <h2>JUICE Music</h2>
+    <p>Create a song, rework a melody, and listen to your takes.</p>
+    <a href="/music/">Open Music →</a>
+  </section>
   <section class="card" aria-label="Crate Juice music library">\n    <h2>CRATE JUICE — Crate Map</h2>\n    <p>Search the linked playlist library by title, symbol or cover family.</p>\n    <a href="https://crate-juice-map.xntfsstt5z.chatgpt.site" target="_blank" rel="noopener">Open the Crate Map ↗</a>\n  </section>\n  <section class="grid">{''.join(cards)}</section>
   <h2>Diagnostics</h2>
   <pre>{html.escape(json.dumps(diagnostics(), indent=2))}</pre>
@@ -179,17 +188,21 @@ class Handler(BaseHTTPRequestHandler):
         self.send_bytes(json.dumps(payload, indent=2).encode("utf-8"), status, "application/json; charset=utf-8")
 
     def do_GET(self) -> None:
+        if MUSIC.handle(self):
+            return
         parsed = urlparse(self.path)
         if parsed.path in {"/", "/index.html"}:
             self.send_bytes(render_page())
         elif parsed.path == "/health":
-            self.send_json({"ok": True, "version": APP_VERSION})
+            self.send_json({"ok": True, "app": APP_NAME, "version": APP_VERSION, "capabilities": ["music-yue2-v1", "open-in-zed"]})
         elif parsed.path == "/api/diagnostics":
             self.send_json(diagnostics())
         else:
             self.send_json({"ok": False, "error": "not found"}, HTTPStatus.NOT_FOUND)
 
     def do_POST(self) -> None:
+        if MUSIC.handle(self):
+            return
         parsed = urlparse(self.path)
         length = int(self.headers.get("Content-Length", "0"))
         body = self.rfile.read(length).decode("utf-8")
@@ -205,6 +218,12 @@ class Handler(BaseHTTPRequestHandler):
             traceback.print_exc()
             self.send_bytes(render_page(str(exc), False), HTTPStatus.BAD_REQUEST)
 
+    def do_HEAD(self) -> None:
+        if not MUSIC.handle(self):
+            self.send_response(HTTPStatus.METHOD_NOT_ALLOWED)
+            self.send_header("Content-Length", "0")
+            self.end_headers()
+
 
 def already_running() -> bool:
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
@@ -213,12 +232,23 @@ def already_running() -> bool:
 
 
 def main() -> int:
-    ensure_layout()
+    if HOST not in {"127.0.0.1", "localhost"}:
+        print("JUICE Control must stay on loopback. Use the private Music connection for iOS.", file=sys.stderr)
+        return 2
     url = f"http://{HOST}:{PORT}/"
     if already_running():
+        try:
+            with urlopen(url + "health", timeout=2) as response:
+                health = json.loads(response.read(4096))
+            if health.get("app") != APP_NAME or health.get("version") != APP_VERSION:
+                raise ValueError("A different server or JC version owns this port")
+        except (OSError, ValueError, AttributeError):
+            print(f"Port {PORT} is already in use by another server or JC version. Identify its source and restart that instance deliberately; no second server was started.", file=sys.stderr)
+            return 2
         webbrowser.open(url)
         print(f"{APP_NAME} already running: {url}")
         return 0
+    ensure_layout()
     httpd = ThreadingHTTPServer((HOST, PORT), Handler)
     threading.Timer(0.4, lambda: webbrowser.open(url)).start()
     print(f"{APP_NAME} {APP_VERSION} serving {url}")
@@ -228,9 +258,11 @@ def main() -> int:
     except KeyboardInterrupt:
         print("\nStopping JUICE Control.")
     finally:
+        MUSIC.close()
         httpd.server_close()
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

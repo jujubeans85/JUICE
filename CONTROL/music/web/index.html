@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#151713">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="JUICE Music">
+  <meta name="description" content="Make music from an idea. One JUICE Control studio, on your desktop and phone.">
+  <title>Music · JUICE Control</title>
+  <link rel="manifest" href="/music/manifest.webmanifest">
+  <link rel="icon" href="/music/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/music/icon-180.png">
+  <link rel="stylesheet" href="/music/style.css">
+  <script src="/music/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to studio</a>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="home-link" href="/" aria-label="Back to JUICE Control home"><span aria-hidden="true">↖</span> Home</a>
+      <a class="wordmark" href="/music/" aria-label="JUICE Music home">JUiCE<span class="wordmark-divider">/</span><span class="wordmark-product">MUSIC</span></a>
+      <button id="connection-button" class="connection" type="button" aria-label="Checking engine connection"><span class="status-dot" aria-hidden="true"></span><span id="connection-label">Checking</span></button>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section id="panel-create" class="panel" role="tabpanel" aria-labelledby="tab-create">
+        <div class="studio-heading">
+          <div><p class="eyebrow">THE MUSIC DOOR</p><h1>Make something<br><em>worth keeping.</em></h1><p class="intro">An idea, a few words, a new sound. The rest happens on your engine.</p></div>
+          <div class="studio-art" aria-hidden="true"><div class="record"><div class="record-label"><span>J</span><i></i></div></div><span class="art-caption">SIDE A · YOUR NEXT IDEA</span></div>
+        </div>
+
+        <div id="connection-notice" class="notice" role="status"><span class="notice-icon" aria-hidden="true">○</span><p id="connection-message">Checking your music engine. You can start writing.</p><button class="text-button" type="button" data-open-setup>Details <span aria-hidden="true">↗</span></button></div>
+
+        <form id="create-form" autocomplete="off">
+          <div class="creation-grid">
+            <section class="composer-card" aria-labelledby="idea-heading">
+              <div class="section-heading"><h2 id="idea-heading"><span class="step-number">01</span> The idea</h2><span class="small-muted" id="draft-state">Draft stays on this device</span></div>
+              <fieldset class="mode-picker"><legend class="sr-only">How to start</legend><label><input type="radio" name="task" value="create" checked><span><strong>Start fresh</strong><small>Words → music</small></span></label><label><input type="radio" name="task" value="cover"><span><strong>Rework audio</strong><small>A new interpretation</small></span></label></fieldset>
+
+              <div id="source-section" class="source-section" hidden>
+                <label class="field-label" for="reference-file">Reference audio</label>
+                <div class="upload-box"><span aria-hidden="true" class="upload-symbol">↥</span><div><strong id="source-name">Choose a recording</strong><p id="source-help">WAV, MP3, FLAC, M4A, OGG or AIFF · up to 100 MB</p></div><label class="small-button file-button" for="reference-file">Choose<input id="reference-file" type="file" accept="audio/*,.wav,.mp3,.flac,.m4a,.ogg,.aiff,.aif"></label></div>
+                <div class="source-foot"><p class="field-help">YuE2 follows the transcribed melody and creates a new performance.</p><button id="remove-source" class="text-button" type="button" hidden>Remove</button></div>
+                <p id="source-status" class="field-help" role="status"></p>
+              </div>
+
+              <label class="field-label" for="title">Working title <span class="optional">optional</span></label>
+              <input id="title" name="title" type="text" maxlength="120" placeholder="The good kind of trouble">
+
+              <div class="label-row"><label class="field-label" for="style">Describe the sound</label><span class="field-caption">The more specific, the more yours.</span></div>
+              <textarea id="style" name="style" rows="5" maxlength="4000" required placeholder="Warm bass, loose drums, a cheeky brass hook. Soulful vocals. Leave room for one glorious left turn."></textarea>
+              <div class="preset-row" aria-label="Starting ideas"><span class="preset-label">TRY A START</span><button type="button" class="preset" data-preset="funk">Warm funk <span aria-hidden="true">↗</span></button><button type="button" class="preset" data-preset="choir">Dark choir <span aria-hidden="true">↗</span></button><button type="button" class="preset" data-preset="house">Wonky house <span aria-hidden="true">↗</span></button></div>
+            </section>
+
+            <section class="composer-card lyrics-card" aria-labelledby="lyrics-heading">
+              <div class="section-heading"><h2 id="lyrics-heading"><span class="step-number">02</span> The words</h2><span class="small-muted">Your voice, your lines</span></div>
+              <label class="field-label" for="lyrics">Lyrics <span class="optional">optional</span></label>
+              <textarea id="lyrics" name="lyrics" rows="11" maxlength="12000" placeholder="[verse]
+The street is quiet, the room is loud
+A little light beneath the cloud
+
+[chorus]
+Your hook goes here…"></textarea>
+              <p class="field-help">Add any words you want sung. Section labels such as [verse] and [chorus] help describe the arrangement.</p>
+
+              <div class="settings-row"><div class="length-field"><label class="field-label" for="duration">Maximum length</label><select id="duration" name="duration"><option value="30">30 sec · a quick idea</option><option value="60" selected>1 min · first listen</option><option value="120">2 min</option><option value="180">3 min</option><option value="240">4 min</option><option value="300">5 min</option><option value="360">6 min</option></select></div><p class="length-note">Start small.<br>Keep the good ones.</p></div>
+              <details class="advanced"><summary>Fine controls <span aria-hidden="true">+</span></summary><div class="advanced-fields"><div><label class="field-label" for="composition">Composition plan</label><select id="composition" name="composition"><option value="full">Melody + chords</option><option value="melody">Melody · free accompaniment</option><option value="off">Direct generation</option></select></div><div><label class="field-label" for="seed">Seed <span class="optional">optional</span></label><input id="seed" name="seed" type="number" min="0" max="2147483647" step="1" inputmode="numeric" placeholder="Random for each take"></div></div><p class="field-help">Length is a limit, not an exact runtime. Timing, tempo and key requests are creative directions, not guaranteed measurements.</p></details>
+            </section>
+          </div>
+
+          <div id="form-error" class="error-box" role="alert" hidden></div>
+          <div class="create-footer"><div class="draft-actions"><button id="export-draft" class="text-button" type="button">Export idea <span aria-hidden="true">↓</span></button><button id="clear-draft" class="text-button muted-button" type="button">Clear</button></div><div class="generate-wrap"><p id="generate-help">Connect your engine to generate.</p><button id="generate-button" class="primary-button" type="submit" disabled><span id="generate-label">Make music</span><span class="button-arrow" aria-hidden="true">↗</span></button></div></div>
+        </form>
+      </section>
+
+      <section id="panel-takes" class="panel" role="tabpanel" aria-labelledby="tab-takes" hidden>
+        <div class="page-heading"><div><p class="eyebrow">THE LISTENING ROOM</p><h1>Your takes.</h1><p class="intro">Listen. Keep what moves you. Make another.</p></div><button id="refresh-takes" class="small-button" type="button">Refresh <span aria-hidden="true">↻</span></button></div>
+        <div class="takes-toolbar"><div class="filter-group" aria-label="Filter takes"><button id="filter-all" class="filter active" type="button" aria-pressed="true">All takes <span id="take-total">0</span></button><button id="filter-kept" class="filter" type="button" aria-pressed="false">Kept <span id="kept-total">0</span></button></div><p class="small-muted">Shared with your JC</p></div>
+        <div id="takes-error" class="error-box" role="alert" hidden></div>
+        <div id="takes-list" class="takes-list" aria-live="polite"></div>
+        <div id="takes-empty" class="empty-state"><span class="empty-disc" aria-hidden="true">◎</span><h2>No takes yet.</h2><p>Your next favourite thing starts with an idea.<br>Finished recordings will appear here.</p><button class="small-button" type="button" data-open-create>Make the first one <span aria-hidden="true">↗</span></button></div>
+      </section>
+
+      <section id="panel-setup" class="panel" role="tabpanel" aria-labelledby="tab-setup" hidden>
+        <div class="page-heading"><div><p class="eyebrow">BEHIND THE SOUND</p><h1>One engine.<br><em>Every screen.</em></h1><p class="intro">JC keeps the queue and recordings. Your phone is the remote.</p></div></div>
+        <div class="setup-grid"><section class="composer-card"><div class="section-heading"><h2>Music engine</h2><span id="setup-badge" class="engine-badge">Checking</span></div><dl class="engine-info"><div><dt>Generator</dt><dd id="engine-name">YuE2 / ComfyUI</dd></div><div><dt>Model</dt><dd id="engine-model">Checking installed model</dd></div><div><dt>New songs</dt><dd id="capability-create">Checking</dd></div><div><dt>Audio reworks</dt><dd id="capability-cover">Checking</dd></div></dl><p id="setup-message" class="setup-message">Checking your engine connection.</p><div id="engine-checks" class="engine-checks" hidden></div><button id="refresh-engine" class="small-button" type="button">Check connection <span aria-hidden="true">↻</span></button><p class="field-help">The engine address and model are configured on JC. Music generation needs a running ComfyUI machine with the YuE2 models installed.</p></section>
+        <section class="composer-card"><div class="section-heading"><h2>Take it with you</h2><span class="phone-mark" aria-hidden="true">▯</span></div><ol class="setup-steps"><li><span>01</span><p>Open the same JC <strong>/music/</strong> address in Safari through your private HTTPS connection.</p></li><li><span>02</span><p>Use Safari’s <strong>Share → Add to Home Screen</strong> to keep the Music Door handy.</p></li><li><span>03</span><p>Start a take and come back later. Generation runs on the engine while JC stays open.</p></li></ol><div class="offline-note"><strong>Ideas survive a quiet day.</strong><p>Your current draft stays on this device. Offline, you can write and export it. Shared takes and generation need JC to be connected.</p></div></section></div>
+        <section class="resources"><p class="eyebrow">SOURCE TOOLS</p><div><a href="https://github.com/multimodal-art-projection/YuE" target="_blank" rel="noopener noreferrer">YuE2 project <span aria-hidden="true">↗</span></a><a href="https://huggingface.co/Comfy-Org/YuE2/tree/main" target="_blank" rel="noopener noreferrer">ComfyUI models <span aria-hidden="true">↗</span></a><a href="https://lumalabs.ai/aisearch-sep2" target="_blank" rel="noopener noreferrer">Luma visuals <span aria-hidden="true">↗</span></a></div><p class="field-help">Luma opens an external service. It is separate from your YuE2 music engine.</p></section>
+      </section>
+    </main>
+
+    <footer class="studio-footer"><span>JUiCE CONTROL</span><span>Same studio. Different screen.</span></footer>
+  </div>
+  <nav class="bottom-nav" role="tablist" aria-label="Music studio"><button id="tab-create" class="nav-tab active" type="button" role="tab" aria-controls="panel-create" aria-selected="true" data-tab="create"><span class="nav-icon" aria-hidden="true">＋</span><span>Create</span></button><button id="tab-takes" class="nav-tab" type="button" role="tab" aria-controls="panel-takes" aria-selected="false" tabindex="-1" data-tab="takes"><span class="nav-icon" aria-hidden="true">≋</span><span>Takes</span><span id="active-count" class="nav-count" hidden>0</span></button><button id="tab-setup" class="nav-tab" type="button" role="tab" aria-controls="panel-setup" aria-selected="false" tabindex="-1" data-tab="setup"><span class="nav-icon" aria-hidden="true">⌘</span><span>Setup</span></button></nav>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><div class="noscript">Turn on JavaScript to use the music studio. Your JC engine runs separately.</div></noscript>
+</body>
+</html>

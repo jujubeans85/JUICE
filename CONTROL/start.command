@@ -18,10 +18,8 @@ HOST="${JUICE_CONTROL_HOST:-127.0.0.1}"
 PORT="${JUICE_CONTROL_PORT:-8765}"
 URL="http://${HOST}:${PORT}/"
 
-if command -v curl >/dev/null 2>&1 && curl -fsS "${URL}health" >/dev/null 2>&1; then
-  open "${URL}" >/dev/null 2>&1 || true
-  exit 0
-fi
+# server.py verifies an occupied port's app identity and version before reusing it.
+# A health response alone does not establish that it is the reviewed JC instance.
 
 if ! command -v python3 >/dev/null 2>&1; then
   printf 'JUICE Control needs python3. Install Command Line Tools or Homebrew Python, then run this again.\n' >&2
@@ -29,3 +27,4 @@ if ! command -v python3 >/dev/null 2>&1; then
 fi
 
 exec python3 "${CONTROL_DIR}/server.py"
+
