@@ -1,35 +1,35 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T04:47:09Z",
+  "updated_at": "2026-11-15T04:51:19Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "9ecfd116ea9d524c014b8709c41d59784373a0eb",
-    "catalogue_blob_sha": "1d2adff4ead91809a310d1108f6a4b26ddc98dd1"
+    "source_commit": "c2859e9bfe502171703709ef39a86aedd09bc0af",
+    "catalogue_blob_sha": "3af946dc267c397bd51ce68f72e5c22ed36e2ef1"
   },
   "coverage": {
-    "indexed_lists": 271,
+    "indexed_lists": 272,
     "public_complete_tracklists": 199,
-    "public_index_only_privacy_placeholders": 72,
-    "owner_private_complete_tracklists": 72,
-    "owner_complete_tracklists": 271,
+    "public_index_only_privacy_placeholders": 73,
+    "owner_private_complete_tracklists": 73,
+    "owner_complete_tracklists": 272,
     "owner_partial_tracklists": 0,
     "owner_index_only_tracklists": 0,
     "public_ordered_track_slots": 10037,
-    "owner_private_ordered_track_slots": 2661,
-    "total_owner_ordered_track_slots": 12698,
+    "owner_private_ordered_track_slots": 2666,
+    "total_owner_ordered_track_slots": 12703,
     "supplied_seeds_preserved": 16,
-    "curated_list_archives": 268,
+    "curated_list_archives": 269,
     "play_history_export_archives": 3,
     "play_history_ordered_events": 181,
     "distinct_supplied_seed_recordings": 11,
     "supplied_seed_count_basis": "16 marked playlist positions preserve 11 distinct recordings. Separate inspiration references remain outside the ordered tracks.",
-    "inspiration_references_outside_track_order": 7
+    "inspiration_references_outside_track_order": 8
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-14T04:47:09Z",
-    "scope": "Read current canonical source and current owner-private Site. Archived one new complete saved export with exact order, source credits, version labels, permalink identifiers, three seed references and inherited metadata verification. Existing fifteen saved exports retain their archived revisions. Full listening, source account playlist creation and device-local changes were outside this check.",
+    "maintenance_checked_at": "2026-11-15T04:51:19Z",
+    "scope": "Read current canonical source and current owner-private Site. Archived one new complete saved recommendation export with exact five-track order, versions, native permalink identifiers, supplied seed shortlink, all source metadata and inherited verification. Sixteen prior saved exports retain their archived revisions. Playback, signed-in account state and device-local changes were outside this check.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
       "2026-11-06": 20,
@@ -40,16 +40,17 @@
       "2026-10-29": 30,
       "2026-10-28": 12368,
       "2026-11-08": 5,
-      "2026-11-13": 16
+      "2026-11-13": 16,
+      "2026-11-15": 5
     },
     "missing_track_verification": 0,
     "missing_track_checked_at": 0,
     "track_verification_counts": {
-      "metadata-verified": 12517,
+      "metadata-verified": 12522,
       "unavailable": 2,
       "unverified": 179
     },
-    "saved_exports_reviewed": 16,
+    "saved_exports_reviewed": 17,
     "saved_exports_match_archived_source": true,
     "new_or_changed_archives": 1
   },
@@ -157,13 +158,22 @@
       "numeric_recording_ids_unknown": 16,
       "native_playlist_status": "not-created-in-source-account",
       "note": "Saved export retains indexed metadata evidence and exact native permalinks. Playback and Australian availability remain untested. Credits are retained as displayed, with performing-artist roles unverified. Three seed mixes are retained separately; extraction from two full mix tracklists and one exact remix match remain unverified. The original volume label duplicates an existing Friday edition and is preserved under a distinct stable archive ID."
+    },
+    {
+      "code": "cj286_source_limits",
+      "crate_id": "CJ-286",
+      "status": "source-notes-retained",
+      "track_slots": 5,
+      "numeric_recording_ids_unknown": 5,
+      "native_playlist_status": "not-created-in-source-account",
+      "note": "Five exact remix/edit permalinks and artist/source metadata retained. Full-track access, playback and Australian availability remain untested. Like Sugar is explicitly an alternate version. The supplied seed shortlink could not be resolved by the source author and is preserved with this limitation. Snapshot duplicate checking remains incomplete."
     }
   ],
   "backfill": {
     "per_run_limit": 3,
     "completed_this_run": 0,
     "eligible_owner_index_only_lists": 0,
-    "note": "All owner archives have complete ordered tracklists. The 72 public index-only entries preserve source privacy."
+    "note": "All owner archives have complete ordered tracklists. The 73 public index-only entries preserve source privacy."
   },
   "replay": {
     "exact_youtube_archives": 6,
@@ -174,30 +184,30 @@
   },
   "exports": {
     "public": {
-      "revision": "9fb9bf49b26e5444",
+      "revision": "9cf76462bef7f4b7",
       "derived_files_match_canonical": true
     },
     "owner": {
-      "revision": "5bb073e2ea4701e3",
-      "offline_sha256": "d669a20f49cfb08b189ce68e0fa1e7efe1578fd9e1a333cc5b8c90c3b412a643",
-      "offline_bytes": 11908134,
+      "revision": "bef9869748daf7c5",
+      "offline_sha256": "528cc53db2f259c49a5121c36a7a0a3fc4b5bb5327dc92400bc84a3bb7a5f7e5",
+      "offline_bytes": 11921479,
       "text_index_matches_merged_source": true,
       "offline_file_name": "CRATE_JUICE_Offline.html",
       "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
-      "library_version": 11,
+      "library_version": 12,
       "existing_library_bytes_match": true,
-      "last_comparison_at": "2026-11-14T04:47:09Z",
-      "export_comparison_basis": "Regenerated owner exports from merged canonical and owner source. Verified all earlier embedded records and artwork remain equal, then replaced version 10 in place and confirmed version 11 metadata."
+      "last_comparison_at": "2026-11-15T04:51:19Z",
+      "export_comparison_basis": "Regenerated owner exports from merged canonical and owner source. Verified all earlier embedded records and artwork remain equal, then replaced version 11 in place and confirmed version 12 metadata."
     },
     "site": {
       "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
       "url": "https://crate-juice-map.xntfsstt5z.chatgpt.site",
-      "source_commit": "d26fc0958a741fd7c1d00ee0aa26e7da96539779",
-      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_626e6d3fab6c81918eeb9006912ddcc5",
+      "source_commit": "ffaaefaff70c3f2231464b0b64a759e28f70119c",
+      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_d5ef4d91c7bc81918dc46a166d75aeb1",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-14T04:47:09Z",
-      "last_checked_version": 21
+      "last_access_check_at": "2026-11-15T04:51:19Z",
+      "last_checked_version": 22
     }
   },
   "device_scope": {
@@ -213,24 +223,6 @@
   },
   "history_limit": 12,
   "history": [
-    {
-      "checked_at": "2026-11-03T04:25:27Z",
-      "outcome": "unchanged",
-      "new_or_changed_lists": 0,
-      "backfilled_lists": 0,
-      "coverage": {
-        "indexed": 266,
-        "owner_complete": 266,
-        "ordered_track_slots": 12631
-      },
-      "actions": [
-        "Read current canonical catalogue and maintenance state; opened and validated the unchanged existing Site source and owner overlay.",
-        "Compared all 11 identified saved exports with archived exact tracks, source metadata, event rows, filtered views and native links; no changes found.",
-        "Validated standalone owner export, text index, revision/service-worker consistency, seeds and four exact-ID replay generators.",
-        "Confirmed persistent offline version 6 and the recorded owner export hash remain current. No export replacement or Site redeployment was necessary.",
-        "Carried all unresolved identities, source availability notes and inaccessible local-file references forward unchanged. No eligible historical owner index-only lists remain."
-      ]
-    },
     {
       "checked_at": "2026-11-04T04:52:09Z",
       "outcome": "unchanged",
@@ -410,6 +402,24 @@
         "Replaced the same persistent offline snapshot from version 10 to 11, published the same Site as version 21 and verified its access policy is identical.",
         "Retained six existing exact-ID YouTube queues and all source platform links. No native account playlist is established for the new archive."
       ]
+    },
+    {
+      "checked_at": "2026-11-15T04:51:19Z",
+      "outcome": "reconciled",
+      "new_or_changed_lists": 1,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 272,
+        "owner_complete": 272,
+        "ordered_track_slots": 12703
+      },
+      "actions": [
+        "Read current canonical catalogue, maintenance state and owner-private Site before changes. Checked the sixteen prior saved export revisions and archived today's five-track export as CJ-286.",
+        "Preserved all original source JSON, exact recording versions, native links, alternate-version flag, supplied shortlink and unresolved access notes.",
+        "Validated all prior embedded archive records and artwork unchanged. Rebuilt public and private derivatives separately, keeping exact private memberships out of public Git.",
+        "Replaced the same persistent offline snapshot from version 11 to 12, published the same Site as version 22 and verified its access policy is identical.",
+        "Retained all six existing exact-ID YouTube queues and native source links. New recommendations retain untested playback, full-track access and regional status."
+      ]
     }
   ],
   "identified_saved_exports": [
@@ -568,6 +578,13 @@
       "source_reference": "Resolve source_export_library_file_id and source_export_version from this crate in the owner Site's dist/private-library.json. The export name, exact track rows and seeds stay in the private overlay.",
       "result": "Complete ordered export preserved with all original labels, sixteen exact source links, three separate seed mixes, source verification notes and duplicate volume label.",
       "reviewed_at": "2026-11-14T04:47:09Z"
+    },
+    {
+      "crate_id": "CJ-286",
+      "track_count": 5,
+      "source_reference": "Resolve source_export_library_file_id and source_export_version from this crate in the owner Site's dist/private-library.json. The export name, exact track rows and supplied seed stay in the private overlay.",
+      "result": "Complete five-track export preserved with original source JSON, exact remix/edit versions, source verification, alternate-version flag and unresolved supplied seed shortlink.",
+      "reviewed_at": "2026-11-15T04:51:19Z"
     }
   ]
 }
