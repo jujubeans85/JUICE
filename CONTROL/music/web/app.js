@@ -486,6 +486,7 @@
     try {
       const data = await api('/api/music/jobs', { method: 'POST', json: payload });
       if (!data.job?.id) throw new Error('JC did not confirm the new take. Refresh Takes before trying again.');
+      setFilter('all');
       replaceJob(data.job);
       state.draft.request_id = ''; saveDraft();
       setTab('takes'); notify('Your take is in the JC queue.');
@@ -556,11 +557,12 @@
   $('connection-button').addEventListener('click', () => setTab('setup'));
   $('refresh-engine').addEventListener('click', async () => { await refreshStatus(true); notify(state.status?.ready ? 'YuE2 is ready.' : 'Connection checked. See engine details.'); });
   $('refresh-takes').addEventListener('click', refreshJobs);
-  for (const filter of ['all', 'kept']) $(`filter-${filter}`).addEventListener('click', () => {
+  function setFilter(filter) {
     state.filter = filter;
     for (const name of ['all', 'kept']) { $(`filter-${name}`).classList.toggle('active', name === filter); $(`filter-${name}`).setAttribute('aria-pressed', String(name === filter)); }
     renderJobs();
-  });
+  }
+  for (const filter of ['all', 'kept']) $(`filter-${filter}`).addEventListener('click', () => setFilter(filter));
   window.addEventListener('online', () => { refreshStatus(); refreshJobs(); });
   window.addEventListener('offline', () => { state.connected = false; updateConnection(); });
   window.addEventListener('hashchange', () => setTab(location.hash.slice(1)));
