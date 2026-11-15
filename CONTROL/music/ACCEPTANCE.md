@@ -19,16 +19,31 @@ they do not run the YuE2 model.
 JavaScript syntax checks pass for the app and service worker. Static file routes
 and assets are checked. The home-screen icons were visually inspected.
 
+The real interface also passes a Chromium browser integration run at 390 × 844,
+834 × 1112 and 1440 × 1000. Each size exercises presets, saved drafts, the real JC
+HTTP/service queue, Keep/filter, source upload, melody-based rework and displaying
+the newly submitted take. Six fixture jobs complete without duplicate submission.
+Create, Takes, Rework and Setup have no horizontal overflow at those widths, and
+the screenshots have been inspected. These tests use an explicit fake engine and
+do not decode or listen to its fixture audio.
+
+The generated standalone preview also opens as a local file, supports editable
+presets and tab navigation, keeps generation disabled and performs no fetch,
+service-worker registration or external network requests. This does not establish
+installed-PWA offline operation.
+
+Evidence: [successful browser and backend CI run](https://github.com/jujubeans85/JUICE/actions/runs/43733881346)
+for commit `a6df51a33b9a3e9a5360b9fa3df134d5b19288f9`. The workflow runs
+`CONTROL/tests/music_browser.py` and uploads viewport screenshots and its log;
+those Actions artifacts have a seven-day retention period.
+
 ## Explicitly not yet verified
 
 - A complete YuE2 GPU generation, its speed or its musical quality.
 - Generation on the user's Mac mini M2.
 - Physical iPhone/iPad Safari installation, playback or file sharing.
 - A live Tailscale private connection.
-- Full-page visual layout in a browser. The installed headless browser could
-  not start in this execution environment; the separate browser could not reach
-  the local preview server. Responsive CSS and accessibility semantics were
-  implemented and reviewed, but a screenshot-based acceptance pass is pending.
+- Installed-PWA offline operation on a physical device.
 - The exact supplied `yue2_full.json`; its download was blocked. Graphs were
   independently authored from the official current node definitions.
 
