@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T04:51:19Z",
+  "updated_at": "2026-11-16T04:15:25Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
@@ -28,8 +28,8 @@
     "inspiration_references_outside_track_order": 8
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-15T04:51:19Z",
-    "scope": "Read current canonical source and current owner-private Site. Archived one new complete saved recommendation export with exact five-track order, versions, native permalink identifiers, supplied seed shortlink, all source metadata and inherited verification. Sixteen prior saved exports retain their archived revisions. Playback, signed-in account state and device-local changes were outside this check.",
+    "maintenance_checked_at": "2026-11-16T04:15:25Z",
+    "scope": "Checked current canonical catalogue, current owner-private Site source, seventeen identified saved export revisions and recent accessible saved-file metadata. Validated full embedded owner records, order, offline hash, revision and six exact-ID queue exports. Playback and inaccessible device state were outside this check.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
       "2026-11-06": 20,
@@ -52,7 +52,7 @@
     },
     "saved_exports_reviewed": 17,
     "saved_exports_match_archived_source": true,
-    "new_or_changed_archives": 1
+    "new_or_changed_archives": 0
   },
   "unresolved": [
     {
@@ -196,7 +196,7 @@
       "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
       "library_version": 12,
       "existing_library_bytes_match": true,
-      "last_comparison_at": "2026-11-15T04:51:19Z",
+      "last_comparison_at": "2026-11-16T04:15:25Z",
       "export_comparison_basis": "Regenerated owner exports from merged canonical and owner source. Verified all earlier embedded records and artwork remain equal, then replaced version 11 in place and confirmed version 12 metadata."
     },
     "site": {
@@ -206,7 +206,7 @@
       "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_d5ef4d91c7bc81918dc46a166d75aeb1",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-15T04:51:19Z",
+      "last_access_check_at": "2026-11-16T04:15:25Z",
       "last_checked_version": 22
     }
   },
@@ -219,26 +219,10 @@
   "notifications": {
     "policy": "Suppress unchanged routine success. Report each concrete blocker once until its situation changes.",
     "reported_blockers": [],
-    "routine_notification_suppressed": false
+    "routine_notification_suppressed": true
   },
   "history_limit": 12,
   "history": [
-    {
-      "checked_at": "2026-11-04T04:52:09Z",
-      "outcome": "unchanged",
-      "new_or_changed_lists": 0,
-      "backfilled_lists": 0,
-      "coverage": {
-        "indexed": 266,
-        "owner_complete": 266,
-        "ordered_track_slots": 12631
-      },
-      "actions": [
-        "Validated the current canonical blob, private Site source, owner archive coverage, four replay queues and export revision.",
-        "Checked all eleven identified export revisions and recent accessible Library metadata for changes.",
-        "Confirmed the owner snapshot hash and retained Library version 6. Carried unresolved items forward."
-      ]
-    },
     {
       "checked_at": "2026-11-05T04:54:23Z",
       "outcome": "reconciled",
@@ -419,6 +403,22 @@
         "Validated all prior embedded archive records and artwork unchanged. Rebuilt public and private derivatives separately, keeping exact private memberships out of public Git.",
         "Replaced the same persistent offline snapshot from version 11 to 12, published the same Site as version 22 and verified its access policy is identical.",
         "Retained all six existing exact-ID YouTube queues and native source links. New recommendations retain untested playback, full-track access and regional status."
+      ]
+    },
+    {
+      "checked_at": "2026-11-16T04:15:25Z",
+      "outcome": "unchanged",
+      "new_or_changed_lists": 0,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 272,
+        "owner_complete": 272,
+        "ordered_track_slots": 12703
+      },
+      "actions": [
+        "Validated unchanged canonical catalogue and current owner-private Site source. All seventeen identified saved exports retain their archived revisions.",
+        "Reviewed recent saved-file metadata. No new or changed ordered music-list export was identified.",
+        "Validated 272 complete owner archives, 12,703 ordered slots and six queues retaining 93 exact YouTube IDs. Confirmed persistent offline version 12 and successful Site version 22; carried unresolved metadata and all privacy placeholders forward."
       ]
     }
   ],
