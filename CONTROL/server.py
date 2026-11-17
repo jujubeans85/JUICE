@@ -152,7 +152,7 @@ def render_page(message: str | None = None, ok: bool = True) -> bytes:
   <h1>{APP_NAME}</h1>
   <p class="muted">Local-only control interface. Zed status: <strong>{html.escape(status_text)}</strong>.</p>
   {banner}
-  <section class="card" aria-label="Crate Juice music library">\n    <h2>CRATE JUICE — Crate Map</h2>\n    <p>Search the linked playlist library by title, symbol or cover family.</p>\n    <a href="https://crate-juice-map.xntfsstt5z.chatgpt.site" target="_blank" rel="noopener">Open the Crate Map ↗</a>\n  </section>\n  <section class="grid">{''.join(cards)}</section>
+  <section class="card" aria-label="Crate Juice music library">\n    <h2>CRATE JUICE — Crate Map</h2>\n    <p>Search the linked playlist library by title, symbol or cover family.</p>\n    <a href="https://crate-juice-map.xntfsstt5z.chatgpt.site" target="_blank" rel="noopener">Open the Crate Map ↗</a>\n  </section>\n  <section class="card" aria-label="JC Postcards">\n    <h2>JC Postcards</h2>\n    <a href="/postcards/">Open the postcard studio</a>\n  </section>\n  <section class="grid">{''.join(cards)}</section>
   <h2>Diagnostics</h2>
   <pre>{html.escape(json.dumps(diagnostics(), indent=2))}</pre>
 </main>
@@ -182,6 +182,24 @@ class Handler(BaseHTTPRequestHandler):
         parsed = urlparse(self.path)
         if parsed.path in {"/", "/index.html"}:
             self.send_bytes(render_page())
+        elif parsed.path == "/postcards":
+            self.send_response(HTTPStatus.MOVED_PERMANENTLY)
+            self.send_header("Location", "/postcards/")
+            self.end_headers()
+        elif parsed.path.startswith("/postcards/"):
+            assets = {"": ("index.html", "text/html; charset=utf-8"),
+                      "postcards.css": ("postcards.css", "text/css; charset=utf-8"),
+                      "postcards.js": ("postcards.js", "text/javascript; charset=utf-8"),
+                      "qr.js": ("qr.js", "text/javascript; charset=utf-8"),
+                      "disk.js": ("disk.js", "text/javascript; charset=utf-8"),
+                      "coast.jpg": ("coast.jpg", "image/jpeg"),
+                      "coast-print.jpg": ("coast-print.jpg", "image/jpeg")}
+            asset = assets.get(parsed.path[len("/postcards/"):])
+            directory = Path(__file__).resolve().parent / "projects" / "postcards"
+            if asset is None or not (directory / asset[0]).is_file():
+                self.send_error(HTTPStatus.NOT_FOUND)
+            else:
+                self.send_bytes((directory / asset[0]).read_bytes(), content_type=asset[1])
         elif parsed.path == "/health":
             self.send_json({"ok": True, "version": APP_VERSION})
         elif parsed.path == "/api/diagnostics":

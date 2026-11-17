@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1c3c33">
+<title>JC Postcards · Christmas press</title>
+<link rel="stylesheet" href="postcards.css">
+</head>
+<body>
+<main class="desk">
+<header class="mast"><span>JC POSTCARDS</span><span>CHRISTMAS PRESS</span></header>
+<div class="desk-grid">
+<section class="preview">
+<div class="preview-top"><h1>Postcard proof</h1><div class="tabs" aria-label="Proof side"><button id="show-front" aria-pressed="true">Front</button><button id="show-back" aria-pressed="false">Message</button></div></div>
+<div id="screen-card" aria-label="Current card proof"></div>
+<p class="credit"><span id="screen-title"></span><span id="screen-issue"></span></p>
+</section>
+<section class="controls">
+<div class="collection"><label>Edition<select id="editions"></select></label><button id="new-card">New card</button></div>
+<h2 id="review-heading">Ready for a look?</h2>
+<p id="review-summary"></p>
+<a id="test-link" target="_blank" rel="noopener noreferrer">Open the gift ↗</a>
+<div class="decisions" aria-label="Review the current revision"><button id="yes" class="primary">Yes</button><button id="no">No</button><button id="edit">Edit</button></div>
+<p class="status" id="status" role="status" aria-live="polite"></p>
+<form id="editor" hidden>
+<label>To<input name="person" maxlength="42" required></label>
+<label>Postcard title<input name="title" maxlength="34" required></label>
+<label>Issue or occasion<input name="issue" maxlength="34" required></label>
+<label>Greeting<input name="greeting" maxlength="65" required></label>
+<label>Your note<textarea name="note" rows="4" maxlength="250" required></textarea></label>
+<label>From<input name="sender" maxlength="36" required></label>
+<label>Track, experience or link title<input name="work" maxlength="76" required></label>
+<label>Artist, host or source<input name="credit" maxlength="64" required></label>
+<label>Destination<input name="url" type="url" maxlength="512" required placeholder="https://…"></label>
+<label>Replace artwork<input name="image" type="file" accept="image/*"></label>
+<label>Colour of your paper<input name="paperTone" type="color" value="#efe6cf"></label>
+<button class="primary" type="submit">Show revised proof</button>
+</form>
+<section id="dispatch" hidden>
+<h3>Print &amp; post</h3>
+<button id="print-card">Print fold-over postcard</button>
+<label>Label sheet<select id="format"><option value="all">All five objects</option><option value="floppy">3½-inch floppy</option><option value="cd">CD sleeve</option><option value="record">Record sleeve</option><option value="usb">USB tag</option><option value="found">Found object tag</option></select></label>
+<button id="print-labels">Print at actual size</button>
+<div class="file-actions"><button id="file-htm">Save START.HTM</button><button id="file-img">Save floppy image</button></div>
+<p>Copy START.HTM onto a spare disk or USB, or burn it as a data CD. The QR also works from a phone. Slip the object and card into an envelope.</p>
+</section>
+</section>
+</div></main>
+<div id="print-card-sheet" class="press-sheet"></div><div id="print-label-sheet" class="press-sheet"></div>
+<script id="seed" type="application/json">{"key":"jc-postcards-studio-1","person":"You","title":"Coast Road","issue":"CHRISTMAS 2026 · 001","greeting":"Merry Christmas!","note":"One song for the next time you take the long way home.","sender":"Adam","work":"Have Yourself a Merry Little Christmas","credit":"James Taylor","url":"https://youtu.be/kbQ0p7gDc5E","art":"coast.jpg","printArt":"coast-print.jpg"}</script>
+<script src="qr.js"></script><script src="disk.js"></script><script src="postcards.js"></script>
+</body></html>
