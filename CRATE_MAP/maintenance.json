@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T04:31:30Z",
+  "updated_at": "2026-11-19T04:26:31Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
@@ -29,8 +29,8 @@
     "incomplete_reference_archives": 1
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-18T04:31:30Z",
-    "scope": "Read canonical source, maintenance state and current private Site. Checked twenty-one prior export revisions, then matched one new postcard PDF and ZIP to the same exact official artist-channel YouTube recording. All earlier ordered records remain equal. Playback, postage and inaccessible device state were outside this check.",
+    "maintenance_checked_at": "2026-11-19T04:26:31Z",
+    "scope": "Checked current canonical catalogue, current owner-private Site source, twenty-three identified saved export revisions and recent accessible saved-file metadata. Validated full embedded owner records, order, offline hash, revision and seven exact-ID queue exports. Playback and inaccessible device state were outside this check.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
       "2026-11-06": 20,
@@ -55,7 +55,7 @@
     },
     "saved_exports_reviewed": 23,
     "saved_exports_match_archived_source": true,
-    "new_or_changed_archives": 1
+    "new_or_changed_archives": 0
   },
   "unresolved": [
     {
@@ -219,7 +219,7 @@
       "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
       "library_version": 14,
       "existing_library_bytes_match": true,
-      "last_comparison_at": "2026-11-18T04:31:30Z",
+      "last_comparison_at": "2026-11-19T04:26:31Z",
       "export_comparison_basis": "Regenerated owner exports from merged canonical and owner source. Verified all earlier embedded records and artwork remain equal, replaced version 13 in place, and confirmed version 14 metadata."
     },
     "site": {
@@ -229,7 +229,7 @@
       "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_daf64b8b59148191a88526cdde4aca63",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-18T04:31:30Z",
+      "last_access_check_at": "2026-11-19T04:26:31Z",
       "last_checked_version": 24
     }
   },
@@ -242,27 +242,10 @@
   "notifications": {
     "policy": "Suppress unchanged routine success. Report each concrete blocker once until its situation changes.",
     "reported_blockers": [],
-    "routine_notification_suppressed": false
+    "routine_notification_suppressed": true
   },
   "history_limit": 12,
   "history": [
-    {
-      "checked_at": "2026-11-07T04:32:41Z",
-      "outcome": "reconciled",
-      "new_or_changed_lists": 1,
-      "backfilled_lists": 0,
-      "coverage": {
-        "indexed": 269,
-        "owner_complete": 269,
-        "ordered_track_slots": 12677
-      },
-      "actions": [
-        "Read current canonical source and owner Site before changes. Matched Friday 006 standalone export and existing offline version 9, including all 268 previous archive records.",
-        "Preserved CJ-283 source entry exactly in the owner overlay and added a generic canonical index placeholder. Source playlist visibility and existing archive memberships were preserved.",
-        "Regenerated public exports and the owner text/revision/service worker. Existing offline snapshot was verified against complete source records and retained.",
-        "Published the same private Site and carried unresolved source limitations forward."
-      ]
-    },
     {
       "checked_at": "2026-11-08T04:15:08Z",
       "outcome": "unchanged",
@@ -450,6 +433,23 @@
         "Validated every previous embedded archive record and cover unchanged. Rebuilt public and owner derivatives independently with only generic private placeholders in public Git.",
         "Replaced persistent offline version 13 with version 14 and published the same private Site as version 24. Verified its access policy remains identical.",
         "Added one verified exact-ID replay generator, retaining seven queues with 94 ordered IDs. The earlier harp reference remains partial after another empty metadata search."
+      ]
+    },
+    {
+      "checked_at": "2026-11-19T04:26:31Z",
+      "outcome": "unchanged",
+      "new_or_changed_lists": 0,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 277,
+        "owner_complete": 276,
+        "owner_partial": 1,
+        "ordered_track_slots": 14812
+      },
+      "actions": [
+        "Validated unchanged canonical catalogue and current private Site source. All twenty-three identified saved exports retain their archived revisions.",
+        "Reviewed recent saved-file metadata. No new or changed music-list export was identified.",
+        "Validated 276 complete owner archives, one partial reference, 14,812 ordered slots and seven queues retaining 94 exact YouTube IDs. Confirmed persistent offline version 14 and successful Site version 24; carried all unresolved metadata and privacy placeholders forward."
       ]
     }
   ],
