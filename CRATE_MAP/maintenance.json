@@ -198,7 +198,7 @@
       "status": "source-evidence-retained",
       "track_slots": 29,
       "native_playlist_status": "review-draft",
-      "note": "Existing private Site source retains 29 exact ordered YouTube IDs and source version metadata dated 19 November. Visual/cultural pairings are source editorial choices. Playback, regional availability and completed music licensing remain unverified. The temporary queue does not establish a saved public playlist."
+      "note": "Existing private Site source retains 29 exact ordered YouTube IDs and source version metadata dated 19 November. Visual/cultural pairings are source editorial choices. Playback and regional availability remain unverified. The temporary queue does not establish a saved public playlist."
     }
   ],
   "backfill": {
