@@ -38,7 +38,7 @@ export class ConceptDesk{
   $('#match-storage').textContent=this.store.persistent?'Choices and cached context stay on this browser. Export atlas includes them.':'Session storage only. Export atlas to keep your choices and cached context.';
  }
  showTrack(key){
-  this.currentKey=key;const t=this.trackIndex.get(key),r=this.get(key),el=$('#concept-detail');if(!t||!r){el.replaceChildren();el.hidden=true;return}el.hidden=false;
+  this.currentKey=key;const t=this.trackIndex.get(key),r=this.get(key),el=$('#concept-detail');if($('#concept-inspector'))$('#concept-inspector').hidden=!t||!r;if(!t||!r){el.replaceChildren();el.hidden=true;return}el.hidden=false;
   const c=this.context(t),selected=r.override?r.scene_id||'neutral':'auto';
   const options='<option value="auto">Follow the matching engine</option><option value="neutral">Keep context open / neutral</option>'+this.engine.registry.scenes.map(s=>`<option value="${esc(s.id)}">${esc(s.label)}</option>`).join('');
   const candidates=r.candidates.slice(0,3).map(x=>`<li><strong>${esc(x.label)}</strong><small>${x.reasons.map(v=>esc(v.scope+': '+v.value)).join(' · ')}</small></li>`).join('');
