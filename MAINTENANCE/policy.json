@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "owner": "jujubeans85",
+  "registry_repository": "jujubeans85/jujubeans85.github.io",
+  "registry_path": "portfolio/registry.json",
+  "expected_public_repositories": 45,
+  "restricted_repository_count": 1,
+  "recent_days": 90,
+  "boundaries": {
+    "private_repositories": "Connected monthly audit only; no private names or data in public Actions outputs.",
+    "deployments": "Source configuration and workflow evidence only. Provider bindings, HTTP routes and physical devices require separate acceptance.",
+    "chats_and_chatgpt_projects": "Only supplied inventories/exports; no complete account enumeration established.",
+    "mac_local": "Actual connected Mac required; known 8765 Control source does not identify the reported 8780 runtime.",
+    "security_and_dependencies": "No credential scanning, vulnerability clearance or dependency currency certification. Source/config changes are observations requiring targeted review."
+  },
+  "manual_gates": [
+    {"id":"GIT-004","repository":"cratejuice-v1","observation":"Earlier Batch 03 records competing deployment trees; current hosting bindings are unverified.","recommendation":"Verify the intended tree and successor routes before changing workflows or retiring the source.","evidence":"https://github.com/jujubeans85/jujubeans85.github.io/blob/main/portfolio/batch-03.md"},
+    {"id":"GIT-005","repository":"NICEDAYTODAY","observation":"The registry requires owner evidence of credential revocation. This audit never reads or tests the suspected value.","recommendation":"Retain the gate until revocation evidence is recorded privately.","evidence":"https://github.com/jujubeans85/jujubeans85.github.io/blob/main/portfolio/registry.json"},
+    {"id":"GIT-007","repository":"disco-globe","observation":"A second music-globe implementation coexists with the canonical JUICE CRATE_MAP/atlas. History and public routes are retained.","recommendation":"Review the proposed prototype/visual-source relationship; do not infer retirement readiness.","evidence":"https://github.com/jujubeans85/JUICE/tree/main/CRATE_MAP/atlas"},
+    {"id":"DEP-002","repository":"ma_phone_site","observation":"Privacy-safe launcher work is an open draft. Source approval does not establish live hosting or iPhone acceptance.","recommendation":"Verify private destinations and the safe release on the actual phone before any legacy-route retirement.","evidence":"https://github.com/jujubeans85/ma_phone_site/pull/1"},
+    {"id":"MAC-001","repository":"JUICE","observation":"Control changes in PRs 3 and 7 are preserved; actual Mac installation and 8780 source remain uninspected.","recommendation":"Identify and preserve the actual running service before integration.","evidence":"https://github.com/jujubeans85/JUICE/pull/7"}
+  ]
+}
