@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T04:58:32Z",
+  "updated_at": "2026-11-21T04:14:02Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "1ac34bec04c2fd0060dc489e786df1959439701a",
+    "source_commit": "70c6f1d331e2e6b7539077e87dafbeec3a99f936",
     "catalogue_blob_sha": "47c91f461e64d980de44581e3da795289c52796b"
   },
   "coverage": {
@@ -29,8 +29,8 @@
     "incomplete_reference_archives": 1
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-20T04:58:32Z",
-    "scope": "Read current canonical source and private Site source before changes. Reconciled existing CJ-292 from current owner source, retaining its per-track metadata dates and evidence. Verified every prior owner entry equals the previously deployed source, embedded owner exports equal merged source, and persistent version 15 matches byte-for-byte. Checked 23 prior export revisions and four recent proof/app exports. No playback or inaccessible device state was inspected.",
+    "maintenance_checked_at": "2026-11-21T04:14:02Z",
+    "scope": "Read current canonical metadata, maintenance state and current owner Site source. Catalogue blob and owner source commit are unchanged. Validated every embedded owner record against merged source, contiguous order, verification fields, offline SHA-256, revision/service worker and eight exact-ID queues. Rechecked 23 identified source export revisions and reviewed recent saved-file metadata plus two relevant context documents; no new or changed ordered music list was found. Persistent offline version 15 is unchanged from the prior byte comparison. Playback and inaccessible devices were not inspected.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
       "2026-11-06": 20,
@@ -54,9 +54,10 @@
       "unavailable": 2,
       "unverified": 179
     },
-    "saved_exports_reviewed": 27,
+    "saved_exports_reviewed": 25,
     "saved_exports_match_archived_source": true,
-    "new_or_changed_archives": 1
+    "new_or_changed_archives": 0,
+    "reviewed_file_count_basis": "23 identified source exports plus two recent context documents; the 20 November proof/app review remains preserved in history."
   },
   "unresolved": [
     {
@@ -229,7 +230,8 @@
       "library_version": 15,
       "existing_library_bytes_match": true,
       "last_comparison_at": "2026-11-20T04:58:32Z",
-      "export_comparison_basis": "Materialized persistent version 15 and compared every byte with the current Site offline export. Embedded records equal merged canonical/owner source; text, revision and service worker agree. Existing snapshot retained."
+      "export_comparison_basis": "Materialized persistent version 15 and compared every byte with the current Site offline export. Embedded records equal merged canonical/owner source; text, revision and service worker agree. Existing snapshot retained.",
+      "last_metadata_check_at": "2026-11-21T04:14:02Z"
     },
     "site": {
       "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
@@ -238,7 +240,7 @@
       "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_6df403b652408191a0afc565dfb03d40",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-20T04:58:32Z",
+      "last_access_check_at": "2026-11-21T04:14:02Z",
       "last_checked_version": 25
     }
   },
@@ -251,28 +253,10 @@
   "notifications": {
     "policy": "Suppress unchanged routine success. Report each concrete blocker once until its situation changes.",
     "reported_blockers": [],
-    "routine_notification_suppressed": false
+    "routine_notification_suppressed": true
   },
   "history_limit": 12,
   "history": [
-    {
-      "checked_at": "2026-11-09T04:57:53Z",
-      "outcome": "reconciled",
-      "new_or_changed_lists": 1,
-      "backfilled_lists": 0,
-      "coverage": {
-        "indexed": 270,
-        "owner_complete": 270,
-        "ordered_track_slots": 12682
-      },
-      "actions": [
-        "Matched current canonical source and owner-only Site to the prior checkpoint. Checked the fourteen previously identified exports and found one new saved owner export.",
-        "Archived five ordered source links and recording metadata under CJ-284 in the owner-only overlay. Published only a generic canonical index entry and cover.",
-        "Validated all prior ordered records and artwork unchanged. Rebuilt public and owner offline HTML, text indexes, revisions and service workers.",
-        "Replaced persistent offline version 9 with version 10 and published the same owner-only Site. Verified the access policy remains identical.",
-        "Carried prior unresolved items and six exact-ID YouTube queue generators forward. Retained five exact native SoundCloud permalink IDs with numeric IDs unresolved."
-      ]
-    },
     {
       "checked_at": "2026-11-10T04:10:33Z",
       "outcome": "unchanged",
@@ -463,6 +447,23 @@
         "Materialized persistent offline version 15 and byte-compared it with the deployed owner export: identical. Retained the same snapshot and successful Site version 25.",
         "Checked 23 previous export revisions and recent postcard proofs/test ZIP plus app export. New postcard test files reference the already archived recording; no duplicate music archive was added.",
         "Carried the partial harp reference, all source limitations and privacy placeholders forward."
+      ]
+    },
+    {
+      "checked_at": "2026-11-21T04:14:02Z",
+      "outcome": "unchanged",
+      "new_or_changed_lists": 0,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 278,
+        "owner_complete": 277,
+        "owner_partial": 1,
+        "ordered_track_slots": 14841
+      },
+      "actions": [
+        "Matched canonical catalogue blob and owner Site source to the prior checkpoint. Validated merged and embedded records, 14,841 ordered slots and eight renewable queues retaining 123 exact YouTube IDs.",
+        "Rechecked 23 identified source-export revisions and recent saved-file metadata. Two relevant context documents introduced no new or changed ordered music list. No eligible historical owner index-only archive remains.",
+        "Confirmed successful Site version 25 with the unchanged owner audience and persistent offline version 15. Retained the previously byte-verified snapshot without unnecessary regeneration or replacement; carried all unknowns forward."
       ]
     }
   ],
