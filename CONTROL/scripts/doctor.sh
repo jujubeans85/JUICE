@@ -21,16 +21,19 @@ check() {
 }
 
 check "python3 is available" command -v python3
-check "server.py compiles" python3 -m py_compile "${CONTROL_DIR}/server.py"
+check "server and intake compile" python3 -m py_compile "${CONTROL_DIR}/server.py" "${CONTROL_DIR}/audio_intake.py"
+check "intake browser assets exist" test -f "${CONTROL_DIR}/intake.js"
+check "intake markup exists" test -f "${CONTROL_DIR}/intake.html"
 check "Zed can be reached" "${CONTROL_DIR}/scripts/open_in_zed.sh" --status
-check "CREATIVE data folder exists" test -d "${HOME}/JUICE_DATA/CREATIVE"
-check "BUILD repos folder exists" test -d "${HOME}/JUICE_DATA/BUILD/Repos"
-check "CAPTURE data folder exists" test -d "${HOME}/JUICE_DATA/CAPTURE"
+DATA_DIR="${JUICE_DATA_ROOT:-${HOME}/JUICE_DATA}"
+check "CREATIVE data folder exists" test -d "${DATA_DIR}/CREATIVE"
+check "BUILD repos folder exists" test -d "${DATA_DIR}/BUILD/Repos"
+check "CAPTURE data folder exists" test -d "${DATA_DIR}/CAPTURE"
 
 PORT="${JUICE_CONTROL_PORT:-8765}"
 if command -v lsof >/dev/null 2>&1; then
   if lsof -nP -iTCP:"${PORT}" -sTCP:LISTEN >/dev/null 2>&1; then
-    printf 'note: Port %s already has a listener. start.command will reuse it if it is JUICE Control.\n' "${PORT}"
+    printf 'note: Port %s already has a listener. start.command reuses only this exact Control version. Run scripts/identify-jc.sh before restarting it.\n' "${PORT}"
   else
     printf 'ok: Port %s is free\n' "${PORT}"
   fi
