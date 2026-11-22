@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T04:14:02Z",
+  "updated_at": "2026-11-22T04:45:53Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "70c6f1d331e2e6b7539077e87dafbeec3a99f936",
+    "source_commit": "89715743a5ad8c9859c99edf3a1d3db97f38c75b",
     "catalogue_blob_sha": "47c91f461e64d980de44581e3da795289c52796b"
   },
   "coverage": {
@@ -29,8 +29,8 @@
     "incomplete_reference_archives": 1
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-21T04:14:02Z",
-    "scope": "Read current canonical metadata, maintenance state and current owner Site source. Catalogue blob and owner source commit are unchanged. Validated every embedded owner record against merged source, contiguous order, verification fields, offline SHA-256, revision/service worker and eight exact-ID queues. Rechecked 23 identified source export revisions and reviewed recent saved-file metadata plus two relevant context documents; no new or changed ordered music list was found. Persistent offline version 15 is unchanged from the prior byte comparison. Playback and inaccessible devices were not inspected.",
+    "maintenance_checked_at": "2026-11-22T04:45:53Z",
+    "scope": "Read current canonical metadata and maintenance state; refreshed the owner Site source checkout. Catalogue blob and owner source commit are unchanged. Validated merged and embedded records, exact order and verification fields, offline SHA-256, revision/service worker and eight renewable exact-ID queues. Rechecked 23 identified source export revisions and reviewed recent saved-file metadata, including soundtrack-related sections in two updated film documents. No new or changed ordered music list was found. Persistent offline version 15 is unchanged from the prior byte comparison. No playback or inaccessible device inspection.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
       "2026-11-06": 20,
@@ -57,7 +57,7 @@
     "saved_exports_reviewed": 25,
     "saved_exports_match_archived_source": true,
     "new_or_changed_archives": 0,
-    "reviewed_file_count_basis": "23 identified source exports plus two recent context documents; the 20 November proof/app review remains preserved in history."
+    "reviewed_file_count_basis": "23 identified source-export metadata reads plus two recent film context documents; recent plain-text trailer is a duplicate-format script rather than a music-list export."
   },
   "unresolved": [
     {
@@ -231,7 +231,7 @@
       "existing_library_bytes_match": true,
       "last_comparison_at": "2026-11-20T04:58:32Z",
       "export_comparison_basis": "Materialized persistent version 15 and compared every byte with the current Site offline export. Embedded records equal merged canonical/owner source; text, revision and service worker agree. Existing snapshot retained.",
-      "last_metadata_check_at": "2026-11-21T04:14:02Z"
+      "last_metadata_check_at": "2026-11-22T04:45:53Z"
     },
     "site": {
       "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
@@ -240,7 +240,7 @@
       "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_6df403b652408191a0afc565dfb03d40",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-21T04:14:02Z",
+      "last_access_check_at": "2026-11-22T04:45:53Z",
       "last_checked_version": 25
     }
   },
@@ -257,22 +257,6 @@
   },
   "history_limit": 12,
   "history": [
-    {
-      "checked_at": "2026-11-10T04:10:33Z",
-      "outcome": "unchanged",
-      "new_or_changed_lists": 0,
-      "backfilled_lists": 0,
-      "coverage": {
-        "indexed": 270,
-        "owner_complete": 270,
-        "ordered_track_slots": 12682
-      },
-      "actions": [
-        "Matched the canonical catalogue, public revision and owner-private Site to the prior checkpoint. Validated the owner offline contents against merged source and confirmed the six queue exports.",
-        "Reviewed fifteen identified saved export revisions and recent accessible saved files. The separate discovery hub projection showed an empty shortlist and no saved tracklist change.",
-        "Matched the supplied HTML attachment to the owner export SHA-256. Confirmed the same persistent version 10 and retained existing playback limitations and privacy placeholders."
-      ]
-    },
     {
       "checked_at": "2026-11-11T04:26:40Z",
       "outcome": "unchanged",
@@ -464,6 +448,23 @@
         "Matched canonical catalogue blob and owner Site source to the prior checkpoint. Validated merged and embedded records, 14,841 ordered slots and eight renewable queues retaining 123 exact YouTube IDs.",
         "Rechecked 23 identified source-export revisions and recent saved-file metadata. Two relevant context documents introduced no new or changed ordered music list. No eligible historical owner index-only archive remains.",
         "Confirmed successful Site version 25 with the unchanged owner audience and persistent offline version 15. Retained the previously byte-verified snapshot without unnecessary regeneration or replacement; carried all unknowns forward."
+      ]
+    },
+    {
+      "checked_at": "2026-11-22T04:45:53Z",
+      "outcome": "unchanged",
+      "new_or_changed_lists": 0,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 278,
+        "owner_complete": 277,
+        "owner_partial": 1,
+        "ordered_track_slots": 14841
+      },
+      "actions": [
+        "Refreshed current owner Site source and matched the canonical catalogue to the prior checkpoint. Validated embedded owner records, ordered positions, verification fields, offline hash, revision and eight queues retaining 123 exact YouTube IDs.",
+        "Checked 23 identified source export revisions and recent saved-file metadata. Updated film production documents contain no new ordered music list. No eligible historical owner index-only archive remains.",
+        "Retained successful Site version 25, existing owner audience and persistent offline version 15. No regeneration or replacement was needed. Carried all unresolved recording identities and source limitations forward."
       ]
     }
   ],
