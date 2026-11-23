@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22T04:45:53Z",
+  "updated_at": "2026-11-23T04:54:19Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "89715743a5ad8c9859c99edf3a1d3db97f38c75b",
-    "catalogue_blob_sha": "47c91f461e64d980de44581e3da795289c52796b"
+    "source_commit": "d81626bc2fdc1f6b916364cb89ba6fb3d3af0dbf",
+    "catalogue_blob_sha": "c4e0d6155f82053cdea0792c181e56ff4bc7c161"
   },
   "coverage": {
-    "indexed_lists": 278,
+    "indexed_lists": 279,
     "public_complete_tracklists": 199,
-    "public_index_only_privacy_placeholders": 79,
-    "owner_private_complete_tracklists": 78,
-    "owner_complete_tracklists": 277,
+    "public_index_only_privacy_placeholders": 80,
+    "owner_private_complete_tracklists": 79,
+    "owner_complete_tracklists": 278,
     "owner_partial_tracklists": 1,
     "owner_index_only_tracklists": 0,
     "public_ordered_track_slots": 10037,
-    "owner_private_ordered_track_slots": 4804,
-    "total_owner_ordered_track_slots": 14841,
+    "owner_private_ordered_track_slots": 4809,
+    "total_owner_ordered_track_slots": 14846,
     "supplied_seeds_preserved": 79,
-    "curated_list_archives": 274,
+    "curated_list_archives": 275,
     "play_history_export_archives": 3,
     "play_history_ordered_events": 181,
     "distinct_supplied_seed_recordings": 37,
@@ -29,8 +29,8 @@
     "incomplete_reference_archives": 1
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-22T04:45:53Z",
-    "scope": "Read current canonical metadata and maintenance state; refreshed the owner Site source checkout. Catalogue blob and owner source commit are unchanged. Validated merged and embedded records, exact order and verification fields, offline SHA-256, revision/service worker and eight renewable exact-ID queues. Rechecked 23 identified source export revisions and reviewed recent saved-file metadata, including soundtrack-related sections in two updated film documents. No new or changed ordered music list was found. Persistent offline version 15 is unchanged from the prior byte comparison. No playback or inaccessible device inspection.",
+    "maintenance_checked_at": "2026-11-23T04:54:19Z",
+    "scope": "Read canonical catalogue and maintenance state, restored current owner Site source, and checked 23 prior export revisions. Preserved one new complete saved five-track source as CJ-293 with original JSON, exact versions, native permalinks, unresolved seed and inherited source verification dates. Reviewed recent export metadata and soundtrack handoff context; generated scores and loop projects did not establish another accessible ordered playlist. Verified all prior embedded owner records and artwork unchanged, separate public/private derivatives, eight exact-ID queues, persistent offline version 16 and unchanged Site audience. No playback or inaccessible device inspection.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
       "2026-11-06": 20,
@@ -45,19 +45,20 @@
       "2026-11-15": 5,
       "2026-11-17": 2108,
       "2026-11-18": 1,
-      "2026-11-19": 29
+      "2026-11-19": 29,
+      "2026-11-22": 5
     },
     "missing_track_verification": 0,
     "missing_track_checked_at": 0,
     "track_verification_counts": {
-      "metadata-verified": 14660,
+      "metadata-verified": 14665,
       "unavailable": 2,
       "unverified": 179
     },
     "saved_exports_reviewed": 25,
     "saved_exports_match_archived_source": true,
-    "new_or_changed_archives": 0,
-    "reviewed_file_count_basis": "23 identified source-export metadata reads plus two recent film context documents; recent plain-text trailer is a duplicate-format script rather than a music-list export."
+    "new_or_changed_archives": 1,
+    "reviewed_file_count_basis": "23 prior source export metadata reads, the new five-track source export, and soundtrack handoff context."
   },
   "unresolved": [
     {
@@ -68,7 +69,7 @@
     },
     {
       "code": "soundcloud_numeric_recording_id",
-      "track_slots": 2170,
+      "track_slots": 2175,
       "status": "retained-explicit-unknown",
       "note": "Native track permalinks and saved recording versions are retained; a numeric ID was not present in these captured rows. Do not invent IDs or YouTube equivalents."
     },
@@ -200,13 +201,22 @@
       "track_slots": 29,
       "native_playlist_status": "review-draft",
       "note": "Existing private Site source retains 29 exact ordered YouTube IDs and source version metadata dated 19 November. Visual/cultural pairings are source editorial choices. Playback and regional availability remain unverified. The temporary queue does not establish a saved public playlist."
+    },
+    {
+      "code": "cj293_source_limits",
+      "crate_id": "CJ-293",
+      "status": "source-notes-retained",
+      "track_slots": 5,
+      "numeric_recording_ids_unknown": 5,
+      "native_playlist_status": "not-created-in-source-account",
+      "note": "Saved source retains five exact native permalinks and version metadata dated 22 November. Two uploads are explicitly label preview files. Playback, full-track access and Australian availability remain untested. One alternate version is marked; duplicate checking and the supplied shortlink remain unresolved. No native saved playlist or verified YouTube equivalents were established."
     }
   ],
   "backfill": {
     "per_run_limit": 3,
     "completed_this_run": 0,
     "eligible_owner_index_only_lists": 0,
-    "note": "No eligible historical owner index-only lists remain. There are 79 public privacy placeholders and one partial harp reference with unresolved exact recording metadata."
+    "note": "No eligible historical owner index-only lists remain. There are 80 public privacy placeholders and one partial harp reference with unresolved exact recording metadata."
   },
   "replay": {
     "exact_youtube_archives": 8,
@@ -217,31 +227,31 @@
   },
   "exports": {
     "public": {
-      "revision": "d3d18f806a6a679f",
+      "revision": "0e27b4e7926b8f05",
       "derived_files_match_canonical": true
     },
     "owner": {
-      "revision": "f8bb0a58579f5074",
-      "offline_sha256": "140e494f1de8149b63057446c3b200b6e41eb353b57225007f10938a49da9c42",
-      "offline_bytes": 14952161,
+      "revision": "3f7fe2e31231db24",
+      "offline_sha256": "889db635d8dee9467d002301b64816bcbdf464dcd1bd25b8c10c0390e49a2402",
+      "offline_bytes": 14972393,
       "text_index_matches_merged_source": true,
       "offline_file_name": "CRATE_JUICE_Offline.html",
       "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
-      "library_version": 15,
+      "library_version": 16,
       "existing_library_bytes_match": true,
-      "last_comparison_at": "2026-11-20T04:58:32Z",
-      "export_comparison_basis": "Materialized persistent version 15 and compared every byte with the current Site offline export. Embedded records equal merged canonical/owner source; text, revision and service worker agree. Existing snapshot retained.",
-      "last_metadata_check_at": "2026-11-22T04:45:53Z"
+      "last_comparison_at": "2026-11-23T04:54:19Z",
+      "export_comparison_basis": "Replaced the same persistent identity with the validated generated owner offline bytes. Verified returned version 16 and byte count. Every prior embedded record and cover remains exactly equal to the prior Site source.",
+      "last_metadata_check_at": "2026-11-23T04:54:19Z"
     },
     "site": {
       "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
       "url": "https://crate-juice-map.xntfsstt5z.chatgpt.site",
-      "source_commit": "e18417376e9ca87a1920f9f72209b6c23b02f207",
-      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_6df403b652408191a0afc565dfb03d40",
+      "source_commit": "893c04ea52cd1484737132abb87aba37051b2572",
+      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_0d789c380e5c8191b09d124e80821874",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-22T04:45:53Z",
-      "last_checked_version": 25
+      "last_access_check_at": "2026-11-23T04:54:19Z",
+      "last_checked_version": 26
     }
   },
   "device_scope": {
@@ -253,26 +263,10 @@
   "notifications": {
     "policy": "Suppress unchanged routine success. Report each concrete blocker once until its situation changes.",
     "reported_blockers": [],
-    "routine_notification_suppressed": true
+    "routine_notification_suppressed": false
   },
   "history_limit": 12,
   "history": [
-    {
-      "checked_at": "2026-11-11T04:26:40Z",
-      "outcome": "unchanged",
-      "new_or_changed_lists": 0,
-      "backfilled_lists": 0,
-      "coverage": {
-        "indexed": 270,
-        "owner_complete": 270,
-        "ordered_track_slots": 12682
-      },
-      "actions": [
-        "Validated unchanged canonical catalogue and current private Site source. Checked all fifteen identified saved export revisions and recent accessible saved-file metadata.",
-        "Verified complete owner offline records, 270 archives, 12,682 ordered slots, revision and service worker, and six replay queues retaining 93 exact YouTube IDs.",
-        "Confirmed persistent offline version 10 and successful Site version 20 with the existing owner audience. Carried all unresolved metadata and privacy placeholders forward."
-      ]
-    },
     {
       "checked_at": "2026-11-12T04:23:21Z",
       "outcome": "unchanged",
@@ -465,6 +459,25 @@
         "Refreshed current owner Site source and matched the canonical catalogue to the prior checkpoint. Validated embedded owner records, ordered positions, verification fields, offline hash, revision and eight queues retaining 123 exact YouTube IDs.",
         "Checked 23 identified source export revisions and recent saved-file metadata. Updated film production documents contain no new ordered music list. No eligible historical owner index-only archive remains.",
         "Retained successful Site version 25, existing owner audience and persistent offline version 15. No regeneration or replacement was needed. Carried all unresolved recording identities and source limitations forward."
+      ]
+    },
+    {
+      "checked_at": "2026-11-23T04:54:19Z",
+      "outcome": "reconciled",
+      "new_or_changed_lists": 1,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 279,
+        "owner_complete": 278,
+        "owner_partial": 1,
+        "ordered_track_slots": 14846
+      },
+      "actions": [
+        "Read canonical source and maintenance state before changes; restored current private Site source. Checked 23 prior saved export revisions and preserved one new five-track source as CJ-293.",
+        "Retained source JSON, exact ordered SoundCloud versions and permalinks, supplied shortlink, preview labels, alternate-version flag and inherited verification dates. No platform playlist or YouTube equivalent was invented.",
+        "Verified all prior embedded owner records and cover bytes unchanged. Regenerated public and private HTML, text indexes, revision and service worker separately, retaining generic placeholders in public Git.",
+        "Published the same private Site as version 26 and verified unchanged audience. Replaced the same persistent offline identity from version 15 to 16; retained eight renewable queues with 123 exact YouTube IDs.",
+        "Carried unresolved metadata forward. No eligible historical owner index-only list remains; generated score projects do not establish an additional ordered playlist."
       ]
     }
   ],
@@ -673,6 +686,13 @@
       "source_reference": "Existing owner Site dist/private-library.json at the source commit recorded under exports.site. Individual source URLs, recording IDs and evidence remain only in the owner overlay.",
       "reviewed_at": "2026-11-20T04:58:32Z",
       "result": "Reconciled already-deployed 29-track soundtrack archive. Existing persistent version 15 is identical to the owner offline export; no replacement was necessary."
+    },
+    {
+      "crate_id": "CJ-293",
+      "track_count": 5,
+      "source_reference": "Resolve source_export_library_file_id and source_export_version in this crate in the owner Site's dist/private-library.json. Export identity, exact track membership and seed stay in the private overlay.",
+      "reviewed_at": "2026-11-23T04:54:19Z",
+      "result": "Preserved exact saved-source JSON, five ordered SoundCloud permalink IDs, versions, preview labels, alternate-version flag and source verification notes."
     }
   ]
 }
