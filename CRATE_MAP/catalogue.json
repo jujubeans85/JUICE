@@ -1,5 +1,31 @@
 [
   {
+    "position": "G4",
+    "symbol": "CL",
+    "edition": "001",
+    "family": "PRIVATE",
+    "color": "#DCA9DC",
+    "owned": true,
+    "status": "EXISTING",
+    "artwork_status": "map only",
+    "id": "CJ-294",
+    "image": "covers/CJ-294.svg",
+    "created_at": "2026-11-23",
+    "updated_at": "2026-11-24",
+    "tracks_snapshot": 1,
+    "title": "Owner-private crate CJ-294",
+    "lines": [
+      "Owner-private",
+      "CJ-294"
+    ],
+    "url": "https://crate-juice-map.xntfsstt5z.chatgpt.site/?q=CJ-294",
+    "source_platform": "private",
+    "source_visibility": "owner-only",
+    "tracklist_status": "index-only",
+    "tracks": [],
+    "note": "Source evidence retained only in the owner-private overlay."
+  },
+  {
     "id": "CJ-293",
     "position": "C9",
     "symbol": "N5",
@@ -167,7 +193,7 @@
     "image": "covers/CJ-290.svg",
     "tracks_snapshot": 1,
     "created_at": "2026-11-17",
-    "updated_at": "2026-11-17",
+    "updated_at": "2026-11-24",
     "title": "Owner-private crate CJ-290",
     "lines": [
       "Owner-private",
