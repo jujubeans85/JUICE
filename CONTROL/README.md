@@ -48,3 +48,7 @@ The app fallback should still work even before the CLI is installed, as long as 
 ## Project build intake
 
 - [AFTERWORLDS](projects/afterworlds/README.md) — screenshot points, research leads and image/file intake. The repository handoff is ready; live Universal Capture wiring must be verified against the current Mac checkout.
+
+## JC Postcards
+
+Open **JC Postcards** from the local control page or visit `/postcards/`. Choose a memory, artwork and an HTTPS destination, then print a folded A6 postcard and labels for found media. You can save the personal note on a real disk, USB or data CD. Drafts stay in this browser.
