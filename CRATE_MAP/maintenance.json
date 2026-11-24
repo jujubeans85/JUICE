@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T04:54:19Z",
+  "updated_at": "2026-11-24T04:56:16Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "d81626bc2fdc1f6b916364cb89ba6fb3d3af0dbf",
-    "catalogue_blob_sha": "c4e0d6155f82053cdea0792c181e56ff4bc7c161"
+    "source_commit": "3fd00c90348426af61d8bdaffe7527d126b0b3be",
+    "catalogue_blob_sha": "4cb242d14681c73c914f69fddc9dae24e1c10687"
   },
   "coverage": {
-    "indexed_lists": 279,
+    "indexed_lists": 280,
     "public_complete_tracklists": 199,
-    "public_index_only_privacy_placeholders": 80,
-    "owner_private_complete_tracklists": 79,
-    "owner_complete_tracklists": 278,
+    "public_index_only_privacy_placeholders": 81,
+    "owner_private_complete_tracklists": 80,
+    "owner_complete_tracklists": 279,
     "owner_partial_tracklists": 1,
     "owner_index_only_tracklists": 0,
     "public_ordered_track_slots": 10037,
-    "owner_private_ordered_track_slots": 4809,
-    "total_owner_ordered_track_slots": 14846,
+    "owner_private_ordered_track_slots": 4810,
+    "total_owner_ordered_track_slots": 14847,
     "supplied_seeds_preserved": 79,
-    "curated_list_archives": 275,
+    "curated_list_archives": 276,
     "play_history_export_archives": 3,
     "play_history_ordered_events": 181,
     "distinct_supplied_seed_recordings": 37,
@@ -29,8 +29,8 @@
     "incomplete_reference_archives": 1
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-23T04:54:19Z",
-    "scope": "Read canonical catalogue and maintenance state, restored current owner Site source, and checked 23 prior export revisions. Preserved one new complete saved five-track source as CJ-293 with original JSON, exact versions, native permalinks, unresolved seed and inherited source verification dates. Reviewed recent export metadata and soundtrack handoff context; generated scores and loop projects did not establish another accessible ordered playlist. Verified all prior embedded owner records and artwork unchanged, separate public/private derivatives, eight exact-ID queues, persistent offline version 16 and unchanged Site audience. No playback or inaccessible device inspection.",
+    "maintenance_checked_at": "2026-11-24T04:56:16Z",
+    "scope": "Read canonical catalogue and maintenance state; restored the current private Site source. Rechecked 24 identified source export revisions and recent saved-file metadata. New saved Card Press theme records establish a cello gift selection and an additional harp performer credit. Preserved the exact cello video ID, title and artist with an independent exact-ID listing match; direct video retrieval and harp exact-title lookup failed. Harp credit remains source-labelled and unverified. Validated all prior ordered tracks and artwork unchanged, intended partial-reference metadata update, public/private derivatives, nine exact-ID queues, persistent offline version 17 and unchanged Site audience. No playback or inaccessible device inspection.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
       "2026-11-06": 20,
@@ -46,19 +46,20 @@
       "2026-11-17": 2108,
       "2026-11-18": 1,
       "2026-11-19": 29,
-      "2026-11-22": 5
+      "2026-11-22": 5,
+      "2026-11-24": 1
     },
     "missing_track_verification": 0,
     "missing_track_checked_at": 0,
     "track_verification_counts": {
-      "metadata-verified": 14665,
+      "metadata-verified": 14666,
       "unavailable": 2,
       "unverified": 179
     },
     "saved_exports_reviewed": 25,
     "saved_exports_match_archived_source": true,
-    "new_or_changed_archives": 1,
-    "reviewed_file_count_basis": "23 prior source export metadata reads, the new five-track source export, and soundtrack handoff context."
+    "new_or_changed_archives": 2,
+    "reviewed_file_count_basis": "24 previously identified source export metadata reads and one newly identified saved Card Press preview."
   },
   "unresolved": [
     {
@@ -191,8 +192,8 @@
       "status": "partial-reference-only",
       "ordered_track_slots": 0,
       "source_reference_count": 1,
-      "note": "Two gift-card PDFs contain the same exact YouTube URL. The source label is preserved with its ID in the owner overlay. Exact title, performer and version remain unknown after direct metadata retrieval failed. No substitute recording or replay queue was invented.",
-      "last_metadata_lookup_attempt": "2026-11-18"
+      "note": "Gift-card PDFs and a newer saved owner export agree on the exact YouTube ID. The newer source adds a performer credit, preserved as unverified. Exact composition title and version remain unknown after fresh video retrieval and exact-ID search failed. Archive stays partial, with no invented ordered track or queue.",
+      "last_metadata_lookup_attempt": "2026-11-24"
     },
     {
       "code": "cj292_review_draft",
@@ -210,48 +211,56 @@
       "numeric_recording_ids_unknown": 5,
       "native_playlist_status": "not-created-in-source-account",
       "note": "Saved source retains five exact native permalinks and version metadata dated 22 November. Two uploads are explicitly label preview files. Playback, full-track access and Australian availability remain untested. One alternate version is marked; duplicate checking and the supplied shortlink remain unresolved. No native saved playlist or verified YouTube equivalents were established."
+    },
+    {
+      "code": "cj294_gift_source_limits",
+      "crate_id": "CJ-294",
+      "status": "source-evidence-retained",
+      "track_slots": 1,
+      "native_playlist_status": "single-recording-gift",
+      "note": "Exact selected title, artist and YouTube ID preserved from a saved owner export, with an independent indexed exact-ID listing match. Source describes a cello cover. Direct video fetch failed; playback and Australian availability remain untested. Keep the original gift and individual recording links. The renewable queue is not a saved public playlist."
     }
   ],
   "backfill": {
     "per_run_limit": 3,
     "completed_this_run": 0,
     "eligible_owner_index_only_lists": 0,
-    "note": "No eligible historical owner index-only lists remain. There are 80 public privacy placeholders and one partial harp reference with unresolved exact recording metadata."
+    "note": "No eligible historical owner index-only lists remain. There are 81 public privacy placeholders and one partial harp reference. The partial reference gained an unverified source performer credit; its exact composition and version remain unresolved."
   },
   "replay": {
-    "exact_youtube_archives": 8,
-    "queue_batches": 8,
-    "ordered_youtube_recording_ids": 123,
+    "exact_youtube_archives": 9,
+    "queue_batches": 9,
+    "ordered_youtube_recording_ids": 124,
     "queue_generator": "https://www.youtube.com/watch_videos?video_ids=COMMA_SEPARATED_EXACT_IDS",
-    "note": "Eight complete temporary YouTube queues retain 123 ordered exact IDs. Five queues are owner-only. Native sources and individual recordings remain preserved; the partial harp reference produces no queue."
+    "note": "Nine complete temporary YouTube queues retain 124 ordered exact IDs. Six queues are owner-only. Native sources and individual recordings remain preserved; the partial harp reference produces no queue."
   },
   "exports": {
     "public": {
-      "revision": "0e27b4e7926b8f05",
+      "revision": "585ed3910d6d93a5",
       "derived_files_match_canonical": true
     },
     "owner": {
-      "revision": "3f7fe2e31231db24",
-      "offline_sha256": "889db635d8dee9467d002301b64816bcbdf464dcd1bd25b8c10c0390e49a2402",
-      "offline_bytes": 14972393,
+      "revision": "0caf64845dda0e7f",
+      "offline_sha256": "889e6374fbf9d31a5d404044bf4e0c1f8b24fcc8fcaeeca8fc743a64b348b9a6",
+      "offline_bytes": 14975395,
       "text_index_matches_merged_source": true,
       "offline_file_name": "CRATE_JUICE_Offline.html",
       "library_file_id": "libfile_58929fd121f881919694f3e92253054a",
-      "library_version": 16,
+      "library_version": 17,
       "existing_library_bytes_match": true,
-      "last_comparison_at": "2026-11-23T04:54:19Z",
-      "export_comparison_basis": "Replaced the same persistent identity with the validated generated owner offline bytes. Verified returned version 16 and byte count. Every prior embedded record and cover remains exactly equal to the prior Site source.",
-      "last_metadata_check_at": "2026-11-23T04:54:19Z"
+      "last_comparison_at": "2026-11-24T04:56:16Z",
+      "export_comparison_basis": "Replaced the same persistent identity with the validated owner export. Verified returned version 17 and byte count. Every prior ordered track and cover byte remains unchanged; one partial reference has the intended metadata update.",
+      "last_metadata_check_at": "2026-11-24T04:56:16Z"
     },
     "site": {
       "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
       "url": "https://crate-juice-map.xntfsstt5z.chatgpt.site",
-      "source_commit": "893c04ea52cd1484737132abb87aba37051b2572",
-      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_0d789c380e5c8191b09d124e80821874",
+      "source_commit": "593080750bdca813870666e91409a34327b8efe1",
+      "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_43c6f6087aac819189a7888706ee07a3",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-23T04:54:19Z",
-      "last_checked_version": 26
+      "last_access_check_at": "2026-11-24T04:56:16Z",
+      "last_checked_version": 27
     }
   },
   "device_scope": {
@@ -267,22 +276,6 @@
   },
   "history_limit": 12,
   "history": [
-    {
-      "checked_at": "2026-11-12T04:23:21Z",
-      "outcome": "unchanged",
-      "new_or_changed_lists": 0,
-      "backfilled_lists": 0,
-      "coverage": {
-        "indexed": 270,
-        "owner_complete": 270,
-        "ordered_track_slots": 12682
-      },
-      "actions": [
-        "Validated unchanged canonical catalogue and current owner-private Site source. All fifteen identified saved exports retain their archived revisions.",
-        "Reviewed recent saved-file metadata and the new distilled index. No new or changed ordered music-list export was identified.",
-        "Validated 270 complete owner archives, 12,682 ordered slots and six queues retaining 93 exact YouTube IDs. Confirmed persistent offline version 10 and successful Site version 20; retained all unresolved items."
-      ]
-    },
     {
       "checked_at": "2026-11-13T04:16:43Z",
       "outcome": "unchanged",
@@ -479,6 +472,27 @@
         "Published the same private Site as version 26 and verified unchanged audience. Replaced the same persistent offline identity from version 15 to 16; retained eight renewable queues with 123 exact YouTube IDs.",
         "Carried unresolved metadata forward. No eligible historical owner index-only list remains; generated score projects do not establish an additional ordered playlist."
       ]
+    },
+    {
+      "checked_at": "2026-11-24T04:56:16Z",
+      "outcome": "reconciled",
+      "new_or_changed_lists": 2,
+      "new_complete_lists": 1,
+      "updated_partial_references": 1,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 280,
+        "owner_complete": 279,
+        "owner_partial": 1,
+        "ordered_track_slots": 14847
+      },
+      "actions": [
+        "Read canonical and maintenance state before changes, restored current owner Site source, checked 24 prior source export revisions and recent saved-file metadata.",
+        "Preserved one newly accessible gift recording as CJ-294. Added a newer source performer credit to CJ-290 while retaining unverified status and unknown exact composition/version.",
+        "Validated all prior ordered records and cover bytes unchanged. Regenerated public and owner derivatives independently; exact private recording details remain only in the owner overlay.",
+        "Published the same private Site as version 27 and verified unchanged audience. Replaced the same persistent offline identity from version 16 to 17.",
+        "Retained nine renewable exact-ID YouTube queues with 124 ordered IDs. No saved public playlist, playback check or inaccessible-device update was claimed."
+      ]
     }
   ],
   "identified_saved_exports": [
@@ -670,8 +684,8 @@
       "crate_id": "CJ-290",
       "track_count": 0,
       "source_reference": "Resolve source_export_library_file_id or source_exports from this crate in the owner Site's dist/private-library.json. Source file identities and all private recording memberships stay in that overlay.",
-      "result": "Shared gift-card music pointer retained as partial, with exact ID and explicit unknown recording metadata.",
-      "reviewed_at": "2026-11-17T04:59:27Z"
+      "result": "Exact reference remains partial. New saved export adds a source-labelled performer credit; independently unverified. Recording title and version remain unknown.",
+      "reviewed_at": "2026-11-24T04:56:16Z"
     },
     {
       "crate_id": "CJ-291",
@@ -693,6 +707,13 @@
       "source_reference": "Resolve source_export_library_file_id and source_export_version in this crate in the owner Site's dist/private-library.json. Export identity, exact track membership and seed stay in the private overlay.",
       "reviewed_at": "2026-11-23T04:54:19Z",
       "result": "Preserved exact saved-source JSON, five ordered SoundCloud permalink IDs, versions, preview labels, alternate-version flag and source verification notes."
+    },
+    {
+      "crate_id": "CJ-294",
+      "track_count": 1,
+      "source_reference": "Resolve source_exports and source_original_theme from this crate in the owner Site's dist/private-library.json. Saved-file identity and exact recording membership remain owner-only.",
+      "reviewed_at": "2026-11-24T04:56:16Z",
+      "result": "Preserved a complete single-recording gift selection with exact YouTube ID, source label, metadata evidence, native gift link and renewable replay queue."
     }
   ]
 }
