@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-24T04:56:16Z",
+  "updated_at": "2026-11-25T04:45:58Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "3fd00c90348426af61d8bdaffe7527d126b0b3be",
+    "source_commit": "50f637a3cea4765e358f647cbf550374dd3a3717",
     "catalogue_blob_sha": "4cb242d14681c73c914f69fddc9dae24e1c10687"
   },
   "coverage": {
@@ -29,8 +29,8 @@
     "incomplete_reference_archives": 1
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-24T04:56:16Z",
-    "scope": "Read canonical catalogue and maintenance state; restored the current private Site source. Rechecked 24 identified source export revisions and recent saved-file metadata. New saved Card Press theme records establish a cello gift selection and an additional harp performer credit. Preserved the exact cello video ID, title and artist with an independent exact-ID listing match; direct video retrieval and harp exact-title lookup failed. Harp credit remains source-labelled and unverified. Validated all prior ordered tracks and artwork unchanged, intended partial-reference metadata update, public/private derivatives, nine exact-ID queues, persistent offline version 17 and unchanged Site audience. No playback or inaccessible device inspection.",
+    "maintenance_checked_at": "2026-11-25T04:45:58Z",
+    "scope": "Read current canonical catalogue metadata and maintenance state; restored current owner Site source. Catalogue blob, owner source commit and offline SHA-256 are unchanged. Validated every embedded owner record against merged source, contiguous track positions, verification fields, revision/service worker and nine renewable queues with 124 exact YouTube IDs. All 25 identified source exports retain their prior revisions. Reviewed all recent saved-file metadata and found no new or changed music list. Confirmed successful Site version 27 and unchanged persistent offline version 17. No playback or inaccessible device inspection.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
       "2026-11-06": 20,
@@ -58,8 +58,8 @@
     },
     "saved_exports_reviewed": 25,
     "saved_exports_match_archived_source": true,
-    "new_or_changed_archives": 2,
-    "reviewed_file_count_basis": "24 previously identified source export metadata reads and one newly identified saved Card Press preview."
+    "new_or_changed_archives": 0,
+    "reviewed_file_count_basis": "25 identified source export revisions; recent saved-file inventory contained only unrelated images and no additional music-list export."
   },
   "unresolved": [
     {
@@ -250,7 +250,7 @@
       "existing_library_bytes_match": true,
       "last_comparison_at": "2026-11-24T04:56:16Z",
       "export_comparison_basis": "Replaced the same persistent identity with the validated owner export. Verified returned version 17 and byte count. Every prior ordered track and cover byte remains unchanged; one partial reference has the intended metadata update.",
-      "last_metadata_check_at": "2026-11-24T04:56:16Z"
+      "last_metadata_check_at": "2026-11-25T04:45:58Z"
     },
     "site": {
       "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
@@ -259,7 +259,7 @@
       "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_43c6f6087aac819189a7888706ee07a3",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-24T04:56:16Z",
+      "last_access_check_at": "2026-11-25T04:45:58Z",
       "last_checked_version": 27
     }
   },
@@ -272,26 +272,10 @@
   "notifications": {
     "policy": "Suppress unchanged routine success. Report each concrete blocker once until its situation changes.",
     "reported_blockers": [],
-    "routine_notification_suppressed": false
+    "routine_notification_suppressed": true
   },
   "history_limit": 12,
   "history": [
-    {
-      "checked_at": "2026-11-13T04:16:43Z",
-      "outcome": "unchanged",
-      "new_or_changed_lists": 0,
-      "backfilled_lists": 0,
-      "coverage": {
-        "indexed": 270,
-        "owner_complete": 270,
-        "ordered_track_slots": 12682
-      },
-      "actions": [
-        "Validated unchanged canonical catalogue and current owner-private Site source. All fifteen identified saved exports retain their archived revisions.",
-        "Reviewed recent saved-file metadata. No new or changed ordered music-list export was identified.",
-        "Validated complete embedded owner records, 12,682 ordered slots and six queues retaining 93 exact YouTube IDs. Confirmed persistent offline version 10 and successful Site version 20; retained unresolved metadata and all privacy placeholders."
-      ]
-    },
     {
       "checked_at": "2026-11-14T04:47:09Z",
       "outcome": "reconciled",
@@ -492,6 +476,23 @@
         "Validated all prior ordered records and cover bytes unchanged. Regenerated public and owner derivatives independently; exact private recording details remain only in the owner overlay.",
         "Published the same private Site as version 27 and verified unchanged audience. Replaced the same persistent offline identity from version 16 to 17.",
         "Retained nine renewable exact-ID YouTube queues with 124 ordered IDs. No saved public playlist, playback check or inaccessible-device update was claimed."
+      ]
+    },
+    {
+      "checked_at": "2026-11-25T04:45:58Z",
+      "outcome": "unchanged",
+      "new_or_changed_lists": 0,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 280,
+        "owner_complete": 279,
+        "owner_partial": 1,
+        "ordered_track_slots": 14847
+      },
+      "actions": [
+        "Matched current canonical catalogue and refreshed owner Site source to the prior checkpoint. Validated merged and embedded records, ordered positions, verification dates, offline hash, revision and service worker.",
+        "Checked all 25 identified saved export revisions and all recent saved-file metadata. No new or changed accessible music list was found; no eligible historical owner index-only entry remains.",
+        "Confirmed successful Site version 27 with the existing owner-only audience, persistent offline version 17 and nine renewable queues retaining 124 exact YouTube IDs. Retained existing exports without unnecessary regeneration or replacement, carrying all unresolved details forward."
       ]
     }
   ],
