@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-25T04:45:58Z",
+  "updated_at": "2026-11-26T04:36:35Z",
   "canonical": {
     "repository": "jujubeans85/JUICE",
     "branch": "main",
     "path": "CRATE_MAP/catalogue.json",
-    "source_commit": "50f637a3cea4765e358f647cbf550374dd3a3717",
+    "source_commit": "674831d14a3d4e0907eee95f12d6e0d399f319c8",
     "catalogue_blob_sha": "4cb242d14681c73c914f69fddc9dae24e1c10687"
   },
   "coverage": {
@@ -29,8 +29,8 @@
     "incomplete_reference_archives": 1
   },
   "verification": {
-    "maintenance_checked_at": "2026-11-25T04:45:58Z",
-    "scope": "Read current canonical catalogue metadata and maintenance state; restored current owner Site source. Catalogue blob, owner source commit and offline SHA-256 are unchanged. Validated every embedded owner record against merged source, contiguous track positions, verification fields, revision/service worker and nine renewable queues with 124 exact YouTube IDs. All 25 identified source exports retain their prior revisions. Reviewed all recent saved-file metadata and found no new or changed music list. Confirmed successful Site version 27 and unchanged persistent offline version 17. No playback or inaccessible device inspection.",
+    "maintenance_checked_at": "2026-11-26T04:36:35Z",
+    "scope": "Read current canonical metadata and maintenance state; restored current private Site source. Catalogue blob, owner source commit and offline SHA-256 are unchanged. Validated embedded records against merged source, contiguous positions, verification fields, revision/service worker and nine renewable queues retaining 124 exact YouTube IDs. Rechecked all 25 identified source export revisions and recent saved-file metadata. The updated context document adds no new or changed ordered music list. Confirmed successful Site version 27 and unchanged persistent offline version 17. No playback or inaccessible device inspection.",
     "retained_track_verification": "Mixed: source metadata verification retained per recording; user-export metadata remains unverified and two inaccessible local-file references are marked unavailable.",
     "retained_checked_at_counts": {
       "2026-11-06": 20,
@@ -56,10 +56,10 @@
       "unavailable": 2,
       "unverified": 179
     },
-    "saved_exports_reviewed": 25,
+    "saved_exports_reviewed": 26,
     "saved_exports_match_archived_source": true,
     "new_or_changed_archives": 0,
-    "reviewed_file_count_basis": "25 identified source export revisions; recent saved-file inventory contained only unrelated images and no additional music-list export."
+    "reviewed_file_count_basis": "25 identified source export revisions plus the updated approved-outcomes context. Its music references point to an already-preserved source."
   },
   "unresolved": [
     {
@@ -250,7 +250,7 @@
       "existing_library_bytes_match": true,
       "last_comparison_at": "2026-11-24T04:56:16Z",
       "export_comparison_basis": "Replaced the same persistent identity with the validated owner export. Verified returned version 17 and byte count. Every prior ordered track and cover byte remains unchanged; one partial reference has the intended metadata update.",
-      "last_metadata_check_at": "2026-11-25T04:45:58Z"
+      "last_metadata_check_at": "2026-11-26T04:36:35Z"
     },
     "site": {
       "project_id": "appgprj_6ae092c4a3748191a1d56b61841da627",
@@ -259,7 +259,7 @@
       "version_id": "appgprj_6ae092c4a3748191a1d56b61841da627~appgver_43c6f6087aac819189a7888706ee07a3",
       "deployment_status": "succeeded",
       "audience": "existing-owner-private-unchanged",
-      "last_access_check_at": "2026-11-25T04:45:58Z",
+      "last_access_check_at": "2026-11-26T04:36:35Z",
       "last_checked_version": 27
     }
   },
@@ -276,24 +276,6 @@
   },
   "history_limit": 12,
   "history": [
-    {
-      "checked_at": "2026-11-14T04:47:09Z",
-      "outcome": "reconciled",
-      "new_or_changed_lists": 1,
-      "backfilled_lists": 0,
-      "coverage": {
-        "indexed": 271,
-        "owner_complete": 271,
-        "ordered_track_slots": 12698
-      },
-      "actions": [
-        "Read current canonical catalogue, maintenance state and owner-private Site before changes. Checked the fifteen prior identified exports and archived one new saved revision as CJ-285.",
-        "Preserved sixteen ordered SoundCloud records, exact source labels and URLs, three seed mixes, metadata dates and all source limitations. Retained the duplicated source volume label with a distinct stable ID.",
-        "Validated all prior embedded archive records and artwork unchanged. Rebuilt public and private derivatives separately with privacy placeholders in canonical public Git.",
-        "Replaced the same persistent offline snapshot from version 10 to 11, published the same Site as version 21 and verified its access policy is identical.",
-        "Retained six existing exact-ID YouTube queues and all source platform links. No native account playlist is established for the new archive."
-      ]
-    },
     {
       "checked_at": "2026-11-15T04:51:19Z",
       "outcome": "reconciled",
@@ -493,6 +475,23 @@
         "Matched current canonical catalogue and refreshed owner Site source to the prior checkpoint. Validated merged and embedded records, ordered positions, verification dates, offline hash, revision and service worker.",
         "Checked all 25 identified saved export revisions and all recent saved-file metadata. No new or changed accessible music list was found; no eligible historical owner index-only entry remains.",
         "Confirmed successful Site version 27 with the existing owner-only audience, persistent offline version 17 and nine renewable queues retaining 124 exact YouTube IDs. Retained existing exports without unnecessary regeneration or replacement, carrying all unresolved details forward."
+      ]
+    },
+    {
+      "checked_at": "2026-11-26T04:36:35Z",
+      "outcome": "unchanged",
+      "new_or_changed_lists": 0,
+      "backfilled_lists": 0,
+      "coverage": {
+        "indexed": 280,
+        "owner_complete": 279,
+        "owner_partial": 1,
+        "ordered_track_slots": 14847
+      },
+      "actions": [
+        "Matched current canonical catalogue and refreshed owner Site source to the prior checkpoint. Validated complete embedded records, order, verification dates, offline hash, revision and service worker.",
+        "Checked 25 identified source-export revisions, the updated context document and all recent saved-file metadata. No new or changed accessible music list was found; no eligible historical owner index-only entry remains.",
+        "Confirmed successful Site version 27 with unchanged owner-only audience, persistent offline version 17 and nine renewable queues retaining 124 exact YouTube IDs. Retained existing exports and all unresolved details without unnecessary regeneration or replacement."
       ]
     }
   ],
