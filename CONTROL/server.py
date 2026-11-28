@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import html
+from skill_radar import RadarBridge
 import json
 import os
 import socket
@@ -20,7 +21,8 @@ from typing import Any
 from urllib.parse import parse_qs, urlparse
 
 APP_NAME = "JUICE Control"
-APP_VERSION = "2026.07-zed-fix"
+APP_VERSION = "2026.11-radar-opt-in"
+RADAR = RadarBridge()
 HOST = os.environ.get("JUICE_CONTROL_HOST", "127.0.0.1")
 PORT = int(os.environ.get("JUICE_CONTROL_PORT", "8765"))
 HOME = Path.home()
@@ -152,6 +154,7 @@ def render_page(message: str | None = None, ok: bool = True) -> bytes:
   <h1>{APP_NAME}</h1>
   <p class="muted">Local-only control interface. Zed status: <strong>{html.escape(status_text)}</strong>.</p>
   {banner}
+  <section class="card"><h2>Skill Radar</h2><p>Review reusable workflows when useful. Disabled until explicitly enabled.</p><a href="/skill-radar">Open Skill Radar</a></section>
   <section class="card" aria-label="Crate Juice music library">\n    <h2>CRATE JUICE — Crate Map</h2>\n    <p>Search the linked playlist library by title, symbol or cover family.</p>\n    <a href="https://crate-juice-map.xntfsstt5z.chatgpt.site" target="_blank" rel="noopener">Open the Crate Map ↗</a>\n  </section>\n  <section class="grid">{''.join(cards)}</section>
   <h2>Diagnostics</h2>
   <pre>{html.escape(json.dumps(diagnostics(), indent=2))}</pre>
@@ -165,6 +168,8 @@ class Handler(BaseHTTPRequestHandler):
     server_version = f"{APP_NAME}/{APP_VERSION}"
 
     def log_message(self, fmt: str, *args: Any) -> None:
+        if "skill-radar" in self.path:
+            return  # No Radar request bodies, query strings or tokens in access logs.
         sys.stderr.write("[%s] %s\n" % (time.strftime("%H:%M:%S"), fmt % args))
 
     def send_bytes(self, body: bytes, status: HTTPStatus = HTTPStatus.OK, content_type: str = "text/html; charset=utf-8") -> None:
@@ -179,6 +184,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_bytes(json.dumps(payload, indent=2).encode("utf-8"), status, "application/json; charset=utf-8")
 
     def do_GET(self) -> None:
+        if RADAR.handle(self):
+            return
         parsed = urlparse(self.path)
         if parsed.path in {"/", "/index.html"}:
             self.send_bytes(render_page())
@@ -190,6 +197,8 @@ class Handler(BaseHTTPRequestHandler):
             self.send_json({"ok": False, "error": "not found"}, HTTPStatus.NOT_FOUND)
 
     def do_POST(self) -> None:
+        if RADAR.handle(self):
+            return
         parsed = urlparse(self.path)
         length = int(self.headers.get("Content-Length", "0"))
         body = self.rfile.read(length).decode("utf-8")
