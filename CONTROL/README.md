@@ -2,6 +2,14 @@
 
 Local-only control interface for the JUICE folders, pinned to Zed as the editor.
 
+## Music creation
+
+The integrated [Music Door](music/README.md) lives at `/music/` on this same server.
+It provides one responsive interface for desktop JC and private iPhone/iPad access,
+with a durable YuE2/ComfyUI queue and shared takes. Start with the
+[engine setup](music/SETUP_ENGINE.md) and [private iOS setup](music/SETUP_IOS.md).
+The adapter does not download models or launch another dashboard.
+
 ## What this fixes
 
 `start.command` and the browser buttons no longer depend on an interactive terminal PATH. The Zed opener tries, in order:
@@ -48,3 +56,4 @@ The app fallback should still work even before the CLI is installed, as long as 
 ## Project build intake
 
 - [AFTERWORLDS](projects/afterworlds/README.md) — screenshot points, research leads and image/file intake. The repository handoff is ready; live Universal Capture wiring must be verified against the current Mac checkout.
+

@@ -1,0 +1,16 @@
+{
+  "id": "/music/",
+  "name": "JUICE Music",
+  "short_name": "JUICE Music",
+  "description": "Your music door. Create, listen and keep your takes in JUICE Control.",
+  "start_url": "/music/",
+  "scope": "/music/",
+  "display": "standalone",
+  "background_color": "#151713",
+  "theme_color": "#151713",
+  "icons": [
+    {"src": "/music/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "/music/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
+    {"src": "/music/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}
