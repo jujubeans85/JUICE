@@ -104,6 +104,24 @@ def diagnostics() -> dict[str, Any]:
     }
 
 
+def maintenance_report() -> bytes:
+    """Serve one fixed public report, never a caller-selected local path."""
+    candidates = [
+        (DATA_ROOT / "MAINTENANCE" / "latest" / "report.html", DATA_ROOT),
+        (CONTROL_ROOT.parent / "MAINTENANCE" / "baseline" / "report.html", CONTROL_ROOT.parent),
+    ]
+    for path, root in candidates:
+        if path.is_symlink():
+            continue
+        try:
+            path.resolve().relative_to(root.resolve())
+            if path.is_file() and path.stat().st_size <= 2 * 1024 * 1024:
+                return path.read_bytes()
+        except (OSError, ValueError):
+            continue
+    return b"<!doctype html><meta charset=utf-8><title>JUICE maintenance</title><h1>No local audit report yet</h1><p>Use the Portfolio maintenance audit in GitHub Actions, or run the documented audit command.</p>"
+
+
 def render_page(message: str | None = None, ok: bool = True) -> bytes:
     zed = zed_status()
     status_text = "ready" if zed["available"] else "needs Zed CLI/app"
@@ -152,6 +170,12 @@ def render_page(message: str | None = None, ok: bool = True) -> bytes:
   <h1>{APP_NAME}</h1>
   <p class="muted">Local-only control interface. Zed status: <strong>{html.escape(status_text)}</strong>.</p>
   {banner}
+  <section class="card" aria-label="Monthly maintenance">
+    <h2>Monthly maintenance</h2>
+    <p>Repository observations, changes and unresolved review gates.</p>
+    <a href="/maintenance">Open the latest local report</a> ·
+    <a href="https://github.com/jujubeans85/JUICE/actions/workflows/portfolio-audit.yml" target="_blank" rel="noopener">GitHub audit history ↗</a>
+  </section>
   <section class="card" aria-label="Crate Juice music library">\n    <h2>CRATE JUICE — Crate Map</h2>\n    <p>Search the linked playlist library by title, symbol or cover family.</p>\n    <a href="https://crate-juice-map.xntfsstt5z.chatgpt.site" target="_blank" rel="noopener">Open the Crate Map ↗</a>\n  </section>\n  <section class="grid">{''.join(cards)}</section>
   <h2>Diagnostics</h2>
   <pre>{html.escape(json.dumps(diagnostics(), indent=2))}</pre>
@@ -186,6 +210,8 @@ class Handler(BaseHTTPRequestHandler):
             self.send_json({"ok": True, "version": APP_VERSION})
         elif parsed.path == "/api/diagnostics":
             self.send_json(diagnostics())
+        elif parsed.path == "/maintenance":
+            self.send_bytes(maintenance_report())
         else:
             self.send_json({"ok": False, "error": "not found"}, HTTPStatus.NOT_FOUND)
 
