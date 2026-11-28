@@ -1,0 +1,15 @@
+<section class="card" id="audio-intake" aria-label="Flood My Ears audio intake">
+  <h2>Flood My Ears — audio intake</h2>
+  <p>Drop ZIP bundles or select multiple WAV, AIFF, AIF and MP3 stems. Originals stay untouched.</p>
+  <div data-drop tabindex="0" role="button" aria-label="Choose or drop audio files"
+       style="padding:24px;border:2px dashed currentColor;border-radius:14px">
+    Drop files here, or click to choose
+  </div>
+  <input data-files type="file" multiple accept=".zip,.wav,.aiff,.aif,.mp3" hidden>
+  <p><button data-cancel type="button" disabled>Cancel current upload</button></p>
+  <p data-status role="status" aria-live="polite">Loading intake…</p>
+  <ul data-results></ul>
+  <p>Intake stages audio for review. Audio processing and native Logic project creation are not connected.</p>
+  <noscript>Enable JavaScript for file intake. Folder-opening buttons still work.</noscript>
+</section>
+<script src="/intake.js" defer></script>
